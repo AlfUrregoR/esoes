@@ -1,1 +1,73 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+$bg-color-titulo: #f3ebe6;
+$beig: #f3ebe6;
+$marron: #85554b;
+$antracit: #474848;
+$font-forum: 'Forum', cursive;
+$font-raleway: 'Raleway';
+body{
+  overflow-x: hidden;
+  h1{
+    font-family: $font-forum;
+   }
+
+   p{
+     font-family: $font-raleway;
+   }
+}
+.fb-ic {
+  color: $bg-color-titulo !important;
+}
+
+.masthead {
+  height: 100vh;
+  width: auto;
+  min-height: 500px;
+  background-image: url('http://localhost/esoes/wp-content/uploads/2019/07/homepage_esoes-min.jpg');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.navbar-nav {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+
+    .nav-link{
+      font-family: $font-raleway;
+    }
+}
+
+.content-title{
+  margin-top: 7%;
+  margin-bottom: 5%;
+
+  h1{
+    color: $marron !important;
+    font-size: 8em;
+  }
+}
+
+.coordinate{
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: $bg-color-titulo !important;
+
+    .coordinate-izq{
+      text-align: left;
+      padding-left: 10%;
+    }
+
+    .coordinate-der{
+      text-align: right;
+      padding-right: 10%;
+    }
+}
+
+.vl {
+  border-right: 2px solid $bg-color-titulo !important;
+  height: 70px;
+  text-align: justify;
+  width: 50%;
+}

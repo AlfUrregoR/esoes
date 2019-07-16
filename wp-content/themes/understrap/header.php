@@ -26,11 +26,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="site" id="page">
 
 	<!-- ******************* The Navbar Area ******************* -->
-	<div id="wrapper-navbar" itemscope itemtype="http://schema.org/WebSite">
+	<div id="wrapper-navbar" itemscope itemtype="http://schema.org/WebSite" class="masthead">
 
 		<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
 
-		<nav class="navbar navbar-expand-md navbar-dark bg-primary">
+		<nav class="navbar navbar-expand-md navbar-dark">
 
 		<?php if ( 'container' == $container ) : ?>
 			<div class="container">
@@ -39,14 +39,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<!-- Your site title as branding in the menu -->
 					<?php if ( ! has_custom_logo() ) { ?>
 
-						<?php if ( is_front_page() && is_home() ) : ?>
-
-							<h1 class="navbar-brand mb-0"><a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a></h1>
-
+						<?php if ( is_front_page()) : ?>
+							<a class="fb-ic mr-3" role="button" href="https://www.instagram.com/esoes_design/"><i class="icono fab fa-instagram"></i></a>
+							<a class="fb-ic mr-3" role="button"><i class="fab fa-facebook-f"></i></a>
+							<a class="fb-ic mr-3" role="button" href="https://www.pinterest.ch/esoes_design/"><i class="fab fa-pinterest"></i></a>
 						<?php else : ?>
-
 							<a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a>
-
 						<?php endif; ?>
 
 
@@ -77,4 +75,26 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		</nav><!-- .site-navigation -->
 
-	</div><!-- #wrapper-navbar end -->
+<div class="content-title">
+  <div class="container h-100">
+    <div class="row h-100 align-items-center">
+      <div class="col-12 text-center">
+        <h1 class="font-weight-light">esoes</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row coordinate">
+  <div class="col-md-6 coordinate-izq">
+			<p>6°10'18.0"N 75°35'00.9"W</p>
+			<p>My mind is here</p>
+	</div>
+	<div class="col-md-6 coordinate-der">
+			<p>46°52'50.163"N 7°2'33.747"E</p>
+			<p>My soual is there</p>
+	</div>
+</div>
+	<div class="vl"></div>
+
+</div><!-- #wrapper-navbar end -->

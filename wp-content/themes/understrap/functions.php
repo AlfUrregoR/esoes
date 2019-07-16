@@ -33,3 +33,20 @@ foreach ( $understrap_includes as $file ) {
 	}
 	require_once $filepath;
 }
+
+add_action( 'wp_enqueue_scripts', 'enqueue_load_fa' );
+function enqueue_load_fa() {
+wp_enqueue_style( 'load-fa', 'https://use.fontawesome.com/releases/v5.3.1/css/all.css' );
+}
+
+add_action("wp_enqueue_scripts", "dcms_insertar_google_fonts");
+function dcms_insertar_google_fonts(){
+    $url = "https://fonts.google.com/specimen/Forum?selection.family=Forum";
+    wp_enqueue_style('google_fonts', $url);
+ }
+
+ add_action("wp_enqueue_scripts", "dcms_insertar_google_fonts");
+ function dcms_insertar_google_fonts_new(){
+     $url = "https://fonts.google.com/specimen/Raleway?selection.family=Raleway:300,400,600,700";
+     wp_enqueue_style('google_fonts_new', $url);
+  }
