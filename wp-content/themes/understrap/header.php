@@ -79,22 +79,28 @@ $container = get_theme_mod( 'understrap_container_type' );
   <div class="container h-100">
     <div class="row h-100 align-items-center">
       <div class="col-12 text-center">
-        <h1 class="font-weight-light">esoes</h1>
+        <img src="http://localhost/esoes/wp-content/uploads/2019/07/logo_esoes.png" alt="">
       </div>
     </div>
   </div>
 </div>
 
-<div class="row coordinate">
-  <div class="col-md-6 coordinate-izq">
-			<p>6°10'18.0"N 75°35'00.9"W</p>
-			<p>My mind is here</p>
-	</div>
-	<div class="col-md-6 coordinate-der">
-			<p>46°52'50.163"N 7°2'33.747"E</p>
-			<p>My soual is there</p>
+<div class="container">
+	<div class="row coordinate">
+		<div class="col-sm-1 col-md-1 vl-izq"></div>
+		<div class="col-md-4 coordinate-izq">
+				<p>6°10'18.0"N 75°35'00.9"W</p>
+				<p>My mind is here</p>
+		</div>
+		<div class="col-md-4 coordinate-der">
+				<p>46°52'50.163"N 7°2'33.747"E</p>
+				<p>My soual is there</p>
+		</div>
+		<div class="col-sm-1 col-md-1 vl-der"></div>
 	</div>
 </div>
+
+
 	<div class="vl"></div>
 
 </div><!-- #wrapper-navbar end -->

@@ -1,18 +1,20 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
 $bg-color-titulo: #f3ebe6;
-$beig: #f3ebe6;
 $marron: #85554b;
 $antracit: #474848;
 $font-forum: 'Forum', cursive;
 $font-raleway: 'Raleway';
+
 body{
   overflow-x: hidden;
-  h1{
+
+  h1, h2, h3, h4, h5, h6{
     font-family: $font-forum;
    }
 
-   p{
+   p,ul,li{
      font-family: $font-raleway;
+     font-weight: normal;
    }
 }
 .fb-ic {
@@ -20,11 +22,12 @@ body{
 }
 
 .masthead {
-  height: 100vh;
+  height: 125vh;
   width: auto;
   min-height: 500px;
   background-image: url('http://localhost/esoes/wp-content/uploads/2019/07/homepage_esoes-min.jpg');
-  background-size: 100% 100%;
+  background-attachment: fixed;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -39,15 +42,6 @@ body{
     }
 }
 
-.content-title{
-  margin-top: 7%;
-  margin-bottom: 5%;
-
-  h1{
-    color: $marron !important;
-    font-size: 8em;
-  }
-}
 
 .coordinate{
   margin-top: 20px;
@@ -56,18 +50,221 @@ body{
 
     .coordinate-izq{
       text-align: left;
-      padding-left: 10%;
     }
 
     .coordinate-der{
       text-align: right;
-      padding-right: 10%;
+    }
+
+    .vl-izq {
+      border-top: 2px solid $bg-color-titulo !important;
+      margin-left: 5%;
+      margin-top: 6px;
+      width:  50% !important;
+    }
+
+    .vl-der {
+      border-top: 2px solid $bg-color-titulo !important;
+      margin-right: 5%;
+      margin-top: 6px;
+      width: 50% !important;
     }
 }
 
 .vl {
   border-right: 2px solid $bg-color-titulo !important;
-  height: 70px;
+  margin-top: 35px;
+  margin-bottom: 10px;
+  height: 90px;
   text-align: justify;
   width: 50%;
+}
+
+#portafolio{
+  .content-title-portafolio{
+    margin-top: 4%;
+    margin-bottom: 4%;
+    width: 100%;
+  }
+
+  .title-portafolio{
+    color: $antracit !important;
+  }
+}
+
+.rings {
+  a {
+    display:inline-block;
+    position:relative;
+
+    span {
+     position:absolute;
+     top:50%;
+     left:50%;
+     transform:translate(-50%, -50%);
+     color:white;
+     display:none;
+    }
+
+     &:hover {
+         background:black;
+    }
+     &:hover span {
+      display:block;
+    }
+     &:hover img {
+     opacity:0.7;
+    }
+  }
+}
+
+.services {
+  margin-top: 50px;
+  height: 75vh;
+  width: auto;
+  min-height: 500px;
+  background-image: url('http://localhost/esoes/wp-content/uploads/2019/07/fond_services.png');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  .content-title-services{
+    padding-top: 10%;
+    padding-bottom: 4%;
+    color: $bg-color-titulo !important;
+  }
+
+  .list-izq{
+    text-align: right;
+    border-right: 1px solid $bg-color-titulo !important;
+    padding-right: 60px;
+    height: 150px;
+  }
+
+  ul{
+     list-style:none;
+     li{
+       color: $bg-color-titulo !important;
+     }
+  }
+
+  .div-btn-services{
+    margin-top: 25px;
+
+    .btn-services{
+      background-color:  $bg-color-titulo;
+      color:$antracit;
+      border: none;
+      padding: 8px;
+      text-decoration: none;
+    }
+  }
+}
+
+.propos{
+
+    .propos-izq{
+      background-image: url('http://localhost/esoes/wp-content/uploads/2019/07/apropos_avion.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .propos-der{
+      color: $antracit;
+      text-align: left;
+      padding: 100px;
+
+      h3{
+        padding-bottom: 50px;
+      }
+
+      .div-btn-propos{
+        margin-top: 25px;
+
+        .btn-propos{
+          background-color:$marron;
+          color:$bg-color-titulo;
+          border: none;
+          padding-left: 40px;
+          padding-right: 40px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          text-decoration: none;
+        }
+      }
+    }
+}
+
+.partenaires{
+  height: 50vh;
+  width: auto;
+  min-height: 500px;
+  background-image: url('http://localhost/esoes/wp-content/uploads/2019/07/partenaires_fond.png');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  .text-partenaires{
+    padding-top: 100px;
+    padding-bottom: 30px;
+    color: $antracit;
+  }
+
+  .log-partenaires{
+    padding: 30px;
+    overflow:hidden;
+    width: 100%;
+    height: 100%;
+
+    &:hover{
+      -webkit-transform:scale(1.5);
+      -moz-transform:scale(1.5);
+      -ms-transform:scale(1.5);
+      -o-transform:scale(1.5);
+      transform:scale(1.5);
+    }
+    img{
+      -webkit-transition:all .9s ease; /* Safari y Chrome */
+      -moz-transition:all .9s ease; /* Firefox */
+      -o-transition:all .9s ease; /* IE 9 */
+      -ms-transition:all .9s ease; /* Opera */
+      width:100%;
+    }
+  }
+}
+
+.collaborations{
+  height: 50vh;
+  width: auto;
+  min-height: 500px;
+  background-image: url('http://localhost/esoes/wp-content/uploads/2019/07/collaboration_fond.png');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  .text-collaborations{
+    padding: 80px;
+    margin-top: 65px;
+    color: $bg-color-titulo;
+    background-color: $marron;
+    opacity: 0.2;
+
+    h3{
+      padding-top: 20px;
+      padding-bottom: 50px;
+    }
+
+  }
+}
+
+.contact{
+  padding: 100px;
+
+  .text-contact{
+    color: $antracit;
+  }
 }
