@@ -186,11 +186,15 @@
     <div class="row align-items-center">
       <div class="container div-btn-propos text-center">
         <div class="col-12">
-          <a href="#" class="btn-propos">Contact</a>
+          <a href="#" class="btn-contact">Contact</a>
         </div>
       </div>
     </div>
   </div>
+</section>
+
+<section id="blog" class="blog">
+
 </section>
 
 
