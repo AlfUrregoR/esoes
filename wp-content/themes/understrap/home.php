@@ -28,41 +28,79 @@
 <section id="portafolio-galeria">
   <div class="container">
     <div class="row">
-      <div class="col-sm-12 col-md-4">
-        <div class="rings">
-          <a href="#">
-            <?php $imagen_portafolio_1 = get_field( 'imagen_portafolio_1' ); ?>
-            <?php if ( $imagen_portafolio_1 ) { ?>
-              <img src="<?php echo $imagen_portafolio_1['url']; ?>" alt="<?php echo $imagen_portafolio_1['alt']; ?>" />
-            <?php } ?>
-          <span><?php the_field( 'title_portafolio_1' ); ?></span>
-          </a>
-        </div>
-      </div>
-      <div class="col-sm-12 col-md-4">
-        <div class="rings">
-          <a href="#">
-            <?php $imagen_portafolio_2 = get_field( 'imagen_portafolio_2' ); ?>
-            <?php if ( $imagen_portafolio_1 ) { ?>
-              <img src="<?php echo $imagen_portafolio_2['url']; ?>" alt="<?php echo $imagen_portafolio_2['alt']; ?>" />
-            <?php } ?>
-          <span><?php the_field( 'title_portafolio_2' ); ?></span>
-          </a>
-        </div>
-      </div>
-      <div class="col-sm-12 col-md-4">
-        <div class="rings">
-          <a href="#">
-            <?php $imagen_portafolio_3 = get_field( 'imagen_portafolio_3' ); ?>
-            <?php if ( $imagen_portafolio_3 ) { ?>
-              <img src="<?php echo $imagen_portafolio_3['url']; ?>" alt="<?php echo $imagen_portafolio_3['alt']; ?>" />
-            <?php } ?>
-          <span><?php the_field( 'title_portafolio_3' ); ?></span>
-          </a>
-        </div>
-      </div>
+        <?php
+        $args = array(
+                  'post_type' => 'portafolio',
+                  'category_name'  => 'Home',
+                  'order' => 'asc'
+              );
+         $category_posts = new WP_Query($args);
+
+         if($category_posts->have_posts()) :
+            while($category_posts->have_posts()) :
+               $category_posts->the_post();
+        ?>
+          <div class="col-sm-12 col-md-4">
+             <div class="rings">
+               <a href="#">
+                 <?php $imagen_portafolio_1 = get_field( 'imagen_portafolio_1' ); ?>
+                 <?php if ( $imagen_portafolio_1 ) { ?>
+                   <img src="<?php echo $imagen_portafolio_1['url']; ?>" alt="<?php echo $imagen_portafolio_1['alt']; ?>" />
+                 <?php } ?>
+               <span><?php the_field( 'title_portafolio_1' ); ?></span>
+               </a>
+             </div>
+           </div>
+      <?php
+            endwhile;
+         else:
+      ?>
+            Vaya, no hay entradas.
+      <?php
+         endif;
+      ?>
     </div>
   </div>
+    <div class="div-mostrar text-center">
+        <a id="mostrar">Ver más</a>
+    </div>
+<div class="container" id="prueba">
+  <div class="row">
+
+    <?php
+    $args = array(
+              'post_type' => 'portafolio',
+              'cat' => '5',
+              'order' => 'asc'
+          );
+     $category_posts = new WP_Query($args);
+
+     if($category_posts->have_posts()) :
+        while($category_posts->have_posts()) :
+           $category_posts->the_post();
+    ?>
+      <div class="col-sm-12 col-md-4">
+         <div class="rings" >
+           <a href="#">
+             <?php $imagen_portafolio_1 = get_field( 'imagen_portafolio_1' ); ?>
+             <?php if ( $imagen_portafolio_1 ) { ?>
+               <img src="<?php echo $imagen_portafolio_1['url']; ?>" alt="<?php echo $imagen_portafolio_1['alt']; ?>" />
+             <?php } ?>
+           <span><?php the_field( 'title_portafolio_1' ); ?></span>
+           </a>
+         </div>
+       </div>
+  <?php
+        endwhile;
+     else:
+  ?>
+        Vaya, no hay entradas.
+  <?php
+     endif;
+  ?>
+  </div>
+</div>
+
 </section>
 
 <!-- Contenido Seccion Servicio-->
@@ -124,8 +162,8 @@
               </div>
             </div>
       </div>
-
     </div>
+
   </div>
 </section>
 
@@ -153,7 +191,7 @@
           <a href="#"><img src="http://localhost/esoes/wp-content/uploads/2019/07/Kambly_logo.png" alt=""></a>
       </div>
       <div class="col-md-2 text-center log-partenaires">
-          <a href="#"><img src="http://localhost/esoes/wp-content/uploads/2019/07/Kambly_logo.png" alt=""></a>
+          <a href="#"><img src="http://localhost/esoes/wp-content/uploads/2019/07/spurring_logo.png" alt=""></a>
       </div>
     </div>
   </div>
@@ -194,7 +232,56 @@
 </section>
 
 <section id="blog" class="blog">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-5 offset-md-1 blog-izq text-center">
+        <img src="http://localhost/esoes/wp-content/uploads/2019/07/Medellin.png" alt="">
+        <div class="contenido-blog">
+          <p>Medellín</p>
+          <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h6>
+        </div>
+      </div>
+      <div class="col-md-5 blog-der text-center">
+        <img src="http://localhost/esoes/wp-content/uploads/2019/07/panama_city.png" alt="">
+        <div class="contenido-blog">
+          <p>Panama City</p>
+          <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
+<section id="instagram" class="instagram">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col-md-2 text-center img-instagram">
+          <img src="https://scontent-iad3-1.cdninstagram.com/vp/298f469976e223be19dc43e796b056a8/5DE9D820/t51.2885-15/e35/64761000_463004221194158_6090328618335708565_n.jpg?_nc_ht=scontent-iad3-1.cdninstagram.com" alt="">
+          <img src="https://scontent-iad3-1.cdninstagram.com/vp/298f469976e223be19dc43e796b056a8/5DE9D820/t51.2885-15/e35/64761000_463004221194158_6090328618335708565_n.jpg?_nc_ht=scontent-iad3-1.cdninstagram.com" alt="">
+      </div>
+      <div class=" col-md-2 text-center img-instagram">
+          <img src="https://scontent-iad3-1.cdninstagram.com/vp/4ded949f0a8d713b11470d2b3923a4fa/5DB17BB7/t51.2885-15/e35/64599493_355854855060433_1169383598495404316_n.jpg?_nc_ht=scontent-iad3-1.cdninstagram.com" alt="">
+          <img src="https://scontent-iad3-1.cdninstagram.com/vp/4ded949f0a8d713b11470d2b3923a4fa/5DB17BB7/t51.2885-15/e35/64599493_355854855060433_1169383598495404316_n.jpg?_nc_ht=scontent-iad3-1.cdninstagram.com" alt="">
+      </div>
+      <div class="col-md-2 text-center img-instagram">
+          <img src="https://scontent-iad3-1.cdninstagram.com/vp/3e257abed46eeeaef5082f92925dfc25/5DAAA5C4/t51.2885-15/e35/66082124_446256732603107_4676076048704848720_n.jpg?_nc_ht=scontent-iad3-1.cdninstagram.com" alt="">
+          <img src="https://scontent-iad3-1.cdninstagram.com/vp/3e257abed46eeeaef5082f92925dfc25/5DAAA5C4/t51.2885-15/e35/66082124_446256732603107_4676076048704848720_n.jpg?_nc_ht=scontent-iad3-1.cdninstagram.com" alt="">
+      </div>
+      <div class="col-md-2 text-center img-instagram">
+          <img src="https://scontent-iad3-1.cdninstagram.com/vp/298f469976e223be19dc43e796b056a8/5DE9D820/t51.2885-15/e35/64761000_463004221194158_6090328618335708565_n.jpg?_nc_ht=scontent-iad3-1.cdninstagram.com" alt="">
+          <img src="https://scontent-iad3-1.cdninstagram.com/vp/298f469976e223be19dc43e796b056a8/5DE9D820/t51.2885-15/e35/64761000_463004221194158_6090328618335708565_n.jpg?_nc_ht=scontent-iad3-1.cdninstagram.com" alt="">
+      </div>
+      <div class="col-md-2 text-center img-instagram">
+          <img src="https://scontent-iad3-1.cdninstagram.com/vp/4ded949f0a8d713b11470d2b3923a4fa/5DB17BB7/t51.2885-15/e35/64599493_355854855060433_1169383598495404316_n.jpg?_nc_ht=scontent-iad3-1.cdninstagram.com" alt="">
+          <img src="https://scontent-iad3-1.cdninstagram.com/vp/4ded949f0a8d713b11470d2b3923a4fa/5DB17BB7/t51.2885-15/e35/64599493_355854855060433_1169383598495404316_n.jpg?_nc_ht=scontent-iad3-1.cdninstagram.com" alt="">
+      </div>
+      <div class="col-md-2 text-center img-instagram">
+          <img src="https://scontent-iad3-1.cdninstagram.com/vp/3e257abed46eeeaef5082f92925dfc25/5DAAA5C4/t51.2885-15/e35/66082124_446256732603107_4676076048704848720_n.jpg?_nc_ht=scontent-iad3-1.cdninstagram.com" alt="">
+          <img src="https://scontent-iad3-1.cdninstagram.com/vp/3e257abed46eeeaef5082f92925dfc25/5DAAA5C4/t51.2885-15/e35/66082124_446256732603107_4676076048704848720_n.jpg?_nc_ht=scontent-iad3-1.cdninstagram.com" alt="">
+      </div>
+    </div>
+
+  </div>
 </section>
 
 

@@ -51,6 +51,11 @@ function dcms_insertar_google_fonts(){
      wp_enqueue_style('google_fonts_new', $url);
   }
 
-	@ini_set( 'upload_max_size' , '64M' );
-	@ini_set( 'post_max_size', '64M');
-	@ini_set( 'max_execution_time', '300' );
+	function my_init() {
+		if (!is_admin()) {
+			wp_deregister_script('jquery');
+			wp_register_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js', false, '2.0.3', true);
+			wp_enqueue_script('jquery');
+		}
+	}
+	add_action('init', 'my_init');

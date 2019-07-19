@@ -5,8 +5,15 @@ $antracit: #474848;
 $font-forum: 'Forum', cursive;
 $font-raleway: 'Raleway';
 
+html {
+  min-height: 100%;
+  position: relative;
+}
+
 body{
   overflow-x: hidden;
+  margin: 0;
+  margin-bottom: 40px;
 
   h1, h2, h3, h4, h5, h6{
     font-family: $font-forum;
@@ -42,20 +49,39 @@ body{
     }
 }
 
-.content-title{
-  margin-top: 25px;
-  margin-bottom: 30px;
+
+  #enlace-idioma{
+    position:absolute;
+    top: 7px;
+    right: 10%;
+    text-decoration: none;
+    color:$bg-color-titulo;
+
+    &:hover{
+      color:$antracit;
+    }
+
   }
+
+
+.content-title{
+  margin-top: 80px;
+  margin-bottom: 50px;
+
   img{
     width: 30%;
   }
 }
 
 .coordinate{
-  color: $bg-color-titulo !important;
-    P{
-      margin-bottom: 0px;
-    }
+      color: $bg-color-titulo !important;
+
+      a{
+        margin-bottom: 0px;
+        text-decoration: none;
+        color: $bg-color-titulo !important;
+      }
+
     .coordinate-izq{
       text-align: left;
     }
@@ -80,7 +106,7 @@ body{
 }
 
 .vl {
-  margin-top: 45px;
+  margin-top: 40px;
   border-right: 2px solid $bg-color-titulo !important;
   height: 90px;
   text-align: justify;
@@ -99,31 +125,50 @@ body{
   }
 }
 
-.rings {
-  a {
-    display:inline-block;
-    position:relative;
+#portafolio-galeria{
+  color: $antracit !important;
 
-    span {
-     position:absolute;
-     top:50%;
-     left:50%;
-     transform:translate(-50%, -50%);
-     color:white;
-     display:none;
-    }
+  #prueba{
+    display: none;
+  }
 
-     &:hover {
-      background:black;
-    }
-     &:hover span {
-      display:block;
-    }
-     &:hover img {
-     opacity:0.7;
-    }
+  .div-mostrar{
+    background-color: #fff;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: Raleway;
+    font-size: 20px;
   }
 }
+
+.rings {
+    margin-top: 30px;
+    a {
+      display:inline-block;
+      position:relative;
+
+      span {
+       position:absolute;
+       top:50%;
+       left:50%;
+       transform:translate(-50%, -50%);
+       color:white;
+       display:none;
+      }
+
+       &:hover {
+        background:black;
+      }
+       &:hover span {
+        display:block;
+      }
+       &:hover img {
+       opacity:0.7;
+      }
+    }
+}
+
+
 
 .services {
   margin-top: 50px;
@@ -210,7 +255,7 @@ body{
   width: auto;
   min-height: 500px;
   background-image: url('http://localhost/esoes/wp-content/uploads/2019/07/partenaires_fond.png');
-  background-attachment: fixed;
+  //background-attachment: fixed;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -269,6 +314,8 @@ body{
   }
 }
 
+
+
 .contact{
   padding: 100px;
 
@@ -294,8 +341,82 @@ body{
 }
 
 .blog{
-  height: 50vh;
+  height: 20vh;
   width: auto;
   min-height: 500px;
   background-color: $marron;
+
+  display: block;
+    .blog-izq{
+      margin-top: 80px;
+      height: 50vh;
+      width: auto;
+      min-height: 100px;
+
+    }
+
+    .blog-der{
+      margin-top: 80px;
+      height: 50vh;
+      width: auto;
+      min-height: 100px;
+
+    }
+
+    .contenido-blog{
+       font-size:11px;
+       margin:0;
+       background:#fff;
+       color:$antracit;
+       padding:5px;
+       text-align:center;
+
+       p{
+         font-size: 12px;
+         margin-bottom: 1px;
+       }
+    }
+}
+
+.instagram{
+  height: 60vh;
+  width: auto;
+  min-height: 50px;
+
+  .img-instagram{
+    padding-left: 0px;
+    padding-right: 0px;
+    height: 50px;
+
+    img{
+      height: 200px;
+      width: 100%;
+    }
+  }
+}
+
+.footer{
+  background-color: $marron;
+  position: absolute;
+  margin-bottom: 0;
+  width: 100%;
+  height: 20px;
+  color: white;
+  overflow: hidden;
+  padding-top: 20px;
+  padding-bottom: 25px;
+
+
+  p{
+    font-size: 11px;
+  }
+
+  .div-item-footer{
+      display: -webkit-box
+  }
+
+  .div-item-der-footer{
+    text-align: right;
+    margin-top: -5px;
+  }
 }

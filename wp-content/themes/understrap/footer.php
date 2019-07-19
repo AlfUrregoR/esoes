@@ -13,39 +13,61 @@ defined( 'ABSPATH' ) || exit;
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
-<?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
+	<footer class="footer">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-6 div-item-footer">
+					<div class="row">
+						<div class="col-md-3 item-footer">
+	            <p>CONTACT</p>
+	          </div>
+	          <div class="col-md-3 item-footer">
+	            <p>SPONSORSHIP</p>
+	          </div>
+	          <div class="col-md-2 item-footer">
+	            <p>TERMS</p>
+	          </div>
+	          <div class="col-md-4 item-footer">
+	            <p>PRIVACY POLICY</p>
+	          </div>
+					</div>
+				</div>
+				<div class="col-md-6 div-item-der-footer">
+					<div class="row">
+		        <div class="col-md-6">
+		          <a class="fb-ic mr-3" role="button" href="https://www.instagram.com/esoes_design/" target="_blank"><i class="icono fab fa-instagram"></i></a>
+		         <a class="fb-ic mr-3" role="button" href="https://www.facebook.com/esoes.design" target="_blank"><i class="fab fa-facebook-f"></i></a>
+		         <a class="fb-ic mr-3" role="button" href="https://www.pinterest.ch/esoes_design/" target="_blank"><i class="fab fa-pinterest"></i></a>
+		        </div>
+		        <div class="col-md-6">
+		          <p>(c) Copyright 2019 | ESOES </p>
+		        </div>
+		      </div>
+				</div>
+			</div>
+		</div>
+	</footer>
 
-<div class="wrapper" id="wrapper-footer">
 
-	<div class="<?php echo esc_attr( $container ); ?>">
+</div><!-- container end -->
 
-		<div class="row">
-
-			<div class="col-md-12">
-
-				<footer class="site-footer" id="colophon">
-
-					<div class="site-info">
-
-						<?php understrap_site_info(); ?>
-
-					</div><!-- .site-info -->
-
-				</footer><!-- #colophon -->
-
-			</div><!--col end -->
-
-		</div><!-- row end -->
-
-	</div><!-- container end -->
-
-</div><!-- wrapper end -->
 
 </div><!-- #page we need this extra closing tag here -->
 
-<?php wp_footer(); ?>
 
+<?php wp_footer(); ?>
+<script type="text/javascript">
+(function($) {
+
+	$('#mostrar').click(function(){
+		$('#prueba').toggle();
+	});
+
+
+})( jQuery );
+
+
+</script>
 </body>
 
 </html>
-
