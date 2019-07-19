@@ -22,7 +22,7 @@ body{
 }
 
 .masthead {
-  height: 125vh;
+  height: 100vh;
   width: auto;
   min-height: 500px;
   background-image: url('http://localhost/esoes/wp-content/uploads/2019/07/homepage_esoes-min.jpg');
@@ -42,12 +42,20 @@ body{
     }
 }
 
+.content-title{
+  margin-top: 25px;
+  margin-bottom: 30px;
+  }
+  img{
+    width: 30%;
+  }
+}
 
 .coordinate{
-  margin-top: 20px;
-  margin-bottom: 30px;
   color: $bg-color-titulo !important;
-
+    P{
+      margin-bottom: 0px;
+    }
     .coordinate-izq{
       text-align: left;
     }
@@ -72,9 +80,8 @@ body{
 }
 
 .vl {
+  margin-top: 45px;
   border-right: 2px solid $bg-color-titulo !important;
-  margin-top: 35px;
-  margin-bottom: 10px;
   height: 90px;
   text-align: justify;
   width: 50%;
@@ -107,7 +114,7 @@ body{
     }
 
      &:hover {
-         background:black;
+      background:black;
     }
      &:hover span {
       display:block;
@@ -144,6 +151,10 @@ body{
 
   ul{
      list-style:none;
+
+     a{
+       text-decoration: none;
+     }
      li{
        color: $bg-color-titulo !important;
      }

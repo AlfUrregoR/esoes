@@ -50,3 +50,7 @@ function dcms_insertar_google_fonts(){
      $url = "https://fonts.google.com/specimen/Raleway?selection.family=Raleway:300,400,600,700";
      wp_enqueue_style('google_fonts_new', $url);
   }
+
+	@ini_set( 'upload_max_size' , '64M' );
+	@ini_set( 'post_max_size', '64M');
+	@ini_set( 'max_execution_time', '300' );
