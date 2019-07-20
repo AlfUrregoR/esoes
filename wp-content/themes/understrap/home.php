@@ -237,14 +237,14 @@
       <div class="col-md-5 offset-md-1 blog-izq text-center">
         <img src="http://localhost/esoes/wp-content/uploads/2019/07/Medellin.png" alt="">
         <div class="contenido-blog text-center">
-          <p>Medellín</p>
+          <p>MEDELLIN</p>
           <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h6>
         </div>
       </div>
       <div class="col-md-5 blog-der text-center">
         <img src="http://localhost/esoes/wp-content/uploads/2019/07/panama_city.png" alt="">
         <div class="contenido-blog text-center">
-          <p>Panama City</p>
+          <p>PANAMA CITY</p>
           <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h6>
         </div>
       </div>
