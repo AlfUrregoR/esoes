@@ -34,7 +34,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<nav class="navbar navbar-expand-md navbar-dark">
 
 		<?php if ( 'container' == $container ) : ?>
-			<div class="container">
+			<div class="container-fluid div-menu">
 		<?php endif; ?>
 
 					<!-- Your site title as branding in the menu -->
@@ -70,15 +70,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 						'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
 					)
 				); ?>
-			<?php if ( 'container' == $container ) : ?>
-			</div><!-- .container -->
-			<?php endif; ?>
-
-			<div class="content-lenguaje" id="idioma" >
-				<div class="container">
+			<?php //if ( 'container' == $container ) : ?>
 					<a href="#" id="enlace-idioma">Lenguaje</a>
-				</div>
-			</div>
+			</div><!-- .container -->
+			<?php //endif; ?>
+
+
 		</nav><!-- .site-navigation -->
 
 <div class="content-title">
@@ -91,18 +88,18 @@ $container = get_theme_mod( 'understrap_container_type' );
   </div>
 </div>
 
-<div class="container">
+<div class="container-fluid">
 	<div class="row coordinate">
-		<div class="col-sm-1 col-md-1 vl-izq"></div>
-		<div class="col-md-4 coordinate-izq">
+		<div class="vl-izq"></div>
+		<div class="col-md-5 coordinate-izq">
 				<a href="https://www.google.com/maps/place/<?php the_field( 'coordenada' ); ?>" target="_blank"><?php the_field( 'coordenada' ); ?></a>
 				<p>My mind is here</p>
 		</div>
-		<div class="col-md-4 coordinate-der">
+		<div class="col-md-5 coordinate-der">
 				<a href="https://www.google.com/maps/place/46%C2%B052'50.163%22N%207%C2%B02'33.747%22E" target="_blank">46°52'50.163"N 7°2'33.747"E</a>
 				<p>My soual is there</p>
 		</div>
-		<div class="col-sm-1 col-md-1 vl-der"></div>
+		<div class="vl-der"></div>
 	</div>
 </div>
 

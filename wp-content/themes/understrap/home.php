@@ -16,7 +16,7 @@
         <div class="row h-100 align-items-center">
           <div class="col-12 text-center">
             <h3 class="title-portafolio"><?php the_title(); ?></h3>
-            <p><?php the_content(); ?></p>
+            <p>Esoes est une agence de design itinérante <br> spécialisée dans les solutions de communications visuelles</p>
           </div>
         </div>
       </div>
@@ -155,11 +155,9 @@
             à pleins temps, sa vision d'un monde éclectique lui permet d'apporter à ses travaux,
             à travers Esoes, des influences internationales et novatrices.</p>
             <div class="row">
-              <div class="container div-btn-propos">
-                <div class="col-12">
+                <div class="col-12 div-btn-propos">
                   <a href="#" class="btn-propos">Lire</a>
                 </div>
-              </div>
             </div>
       </div>
     </div>
@@ -175,22 +173,22 @@
       </div>
     </div>
     <div class="row align-items-center">
-      <div class="col-md-2 text-center log-partenaires">
+      <div class="col-12 col-md-2 text-center log-partenaires">
           <a href="#"><img src="http://localhost/esoes/wp-content/uploads/2019/07/exception_logo.png" alt=""></a>
       </div>
-      <div class=" col-md-2 text-center log-partenaires">
+      <div class="col-12 col-md-2 text-center log-partenaires">
           <a href="#"><img src="http://localhost/esoes/wp-content/uploads/2019/07/manor-logo.png" alt=""></a>
       </div>
-      <div class="col-md-2 text-center log-partenaires">
+      <div class="col-12 col-md-2 text-center log-partenaires">
           <a href="#"><img src="http://localhost/esoes/wp-content/uploads/2019/07/Vaucher_logo.png" alt=""></a>
       </div>
-      <div class="col-md-2 text-center log-partenaires">
+      <div class="col-12 col-md-2 text-center log-partenaires">
           <a href="#"><img src="http://localhost/esoes/wp-content/uploads/2019/07/Kramer_Krieg_logo.png" alt=""></a>
       </div>
-      <div class="col-md-2 text-center log-partenaires">
+      <div class="col-12 col-md-2 text-center log-partenaires">
           <a href="#"><img src="http://localhost/esoes/wp-content/uploads/2019/07/Kambly_logo.png" alt=""></a>
       </div>
-      <div class="col-md-2 text-center log-partenaires">
+      <div class=" col-12 col-md-2 text-center log-partenaires">
           <a href="#"><img src="http://localhost/esoes/wp-content/uploads/2019/07/spurring_logo.png" alt=""></a>
       </div>
     </div>
@@ -202,7 +200,7 @@
     <div class="row align-items-center">
       <div class="col-12 text-center text-collaborations">
           <h3>Dernieres Collaborations</h3>
-          <p>Nous remercions Esoes pour l’exceptionnelle réalisation de notre identité visuelle.
+          <p>Nous remercions Esoes pour l’exceptionnelle réalisation de notre identité visuelle.<br>
             Esoes a tout de suite su cerner notre univers et le retranscrire à travers un design élégant et percutant.
           </p>
           <p>Lucien Meylan | Spurring</p>
@@ -215,7 +213,7 @@
   <div class="container">
     <div class="row align-items-center">
       <div class="col-12 text-center text-contact">
-          <p>Vous pensez à une collaboration ?
+          <p>Vous pensez à une collaboration ?<br>
             Esoes se réjouit d'en apprendre plus sur vos
             différents projets, envies et inspirations !
           </p>

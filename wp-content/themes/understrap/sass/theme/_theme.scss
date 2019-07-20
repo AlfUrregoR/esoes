@@ -39,30 +39,33 @@ body{
   background-repeat: no-repeat;
 }
 
-.navbar-nav {
-    position: absolute;
-    left: 50%;
-    transform: translatex(-50%);
+.navbar{
+  .div-menu{
+    margin-top: 25px;
+  }
 
-    .nav-link{
-      font-family: $font-raleway;
-    }
-}
+  .navbar-nav {
+      position: absolute;
+      left: 50%;
+      transform: translatex(-50%);
 
-
+      .nav-link{
+        font-family: $font-raleway;
+      }
+  }
   #enlace-idioma{
     position:absolute;
-    top: 7px;
-    right: 10%;
+    top: 34px;
+    right: 2%;
     text-decoration: none;
     color:$bg-color-titulo;
     font-family: $font-raleway;
+
     &:hover{
-      color:$marron;
+        color:$marron;
     }
-
   }
-
+}
 
 .content-title{
   margin-top: 80px;
@@ -88,20 +91,20 @@ body{
 
     .coordinate-der{
       text-align: right;
+      margin-left: 5%;
     }
 
     .vl-izq {
       border-top: 2px solid $bg-color-titulo !important;
-      margin-left: 5%;
       margin-top: 6px;
-      width:  50% !important;
+      margin-left: 23px;
+      width:  4% !important;
     }
 
     .vl-der {
       border-top: 2px solid $bg-color-titulo !important;
-      margin-right: 5%;
       margin-top: 6px;
-      width: 50% !important;
+      width: 4% !important;
     }
 }
 
@@ -115,18 +118,22 @@ body{
 
 #portafolio{
   .content-title-portafolio{
+    color: $antracit !important;
     margin-top: 4%;
     margin-bottom: 4%;
     width: 100%;
+
+    p{
+      font-size: 20px;
+    }
   }
 
   .title-portafolio{
-    color: $antracit !important;
+    margin-bottom: 40px;
   }
 }
 
 #portafolio-galeria{
-  color: $antracit !important;
 
   #prueba{
     display: none;
@@ -137,7 +144,11 @@ body{
     margin-top: 30px;
     margin-bottom: 30px;
     font-family: Raleway;
-    font-size: 20px;
+    font-size: 18px;
+
+    a{
+        color: $antracit !important;
+    }
   }
 }
 
@@ -174,7 +185,7 @@ body{
   margin-top: 50px;
   height: 75vh;
   width: auto;
-  min-height: 500px;
+  min-height: 550px;
   background-image: url('http://localhost/esoes/wp-content/uploads/2019/07/fond_services.png');
   background-attachment: fixed;
   background-size: cover;
@@ -182,16 +193,23 @@ body{
   background-repeat: no-repeat;
 
   .content-title-services{
-    padding-top: 10%;
-    padding-bottom: 4%;
+    padding-top: 6%;
+    padding-bottom: 3%;
     color: $bg-color-titulo !important;
   }
 
   .list-izq{
     text-align: right;
-    border-right: 1px solid $bg-color-titulo !important;
-    padding-right: 60px;
-    height: 150px;
+    border-right: 2px solid $bg-color-titulo !important;
+    padding-right: 70px;
+    padding-top: 30px;
+    height: 220px;
+    margin-bottom: 20px;
+  }
+
+  .list-der{
+    padding-left: 37PX;
+    padding-top: 30px;
   }
 
   ul{
@@ -202,6 +220,7 @@ body{
      }
      li{
        color: $bg-color-titulo !important;
+       padding-bottom: 8px;
      }
   }
 
@@ -211,8 +230,9 @@ body{
     .btn-services{
       background-color:  $bg-color-titulo;
       color:$antracit;
+      font-size: 13px;
       border: none;
-      padding: 8px;
+      padding: 10px 25px;
       text-decoration: none;
     }
   }
@@ -238,6 +258,7 @@ body{
 
       .div-btn-propos{
         margin-top: 25px;
+        margin-left: 0px;
 
         .btn-propos{
           background-color:$marron;
@@ -259,6 +280,10 @@ body{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  @media screen and (max-width: 760px) {
+    height: auto;
+  }
 
   .text-partenaires{
     padding-top: 100px;
@@ -285,6 +310,8 @@ body{
       -o-transition:all .9s ease; /* IE 9 */
       -ms-transition:all .9s ease; /* Opera */
       width:100%;
+
+
     }
   }
 }
@@ -347,47 +374,55 @@ body{
   background-color: $marron;
   display: block;
 
-    img{
-      height: 320px;
+  @media screen and (max-width: 1200px) {
+    height: 90vh;
+  }
+
+  img{
+    height: 320px;
+  }
+  .blog-izq,.blog-der{
+    margin-top: 80px;
+    min-height: 100px;
+
+  }
+
+  .contenido-blog{
+     font-size:11px;
+     margin:0;
+     background:#fff;
+     color:$antracit;
+     padding:25px;
+     text-align:center;
+
+     p{
+       font-size: 12px;
+       margin-bottom: 1px;
+     }
+  }
+  .div-btn-blog{
+    margin-top: 60px;
+    margin-bottom: 20px;
+
+    .btn-blog{
+
+      background-color:  $bg-color-titulo;
+      color:$antracit;
+      border: none;
+      padding: 8px;
+      text-decoration: none;
     }
-    .blog-izq,.blog-der{
-      margin-top: 80px;
-      min-height: 100px;
-
-    }
-
-    .contenido-blog{
-       font-size:11px;
-       margin:0;
-       background:#fff;
-       color:$antracit;
-       padding:25px;
-       text-align:center;
-
-       p{
-         font-size: 12px;
-         margin-bottom: 1px;
-       }
-    }
-
-    .div-btn-blog{
-      margin-top: 60px;
-      margin-bottom: 20px;
-
-      .btn-blog{
-        background-color:  $bg-color-titulo;
-        color:$antracit;
-        border: none;
-        padding: 8px;
-        text-decoration: none;
-      }
-    }
+  }
 }
 
 .instagram{
   height: 60vh;
   width: auto;
   min-height: 50px;
+
+  @media screen and (max-width: 1200px) {
+    height: 55vh;
+  }
 
   .img-instagram{
     padding-left: 0px;
