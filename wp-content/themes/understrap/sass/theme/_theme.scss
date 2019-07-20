@@ -58,7 +58,7 @@ body{
     color:$bg-color-titulo;
 
     &:hover{
-      color:$antracit;
+      color:$marron;
     }
 
   }
@@ -341,24 +341,17 @@ body{
 }
 
 .blog{
-  height: 20vh;
+  height: 110vh;
   width: auto;
   min-height: 500px;
   background-color: $marron;
-
   display: block;
-    .blog-izq{
-      margin-top: 80px;
-      height: 50vh;
-      width: auto;
-      min-height: 100px;
 
+    img{
+      height: 320px;
     }
-
-    .blog-der{
+    .blog-izq,.blog-der{
       margin-top: 80px;
-      height: 50vh;
-      width: auto;
       min-height: 100px;
 
     }
@@ -368,13 +361,26 @@ body{
        margin:0;
        background:#fff;
        color:$antracit;
-       padding:5px;
+       padding:25px;
        text-align:center;
 
        p{
          font-size: 12px;
          margin-bottom: 1px;
        }
+    }
+
+    .div-btn-blog{
+      margin-top: 60px;
+      margin-bottom: 20px;
+
+      .btn-blog{
+        background-color:  $bg-color-titulo;
+        color:$antracit;
+        border: none;
+        padding: 8px;
+        text-decoration: none;
+      }
     }
 }
 
