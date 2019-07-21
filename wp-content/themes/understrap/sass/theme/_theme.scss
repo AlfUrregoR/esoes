@@ -53,16 +53,28 @@ body{
         font-family: $font-raleway;
       }
   }
-  #enlace-idioma{
-    position:absolute;
-    top: 34px;
-    right: 2%;
-    text-decoration: none;
-    color:$bg-color-titulo;
-    font-family: $font-raleway;
 
-    &:hover{
-        color:$marron;
+.buscador{
+  position:absolute;
+  top: 34px;
+  right: 7%;
+  a{
+    color:$bg-color-titulo;
+  }
+
+}
+#enlace-idioma{
+    position:absolute;
+    top: 33px;
+    right: 2%;
+    a{
+      text-decoration: none;
+      color:$bg-color-titulo;
+      font-family: $font-raleway;
+
+      &:hover{
+          color:$marron;
+      }
     }
   }
 }
@@ -109,7 +121,7 @@ body{
 }
 
 .vl {
-  margin-top: 40px;
+  margin-top: 35px;
   border-right: 2px solid $bg-color-titulo !important;
   height: 90px;
   text-align: justify;

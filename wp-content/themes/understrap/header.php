@@ -71,7 +71,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 					)
 				); ?>
 			<?php //if ( 'container' == $container ) : ?>
-					<a href="#" id="enlace-idioma">Lenguaje</a>
+				<div class="buscador">
+					 <a class="fb-ic mr-3" role="button" href="" target="_blank"><i class="fas fa-search"></i></a>
+				</div>
+				 <div id="enlace-idioma" class="">
+				 	 <a href="#" >Lenguaje</a>
+				 </div>
+
 			</div><!-- .container -->
 			<?php //endif; ?>
 
