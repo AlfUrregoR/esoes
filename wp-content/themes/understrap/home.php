@@ -149,11 +149,11 @@
       <div class="col-sm-12 col-md-6 propos-izq"></div>
       <div class="col-sm-12 col-md-6 propos-der">
           <h3>À propos</h3>
-          <h4>Esoes, une agence itinérante.</h4>
-          <p>Bien que ses racines se trouvent en Suisse, Lucie à pour mission personnelle de
-            découvrir le monde et ses différentes cultures. Digitale nomade et exploratrice
-            à pleins temps, sa vision d'un monde éclectique lui permet d'apporter à ses travaux,
-            à travers Esoes, des influences internationales et novatrices.</p>
+          <h6>Esoes, une agence itinérante.</h6>
+          <p>Bien que ses racines se trouvent en Suisse, Lucie à<br> pour mission personnelle de
+            découvrir le monde et ses<br> différentes cultures. Digitale nomade et exploratrice<br>
+            à pleins temps, sa vision d'un monde éclectique lui<br> permet d'apporter à ses travaux,
+            à travers Esoes, des<br> influences internationales et novatrices.</p>
             <div class="row">
                 <div class="col-12 div-btn-propos">
                   <a href="#" class="btn-propos">Lire</a>
@@ -197,13 +197,13 @@
 
 <section id="collaborations" class="collaborations">
   <div class="container">
-    <div class="row align-items-center">
+    <div class="row align-items-center div-text-collaborations">
       <div class="col-12 text-center text-collaborations">
           <h3>Dernieres Collaborations</h3>
           <p>Nous remercions Esoes pour l’exceptionnelle réalisation de notre identité visuelle.<br>
             Esoes a tout de suite su cerner notre univers et le retranscrire à travers un design élégant et percutant.
           </p>
-          <p>Lucien Meylan | Spurring</p>
+          <p>LUCIEN MEYLAN | SPURRING</p>
       </div>
     </div>
   </div>
@@ -215,7 +215,7 @@
       <div class="col-12 text-center text-contact">
           <p>Vous pensez à une collaboration ?<br>
             Esoes se réjouit d'en apprendre plus sur vos
-            différents projets, envies et inspirations !
+            différents projets,<br> envies et inspirations !
           </p>
       </div>
     </div>
@@ -233,17 +233,27 @@
   <div class="container">
     <div class="row align-items-center">
       <div class="col-md-5 offset-md-1 blog-izq text-center">
-        <img src="http://localhost/esoes/wp-content/uploads/2019/07/Medellin.png" alt="">
-        <div class="contenido-blog text-center">
-          <p>MEDELLIN</p>
-          <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h6>
+        <div class="efecto-blog">
+          <a href="#">
+            <img src="http://localhost/esoes/wp-content/uploads/2019/07/Medellin.png" alt="">
+            <span>VOYAGE</span>
+          </a>
+          <div class="contenido-blog text-center">
+            <p><strong>MEDELLIN</strong></p>
+            <h6><strong>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit</strong></h6>
+          </div>
         </div>
       </div>
       <div class="col-md-5 blog-der text-center">
-        <img src="http://localhost/esoes/wp-content/uploads/2019/07/panama_city.png" alt="">
-        <div class="contenido-blog text-center">
-          <p>PANAMA CITY</p>
-          <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h6>
+        <div class="efecto-blog">
+          <a href="#">
+            <img src="http://localhost/esoes/wp-content/uploads/2019/07/panama_city.png" alt="">
+            <span>VOYAGE</span>
+          </a>
+          <div class="contenido-blog text-center">
+            <p><strong>PANAMA CITY</strong></p>
+            <h6><strong>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit</strong></h6>
+          </div>
         </div>
       </div>
     </div>
