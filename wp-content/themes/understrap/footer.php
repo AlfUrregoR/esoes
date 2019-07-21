@@ -16,9 +16,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<footer class="footer">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md-6 div-item-footer">
+				<div class="col-md-8 div-item-footer">
 					<div class="row">
-						<div class="col-md-3 item-footer">
+						<div class="col-md-2 item-footer">
 	            <p>CONTACT</p>
 	          </div>
 	          <div class="col-md-3 item-footer">
@@ -32,15 +32,15 @@ $container = get_theme_mod( 'understrap_container_type' );
 	          </div>
 					</div>
 				</div>
-				<div class="col-md-6 div-item-der-footer">
+				<div class="col-md-4 div-item-der-footer">
 					<div class="row">
-		        <div class="col-md-6">
-		          <a class="fb-ic mr-3" role="button" href="https://www.instagram.com/esoes_design/" target="_blank"><i class="icono fab fa-instagram"></i></a>
+		        <div class="col-md-6 div-item-rs">
+		         <a class="fb-ic mr-3" role="button" href="https://www.instagram.com/esoes_design/" target="_blank"><i class="icono fab fa-instagram"></i></a>
 		         <a class="fb-ic mr-3" role="button" href="https://www.facebook.com/esoes.design" target="_blank"><i class="fab fa-facebook-f"></i></a>
 		         <a class="fb-ic mr-3" role="button" href="https://www.pinterest.ch/esoes_design/" target="_blank"><i class="fab fa-pinterest"></i></a>
 		        </div>
-		        <div class="col-md-6">
-		          <p>(c) Copyright 2019 | ESOES </p>
+		        <div class="col-md-6 div-item-copy ">
+		          <p>(c) C O P Y R I G H T 2 0 1 9 | E S O E S </p>
 		        </div>
 		      </div>
 				</div>
