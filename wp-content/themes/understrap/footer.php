@@ -18,17 +18,17 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="row">
 				<div class="col-md-8 div-item-footer">
 					<div class="row">
-						<div class="col-md-2 item-footer">
-	            <p>CONTACT</p>
+						<div class="col-md-3 item-footer">
+	            <a href="#">C O N T A C T</a>
 	          </div>
-	          <div class="col-md-3 item-footer">
-	            <p>SPONSORSHIP</p>
+						<div class="col-md-3 item-footer2">
+	            <a href="#">S P O N S O R S H I P</a>
 	          </div>
-	          <div class="col-md-2 item-footer">
-	            <p>TERMS</p>
+	          <div class="col-md-3 item-footer3">
+	            <a href="#">T E R M S</a>
 	          </div>
-	          <div class="col-md-4 item-footer">
-	            <p>PRIVACY POLICY</p>
+	          <div class="col-md-3 item-footer4">
+	           <a href="#">P R I V A C Y P O L I C Y</a>
 	          </div>
 					</div>
 				</div>

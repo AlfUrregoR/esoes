@@ -480,6 +480,16 @@ body{
       width: 100%;
     }
   }
+  .btn-instagram{
+    background-color: #fff;
+    text-decoration: none;
+    padding: 12px 30px;
+    color: #474848;
+    font-size: 12px;
+    position: absolute;
+    margin-top: -25px;
+    margin-left: 45px;
+  }
 }
 
 .footer{
@@ -488,27 +498,31 @@ body{
   margin-bottom: 0;
   width: 100%;
   height: 20px;
-  color: white;
   overflow: hidden;
   padding-top: 15px;
   padding-bottom: 25px;
 
 
-  p{
-    font-size: 8px;
+  a,p{
+    font-size: 9px;
+    color: #fff;
+    text-decoration: none;
   }
 
   .div-item-footer{
-      display: -webkit-box;
-      padding-left: 35px;
+     padding-left: 35px;
+     margin-top: -5px;
   }
 
   .div-item-der-footer{
     text-align: right;
-    margin-top: -5px;
+    //margin-top: -5px;
   }
 
   .div-item-rs{
+    a{
+      font-size: 15px;
+    }
     text-align: right;
   }
 
@@ -516,5 +530,17 @@ body{
     text-align: left;
     //padding-left: 27px;
     margin-top: 5px;
+  }
+
+  .item-footer2{
+    left: -14%;
+  }
+
+  .item-footer3{
+    left: -24%;
+  }
+
+  .item-footer4{
+    left: -40%;
   }
 }
