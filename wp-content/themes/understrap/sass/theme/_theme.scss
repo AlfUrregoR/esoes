@@ -54,15 +54,38 @@ body{
       }
   }
 
-.buscador{
-  position:absolute;
-  top: 34px;
-  right: 7%;
-  a{
-    color:$bg-color-titulo;
+.astm-search-menu{
+  position: relative;
+  top: 12px;
+  left: 400px;
+  path{
+    fill:$bg-color-titulo;
   }
 
+  .btn-primary{
+    background-color: $marron;
+    border: none;
+    color: $bg-color-titulo;
+  }
+  .form-control{
+    border: 1px solid $marron;
+    background-clip: inherit;
+    transition:$marron .15s ease-in-out;
+
+    &:focus{
+      box-shadow:none;
+    }
+  }
 }
+
+.search-close{
+  display: none;
+}
+
+.is-edit-link{
+  display: none;
+}
+
 #enlace-idioma{
     position:absolute;
     top: 33px;
@@ -121,7 +144,7 @@ body{
 }
 
 .vl {
-  margin-top: 35px;
+  margin-top: 10px;
   border-right: 2px solid $bg-color-titulo !important;
   height: 90px;
   text-align: justify;
