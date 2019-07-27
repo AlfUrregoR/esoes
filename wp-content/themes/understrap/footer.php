@@ -66,7 +66,27 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 })( jQuery );
 
+(function($) {
 
+  var btn = $('#button');
+
+  $(window).on('scroll',function() {
+    if ($(window).scrollTop() > 500) {
+      btn.show();
+    } else {
+      btn.hide();
+    }
+  });
+
+
+  btn.on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({scrollTop:0}, '100');
+  });
+
+	$('.search-icon').replaceWith("<img class='img-lupe' src='http://esoes-design.com/wp-content/uploads/2019/07/loupe.png'>");
+
+})( jQuery );
 </script>
 </body>
 

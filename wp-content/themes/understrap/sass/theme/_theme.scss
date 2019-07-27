@@ -11,7 +11,7 @@ html {
 }
 
 #body-const{
-  
+
   width: auto;
   min-height: 500px;
   background-image: url('http://esoes-design.com/wp-content/uploads/2019/07/WhatsApp-Image-2019-07-23-at-2.51.49-PM.jpeg');
@@ -37,8 +37,19 @@ body{
 }
 .fb-ic {
   color: $bg-color-titulo !important;
+  width: 14px;
 }
 
+
+.fb-fb{
+  width: 14px;
+  height: 24px;
+
+  img{
+    height: 18px;
+    width: 11px;
+  }
+}
 .masthead {
   height: 100vh;
   width: auto;
@@ -68,7 +79,7 @@ body{
 .astm-search-menu{
   position: relative;
   top: 12px;
-  left: 400px;
+  left: 20rem;
   path{
     fill:$bg-color-titulo;
   }
@@ -90,7 +101,7 @@ body{
 }
 
 .search-close{
-  display: none;
+  display: none !important;
 }
 
 .is-edit-link{
@@ -141,14 +152,14 @@ body{
     }
 
     .vl-izq {
-      border-top: 2px solid $bg-color-titulo !important;
+      border-top: 1px solid $bg-color-titulo !important;
       margin-top: 6px;
       margin-left: 23px;
       width:  4% !important;
     }
 
     .vl-der {
-      border-top: 2px solid $bg-color-titulo !important;
+      border-top: 1px solid $bg-color-titulo !important;
       margin-top: 6px;
       width: 4% !important;
     }
@@ -156,8 +167,8 @@ body{
 
 .vl {
   margin-top: 10px;
-  border-right: 2px solid $bg-color-titulo !important;
-  height: 90px;
+  border-right: 1px solid $bg-color-titulo !important;
+  height: 110px;
   text-align: justify;
   width: 50%;
 }
@@ -194,6 +205,10 @@ body{
 
     a{
         color: $antracit !important;
+
+        img{
+          transform: rotate(90deg);
+        }
     }
   }
 }
@@ -246,7 +261,7 @@ body{
 
   .list-izq{
     text-align: right;
-    border-right: 2px solid $bg-color-titulo !important;
+    border-right: 1px solid $bg-color-titulo !important;
     padding-right: 70px;
     padding-top: 30px;
     height: 220px;
@@ -511,6 +526,7 @@ body{
   height: 75vh;
   width: auto;
   min-height: 50px;
+  margin-top: -30px;
 
   @media screen and (max-width: 1200px) {
     height: 55vh;
@@ -533,8 +549,9 @@ body{
     color: #474848;
     font-size: 12px;
     position: absolute;
-    margin-top: -25px;
-    margin-left: 45px;
+    z-index: 1;
+    margin-top: -5px;
+    margin-left: 38rem;
   }
 }
 
@@ -589,4 +606,48 @@ body{
   .item-footer4{
     left: -40%;
   }
+}
+
+#button {
+  display: inline-block;
+  background-color: $antracit;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  margin: 30px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s;
+  z-index: 1000;
+
+  img{
+    transform: rotate(270deg);
+    width: 25px;
+    height: 41px;
+    margin-top: 4px;
+  }
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+
+/*#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+*/
+
+.img-lupe{
+  width: 19px;
 }
