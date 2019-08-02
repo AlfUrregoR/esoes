@@ -2,12 +2,11 @@
 $bg-color-titulo: #f3ebe6;
 $marron: #85554b;
 $antracit: #474848;
-$font-forum: 'Forum', cursive;
-$font-raleway: 'Raleway';
+$font-title: 'Forum';
+$font-text: 'Source Sans Pro';
 
 html {
   min-height: 100%;
-  position: relative;
 }
 
 #body-const{
@@ -23,16 +22,22 @@ html {
 
 body{
   overflow-x: hidden;
+  padding: 0;
   margin: 0;
-  margin-bottom: 40px;
 
   h1, h2, h3, h4, h5, h6{
-    font-family: $font-forum;
+    font-family: $font-title;
+    font-weight: 400;
+   }
+
+   h3{
+     font-size: 1.60rem;
    }
 
    p,ul,li{
-     font-family: $font-raleway;
-     font-weight: normal;
+     font-family: 'Source Sans Pro';
+     font-weight: 300;
+     font-size: 14px;
    }
 }
 .fb-ic {
@@ -40,6 +45,11 @@ body{
   width: 14px;
 }
 
+.cabecera{
+  position: fixed;
+  z-index: 10000;
+  width: 100%;
+}
 
 .fb-fb{
   width: 14px;
@@ -61,6 +71,30 @@ body{
   background-repeat: no-repeat;
 }
 
+.masthead_int{
+    height: 15vh;
+    width: auto;
+    background-color: $marron;
+    font-size: 1rem;
+
+    #menu-item-153{
+      padding-right: 34vh;
+    }
+}
+
+.content-logo{
+  width: 100%;
+  height: 0px;
+
+  img{
+    width: 15%;
+    position: relative;
+    top: 4vh;
+    left: 7vh;
+  }
+}
+
+
 .navbar{
   .div-menu{
     margin-top: 25px;
@@ -72,8 +106,8 @@ body{
       transform: translatex(-50%);
 
       .nav-link{
-        font-family: $font-raleway;
-      }
+        font-family: $font-text;
+        }
   }
 
 .astm-search-menu{
@@ -115,7 +149,7 @@ body{
     a{
       text-decoration: none;
       color:$bg-color-titulo;
-      font-family: $font-raleway;
+      font-family: $font-text;
 
       &:hover{
           color:$marron;
@@ -139,6 +173,8 @@ body{
       a{
         margin-bottom: 0px;
         text-decoration: none;
+        font-size: 14px;
+        font-family: $font-text;
         color: $bg-color-titulo !important;
       }
 
@@ -153,14 +189,14 @@ body{
 
     .vl-izq {
       border-top: 1px solid $bg-color-titulo !important;
-      margin-top: 6px;
+      margin-top: 10px;
       margin-left: 23px;
       width:  4% !important;
     }
 
     .vl-der {
       border-top: 1px solid $bg-color-titulo !important;
-      margin-top: 6px;
+      margin-top: 10px;
       width: 4% !important;
     }
 }
@@ -168,7 +204,7 @@ body{
 .vl {
   margin-top: 10px;
   border-right: 1px solid $bg-color-titulo !important;
-  height: 110px;
+  height: 90px;
   text-align: justify;
   width: 50%;
 }
@@ -179,10 +215,6 @@ body{
     margin-top: 6%;
     margin-bottom: 4%;
     width: 100%;
-
-    p{
-      font-size: 20px;
-    }
   }
 
   .title-portafolio{
@@ -291,18 +323,255 @@ body{
     .btn-services{
       background-color:  $bg-color-titulo;
       color:$antracit;
-      font-size: 13px;
+      font-size: 11px;
+      text-transform: uppercase;
       border: none;
-      padding: 10px 25px;
+      padding: 10px 20px;
       text-decoration: none;
     }
   }
 }
 
+#pag-services{
+  background-image: url('http://localhost/esoes/wp-content/uploads/2019/07/service1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  .content-services{
+    padding-top: 40vh;
+    padding-bottom: 20vh;
+    color: $antracit;
+
+    h3{
+      display: inline-block;
+      position: relative;
+      padding-bottom: 30px;
+      left: 60px;
+
+      &::before{
+        content: '';
+        position: absolute;
+        width: 30%;
+        height: 1px;
+        background-color: $antracit;
+        top: 1.2rem;
+        left: -60px;
+      }
+    }
+
+    ul{
+      width:100vh;
+      margin-bottom:20px;
+      overflow:hidden;
+    }
+    li{
+      line-height:2em;
+      font-size: 14px;
+      color: $antracit;
+      width:40%;
+      float:left;
+      display:inline;
+      border-bottom: 1px solid #d5d5d5;
+      margin-right: 30px;
+    }
+
+    .list-services{
+      float: right;
+      margin-top: 30vh;
+      padding-left: 15vh;
+
+      .fas{
+        font-size: 2px;
+        width: 30px;
+        position: relative;
+        top: -4px;
+      }
+    }
+  }
+}
+
+#processus{
+  height: auto;
+  color: $bg-color-titulo;
+  background-image: url('http://localhost/esoes/wp-content/uploads/2019/07/services2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  img{
+    width: 10%;
+  }
+  .content-title-processus{
+    padding-top: 25vh;
+    padding-bottom: 15px;
+
+    h3{
+      display: inline-block;
+      position: relative;
+      padding-bottom: 30px;
+
+      &::before{
+        content: '';
+        position: absolute;
+        width: 30%;
+        height: 1px;
+        background-color: $bg-color-titulo;
+        top: 1.2rem;
+        left: -60px;
+      }
+
+      &::after{
+        content: '';
+        position: absolute;
+        width: 30%;
+        height: 1px;
+        background-color: $bg-color-titulo;
+        top: 1.2rem;
+        right: -60px;
+      }
+    }
+  }
+
+  .carousel-control-prev{
+    transform: rotate(180deg);
+  }
+
+  .carousel-inner{
+    padding-top: 2vh;
+    padding-bottom: 20vh;
+
+    h4{
+      padding-bottom: 10px;
+    }
+
+    .carousel-item{
+      padding-left: 25vh;
+      height: 20%;
+
+      .div-phase{
+        margin-top: -30vh;
+      }
+
+      .div-livrable{
+        margin-top: -6vh;
+      }
+
+      li{
+        list-style:none;
+
+        .fas{
+          font-size: 2px;
+          width: 30px;
+          position: relative;
+          top: -4px;
+        }
+      }
+    }
+  }
+}
+
+#services-collaborations{
+  color: $antracit;
+  padding-top: 20vh;
+  padding-bottom: 25vh;
+
+  .contact-image{
+    img{
+      width: 20%;
+    }
+  }
+
+  h3{
+    display: inline-block;
+    position: relative;
+    padding-bottom: 30px;
+    right: 70px;
+
+    &::after{
+      content: '';
+      position: absolute;
+      width: 30%;
+      height: 2px;
+      background-color: $antracit;
+      top: 1.2rem;
+      right: -66px;
+    }
+  }
+
+  .text-contact{
+    text-align: right;
+    right: 10vh;
+
+    p{
+      padding-bottom: 60px;
+    }
+
+    .btn-contact{
+      margin-top: 50px;
+      background-color:$marron;
+      color:$bg-color-titulo;
+      border: none;
+      padding: 10px 40px 10px 40px;
+      text-decoration: none;
+    }
+  }
+}
+
+#pourquoi{
+  background-color: $marron;
+  color: $bg-color-titulo;
+  padding-top: 20vh;
+  padding-bottom: 30vh;
+
+
+    h3{
+      display: inline-block;
+      position: relative;
+      padding-bottom: 15vh;
+
+      &::before{
+        content: '';
+        position: absolute;
+        width: 16%;
+        height: 1px;
+        background-color: $bg-color-titulo;
+        top: 1.2rem;
+        left: -70px;
+      }
+
+      &::after{
+        content: '';
+        position: absolute;
+        width: 16%;
+        height: 2px;
+        background-color: $bg-color-titulo;
+        top: 1.2rem;
+        right: -67px;
+      }
+    }
+
+    h4{
+      padding-bottom: 3vh;
+    }
+
+    .text-pourquoi{
+      border-right: 1px solid $bg-color-titulo;
+      height: 50vh;
+      padding-top: 10vh;
+    }
+
+    .text-pourquoi-unique{
+      height: 50vh;
+      padding-top: 10vh;
+    }
+
+}
+
 .propos{
 
     .propos-izq{
-      background-image: url('http://localhost/esoes/wp-content/uploads/2019/07/apropos_avion.jpg');
+      background-image: url('http://localhost/esoes/wp-content/uploads/2019/07/apropos_home.png');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -332,13 +601,162 @@ body{
         .btn-propos{
           background-color:$marron;
           color:$bg-color-titulo;
-          font-size: 13px;
+          font-size: 11px;
+          text-transform: uppercase;
           border: none;
-          padding: 12px 50px;
+          padding: 10px 20px;
           text-decoration: none;
         }
       }
     }
+}
+
+#pag-propos{
+  height: 150vh;
+  width: auto;
+  background-image: url('http://localhost/esoes/wp-content/uploads/2019/07/about_1.png');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .content-propos-1{
+    color: $antracit;
+    padding-top: 30vh;
+    padding-bottom: 50vh;
+
+    h3{
+      display: inline-block;
+      position: relative;
+      padding-bottom: 30px;
+      left: 60px;
+
+      &::before{
+        content: '';
+        position: absolute;
+        width: 30%;
+        height: 1px;
+        background-color: $antracit;
+        top: 1.2rem;
+        left: -60px;
+      }
+    }
+
+  }
+}
+
+
+#pag-propos-1{
+  height: 110vh;
+  width: auto;
+  background-color: $marron;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  img{
+    margin-top: -60px;
+    margin-left: -55px;
+    height: 130vh;
+    width: 90%;
+  }
+
+  .content-propos-2{
+    color: $bg-color-titulo;
+    padding-top: 25vh;
+    padding-bottom: 25vh;
+    padding-left: 10vh;
+
+    h3{
+      display: inline-block;
+      position: relative;
+      padding-bottom: 30px;
+      left: 70px;
+
+      &::before{
+        content: '';
+        position: absolute;
+        width: 15%;
+        height: 1px;
+        background-color: $bg-color-titulo;
+        top: 1.2rem;
+        left: -70px;
+      }
+    }
+  }
+
+  @media (max-width: 990px)  {
+    height: auto;
+
+    img{
+      margin-top: -60px;
+      margin-left: 0px;
+      height: 80vh;
+      width: 80%;
+    }
+
+    .content-propos-2{
+      color: $bg-color-titulo;
+      padding-top: 15vh;
+      padding-bottom: 15vh;
+      padding-left: 15vh;
+    }
+
+  }
+
+  @media (max-width: 480px) {
+
+  }
+
+}
+
+#pag-propos-3{
+  padding-top: 40vh;
+  margin-bottom: 15vh;
+
+  img{
+    width: 100%;
+    height: 90%;
+    margin-left: 5vh;
+  }
+
+  .content-propos-3{
+    padding-top: 12vh;
+    padding-bottom: 20vh;
+    padding-left: 20vh;
+
+
+    .title-propos-2{
+      display: inline-block;
+      position: relative;
+      padding-bottom: 30px;
+      left: 70px;
+
+      &::before{
+        content: '';
+        position: absolute;
+        width: 13%;
+        height: 1px;
+        background-color: $antracit;
+        top: 1.2rem;
+        left: -70px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 990px) {
+    padding-top: 15vh;
+    height: auto;
+
+    .content-propos-3 {
+      padding-top: 2vh;
+      padding-left: 15vh;
+    }
+
+    img{
+      width: 80%;
+    }
+
+  }
 }
 
 .partenaires{
@@ -350,9 +768,6 @@ body{
   background-position: center;
   background-repeat: no-repeat;
 
-  @media screen and (max-width: 760px) {
-    height: auto;
-  }
 
   .text-partenaires{
     padding-top: 100px;
@@ -400,8 +815,12 @@ body{
     width: 85%;
     margin: 160px 80px 130px 70px;
     color: $bg-color-titulo;
-    background-color:  rgba(133, 85, 75, 0.5);
+    background-color: rgba(200, 189, 167, 0.5);
     //opacity: 0.4;
+
+    .collaborations-name{
+      font-size: 12px !important;
+    }
 
     h3{
       padding-top: 10px;
@@ -411,7 +830,6 @@ body{
     p{
       padding-bottom: 26px;
     }
-
   }
 }
 
@@ -436,9 +854,11 @@ body{
       margin-top: 20px;
       background-color:$marron;
       color:$bg-color-titulo;
+      font-size: 11px;
       border: none;
-      padding: 10px 40px 10px 40px;
+      padding: 10px 20px;
       text-decoration: none;
+      text-transform: uppercase;
     }
 
    }
@@ -451,10 +871,6 @@ body{
   min-height: 500px;
   background-color: $marron;
   display: block;
-
-  @media screen and (max-width: 1200px) {
-    height: 90vh;
-  }
 
   img{
     height: 320px;
@@ -474,7 +890,6 @@ body{
      text-align:center;
 
      p{
-       font-size: 11px;
        margin-bottom: 1px;
      }
   }
@@ -483,12 +898,13 @@ body{
     margin-bottom: 20px;
 
     .btn-blog{
-      font-size: 12px;
+      font-size: 11px;
       background-color:  $bg-color-titulo;
       color:$antracit;
       border: none;
-      padding: 10px 27px;
+      padding: 10px 20px;
       text-decoration: none;
+      text-transform: uppercase;
     }
   }
 
@@ -523,13 +939,14 @@ body{
 }
 
 .instagram{
-  height: 75vh;
   width: auto;
-  min-height: 50px;
-  margin-top: -30px;
+  margin-top: -70px;
 
-  @media screen and (max-width: 1200px) {
-    height: 55vh;
+  @media (min-width: 768px){
+
+      .btn-instagram{
+        left: 0px;
+      }
   }
 
   .img-instagram{
@@ -545,26 +962,23 @@ body{
   .btn-instagram{
     background-color: #fff;
     text-decoration: none;
-    padding: 12px 30px;
+    padding: 10px 20px;
     color: #474848;
-    font-size: 12px;
-    position: absolute;
+    font-size: 11px;
+    position: relative;
     z-index: 1;
-    margin-top: -5px;
-    margin-left: 38rem;
+    top: 43vh;
+    left: 100vh;
   }
 }
 
 .footer{
-  background-color: $marron;
-  position: absolute;
-  margin-bottom: 0;
-  width: 100%;
-  height: 20px;
-  overflow: hidden;
+  background-color: #85554b;
+  position: relative;
+  margin-top: -31px;
+  height: 30px;
   padding-top: 15px;
-  padding-bottom: 25px;
-
+  padding-bottom: 35px;
 
   a,p{
     font-size: 9px;

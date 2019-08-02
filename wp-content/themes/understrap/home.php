@@ -198,7 +198,7 @@
           <p>Nous remercions Esoes pour l’exceptionnelle réalisation de notre identité visuelle.<br>
             Esoes a tout de suite su cerner notre univers et le retranscrire à travers un design élégant et percutant.
           </p>
-          <p>LUCIEN MEYLAN | SPURRING</p>
+          <p class="collaborations-name">LUCIEN MEYLAN | SPURRING</p>
       </div>
     </div>
   </div>
@@ -258,15 +258,6 @@
           <a href="#" class="btn-blog">Lire le Blog</a>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<section id="instagram" class="instagram">
-  <div class="container-fluid">
-    <div class="row align-items-center">
-      <a class="btn-instagram" href="#">INSTAGRAM</a>
-      <?php echo do_shortcode('[enjoyinstagram_mb_grid]'); ?>
     </div>
   </div>
 </section>

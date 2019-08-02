@@ -39,17 +39,18 @@ function enqueue_load_fa() {
 wp_enqueue_style( 'load-fa', 'https://use.fontawesome.com/releases/v5.3.1/css/all.css' );
 }
 
-add_action("wp_enqueue_scripts", "dcms_insertar_google_fonts");
-function dcms_insertar_google_fonts(){
-    $url = "https://fonts.google.com/specimen/Forum?selection.family=Forum";
-    wp_enqueue_style('google_fonts', $url);
- }
+function load_fonts() {
+     wp_register_style('googleFonts', 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300&display=swap');
+     wp_enqueue_style('googleFonts');
+}
+add_action('wp_enqueue_scripts', 'load_fonts');
 
- add_action("wp_enqueue_scripts", "dcms_insertar_google_fonts");
- function dcms_insertar_google_fonts_new(){
-     $url = "https://fonts.google.com/specimen/Raleway?selection.family=Raleway:300,400,600,700";
-     wp_enqueue_style('google_fonts_new', $url);
-  }
+function load_fonts_new() {
+     wp_register_style('googleFonts', 'https://fonts.googleapis.com/css?family=Forum&display=swap');
+     wp_enqueue_style('googleFonts');
+}
+add_action('wp_enqueue_scripts', 'load_fonts_new');
+
 
 	function my_init() {
 		if (!is_admin()) {
