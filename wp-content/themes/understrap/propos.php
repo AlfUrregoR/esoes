@@ -28,10 +28,6 @@ get_header('int');
               de communication suisses et aide ses clients à créer une continuité vi-<br>
               suelle cohérente et développer leur présence sur le marché à travers<br>
               des contenus réfléchis.
-              <?php $imagen_partenaires = get_field( 'imagen_partenaires' ); ?>
-              <?php if ( $imagen_partenaires ) { ?>
-              	<img src="<?php echo $imagen_partenaires['url']; ?>" alt="<?php echo $imagen_partenaires['alt']; ?>" />
-              <?php } ?>
             </p>
           </div>
         </div>

@@ -865,6 +865,98 @@ body{
 
 }
 
+.pages-contact{
+  padding-top: 30vh;
+  padding-bottom: 30vh;
+  background-image: url('http://localhost/esoes/wp-content/uploads/2019/08/contact_fundo.png');
+  //background-attachment: fixed;
+  //background-size: cover;
+  //background-position: center;
+  background-repeat: no-repeat;
+
+  h3{
+    display: inline-block;
+    position: relative;
+    padding-bottom: 20px;
+
+    &::before{
+      content: '';
+      position: absolute;
+      width: 30%;
+      height: 1px;
+      background-color: $antracit;
+      top: 1rem;
+      left: -40px;
+    }
+
+    &::after{
+      content: '';
+      position: absolute;
+      width: 30%;
+      height: 1px;
+      background-color: $antracit;
+      top: 1rem;
+      right: -40px;
+    }
+  }
+
+  .fondo{
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10vh;
+  }
+  .form-contact{
+    padding-top: 20vh;
+
+    .group-izq{
+      width: 90%;
+    }
+    .group-der{
+      width: 90%;
+      float: right;
+    }
+
+    input,textarea {
+      font-family: $font-text;
+      border-radius: 0px;
+      margin-bottom: 5vh;
+      outline: none !important;
+      border: 0;
+      outline: 0;
+      background: transparent;
+      border-bottom: 1px solid black;
+    }
+
+    .div-message{
+      font-family: $font-text;
+      padding-top: 10vh;
+    }
+
+    .btn-form{
+      background-color: $marron;
+      color: $bg-color-titulo;
+      border-radius: 0px;
+      font-size: 11px;
+      padding: 10px 20px;
+      text-transform: uppercase;
+      margin-top: 10vh;
+      float: right;
+    }
+  }
+
+  .div-datos{
+    padding-top: 20vh;
+    img{
+      width: 15%;
+      float: right;
+    }
+
+    p{
+      padding-top: 4vh;
+    }
+  }
+
+}
+
 .blog{
   height: 120vh;
   width: auto;
