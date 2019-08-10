@@ -7031,8 +7031,3 @@
     }, false);
   }
 })();
-
-function mostrar()
-{
-  document.getElementById("prueba").style.display="block";
-}

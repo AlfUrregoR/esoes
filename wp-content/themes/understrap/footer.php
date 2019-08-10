@@ -17,7 +17,7 @@ $container = get_theme_mod( 'understrap_container_type' );
   <div class="container-fluid align-items-center">
     <div class="row text-center">
       <a class="btn-instagram" href="#">INSTAGRAM</a>
-			<?php echo do_shortcode('[enjoyinstagram_mb_grid]'); ?>
+			<?php echo do_shortcode( '[enjoyinstagram_mb_grid]' ); ?>
     </div>
   </div>
 </section>
@@ -67,18 +67,27 @@ $container = get_theme_mod( 'understrap_container_type' );
 <?php wp_footer(); ?>
 <script type="text/javascript">
 (function($) {
+  var action = 1;
 
-	$('#mostrar').click(function(){
-		$('#prueba').toggle();
-	});
+  $("#mostrar").on("click", viewSomething);
 
-
+  function viewSomething() {
+      if ( action == 1 ) {
+        $('.prueba').toggle();
+        $("#mostrar-img").css("transform", "rotate(270deg)");
+        $("#div-mostrar").css("padding-top", "40vh");
+        $("#div-mostrar").css("padding-bottom", "10vh");
+          action = 2;
+      } else {
+        $('.prueba').toggle();
+        $("#div-mostrar").css("padding-top", "10vh");
+        $("#mostrar-img").css("transform", "rotate(90deg)");
+          action = 1;
+      }
+  }
 })( jQuery );
-
 (function($) {
-
   var btn = $('#button');
-
   $(window).on('scroll',function() {
     if ($(window).scrollTop() > 500) {
       btn.show();
@@ -86,16 +95,30 @@ $container = get_theme_mod( 'understrap_container_type' );
       btn.hide();
     }
   });
-
-
   btn.on('click', function(e) {
     e.preventDefault();
     $('html, body').animate({scrollTop:0}, '100');
   });
-
 	$('.search-icon').replaceWith("<img class='img-lupe' src='http://esoes-design.com/wp-content/uploads/2019/07/loupe.png'>");
-
 })( jQuery );
+
+  var heightImages = 0;
+
+  window.onload = function(){
+      heightImages = document.querySelector('.cont-img').scrollHeight;
+  }
+
+  function controlScroll($event) {
+      console.log(pageYOffset);
+     var scrollY = window.innerHeight + pageYOffset;
+     var texto = document.querySelector('.cont-text');
+     if(scrollY > heightImages) {
+          texto.classList.add('quieto')
+     } else {
+         texto.classList.remove('quieto');
+     }
+  }
+
 </script>
 </body>
 

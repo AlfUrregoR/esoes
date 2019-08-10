@@ -22,19 +22,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> onscroll="controlScroll(event)">
 <?php do_action( 'wp_body_open' ); ?>
 <div class="site" id="page">
 	<div class="cabecera">
-		<div class="content-logo">
-			<div class="container h-100">
-				<div class="row h-100 align-items-center">
-					<div class="col-12 text-center">
-						<img src="http://localhost/esoes/wp-content/uploads/2019/07/logo_esoes_beige.png" alt="">
-					</div>
-				</div>
-			</div>
-		</div>
+
 		<!-- ******************* The Navbar Area ******************* -->
 	<div id="wrapper-navbar" itemscope itemtype="http://schema.org/WebSite" class="masthead_int">
 
@@ -49,10 +41,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 						<!-- Your site title as branding in the menu -->
 
-
 								<a class="fb-ic mr-3" role="button" href="https://www.instagram.com/esoes_design/" target="_blank"><img src="http://esoes-design.com/wp-content/uploads/2019/07/Instagram.png" alt=""></a>
 								<a class="fb-fb mr-3" role="button" href="https://www.facebook.com/esoes.design" target="_blank"><img src="http://esoes-design.com/wp-content/uploads/2019/07/facebook.png" alt=""></a>
 								<a class="fb-ic mr-3" role="button" href="https://www.pinterest.ch/esoes_design/" target="_blank"><img src="http://esoes-design.com/wp-content/uploads/2019/07/Pinteres.png" alt=""></a>
+								<div class="row h-100 align-items-center">
+									<div class="col-12 text-center">
+										<a class="content-logo" href="http://localhost/esoes"><img src="http://localhost/esoes/wp-content/uploads/2019/07/logo_esoes_beige.png" alt=""></a>
+									</div>
 
 
 
@@ -77,6 +72,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 
 			</nav><!-- .site-navigation -->
-	</div><!-- #wrapper-navbar end -->
-
+		</div><!-- #wrapper-navbar end -->
 	</div>
+</div>

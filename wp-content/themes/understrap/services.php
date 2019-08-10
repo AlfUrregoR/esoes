@@ -176,7 +176,6 @@ get_header('int');
     </a>
   </div>
 </section>
-
 <section id="services-collaborations">
   <div class="content-collaborations">
     <div class="container h-100">
@@ -234,7 +233,7 @@ get_header('int');
           <p>
             Créez une stratégique de marque solide en mettant <br>
             en avant l’unicité de votre business.
-            Nous déterminerons comment communiquer <br> votre message et 
+            Nous déterminerons comment communiquer <br> votre message et
             vos valeurs de la meilleure forme qu'il soit.
           </p>
         </div>

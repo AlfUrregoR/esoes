@@ -46,9 +46,11 @@ body{
 }
 
 .cabecera{
-  position: fixed;
+  width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+  left: 0; /* Posicionamos la cabecera al lado izquierdo */
+  top: 0px; /* Posicionamos la cabecera pegada arriba */
+  position: fixed; /* Hacemos que la cabecera tenga una posición fija */
   z-index: 10000;
-  width: 100%;
 }
 
 .fb-fb{
@@ -71,17 +73,41 @@ body{
   background-repeat: no-repeat;
 }
 
+.dropdown-menu{
+  background-color:#c7b4a2;
+  border: none;
+  margin: -0.5rem 0 0;
+  min-width: 8rem;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: .2rem;
+
+  .dropdown-item{
+    color: $bg-color-titulo !important;
+  }
+
+  .dropdown-item:focus, .dropdown-item:hover {
+    color: #fff !important;
+    text-decoration: none;
+    background-color: transparent;
+  }
+}
+
+
 .masthead_int{
-    height: 15vh;
+    margin-top: 0px;
+    padding-top: 3vh;
+    height: 18vh;
     width: auto;
     background-color: $marron;
     font-size: 1rem;
 
     #menu-item-153{
-      padding-right: 34vh;
+      a{
+        margin-right: 40vh;
+      }
+
     }
 }
-
 .content-logo{
   width: 100%;
   height: 0px;
@@ -89,11 +115,11 @@ body{
   img{
     width: 15%;
     position: relative;
-    top: 4vh;
-    left: 7vh;
+    top: -1vh;
+    left: 2vh;
+    z-index: 100000;
   }
 }
-
 
 .navbar{
   .div-menu{
@@ -107,7 +133,11 @@ body{
 
       .nav-link{
         font-family: $font-text;
+
+        &:after{
+          display: none;
         }
+      }
   }
 
 .astm-search-menu{
@@ -224,29 +254,38 @@ body{
 
 #portafolio-galeria{
 
-  #prueba{
+  .prueba{
     display: none;
   }
 
   .div-mostrar{
-    background-color: #fff;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    font-family: Raleway;
-    font-size: 18px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 
     a{
-        color: $antracit !important;
+      display: inline-block;
+      background-color: #c7b4a2;
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      border-radius: 5px;
+      margin: 30px;
+      bottom: 30px;
+      right: 30px;
+      transition: background-color .3s;
 
-        img{
+        #mostrar-img{
           transform: rotate(90deg);
+          width: 15px;
+          margin-top: 8px;
         }
     }
   }
 }
 
+
 .rings {
-    margin-top: 30px;
     a {
       display:inline-block;
       position:relative;
@@ -272,7 +311,60 @@ body{
     }
 }
 
+#pages-portfolio{
 
+  .cont {
+      .cont-text {
+          padding-top: 30vh;
+          padding-left: 35vh;
+          padding-bottom: 10vh;
+
+            .tag{
+              display: inline-block;
+              position: relative;
+              padding-bottom: 30px;
+              left: 40px;
+
+              &::before{
+                content: '';
+                position: absolute;
+                width: 20%;
+                height: 1px;
+                background-color: $antracit;
+                top: 0.7rem;
+                left: -40px;
+              }
+            }
+            .tag_space{
+              padding-bottom: 30px;
+            }
+          .sticky{
+            position: -webkit-sticky; /* Safari */
+            position: sticky;
+            top: 20vh;
+          }
+      }
+
+        .cont-img{
+          height: 420vh;
+          background-image: url('http://localhost/esoes/wp-content/uploads/2019/07/homepage_esoes-min.jpg');
+          background-attachment: fixed;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+
+          img{
+            position: relative;
+            top: 30vh;
+            left: 20vh;
+            width: 105% !important;
+            height: 13%;
+            padding-bottom: 30px;
+          }
+        }
+    }
+
+}
 
 .services {
   margin-top: 50px;
@@ -291,6 +383,10 @@ body{
     color: $bg-color-titulo !important;
   }
 
+  .file-services{
+      justify-content: center;
+  }
+
   .list-izq{
     text-align: right;
     border-right: 1px solid $bg-color-titulo !important;
@@ -298,11 +394,13 @@ body{
     padding-top: 30px;
     height: 220px;
     margin-bottom: 20px;
+    max-width: 30%;
   }
 
   .list-der{
     padding-left: 37PX;
     padding-top: 30px;
+    max-width: 30%;
   }
 
   ul{
@@ -777,28 +875,28 @@ body{
 
   .log-partenaires{
     overflow:hidden;
-    width: 100%;
+    width: 90%;
 
     img{
       -webkit-transition:all .9s ease; /* Safari y Chrome */
       -moz-transition:all .9s ease; /* Firefox */
       -o-transition:all .9s ease; /* IE 9 */
       -ms-transition:all .9s ease; /* Opera */
-      width:90%;
+      width:80%;
 
     }
     &:hover{
-      -webkit-transform:scale(1.5);
-      -moz-transform:scale(1.5);
-      -ms-transform:scale(1.5);
-      -o-transform:scale(1.5);
-      transform:scale(1.5);
+      -webkit-transform:scale(1.2);
+      -moz-transform:scale(1.2);
+      -ms-transform:scale(1.2);
+      -o-transform:scale(1.2);
+      transform:scale(1.2);
     }
   }
 }
 
 .collaborations{
-  height: 120vh;
+  height: 110vh;
   width: auto;
   //min-height: 500px;
   background-image: url('http://localhost/esoes/wp-content/uploads/2019/07/collaboration_fond.png');
@@ -808,12 +906,12 @@ body{
   background-repeat: no-repeat;
 
   .div-text-collaborations{
-    width: 90%;
+    width: 70%;
   }
   .text-collaborations{
     padding: 80px;
     width: 85%;
-    margin: 160px 80px 130px 70px;
+    margin: 140px 80px 130px 165px;
     color: $bg-color-titulo;
     background-color: rgba(200, 189, 167, 0.5);
     //opacity: 0.4;
@@ -830,6 +928,13 @@ body{
     p{
       padding-bottom: 26px;
     }
+  }
+
+  .carousel-control-prev{
+    transform: rotate(180deg);
+  }
+  img{
+    width: 10%;
   }
 }
 
@@ -904,6 +1009,72 @@ body{
     background-color: rgba(255, 255, 255, 0.7);
     padding: 10vh;
   }
+
+      textarea {
+        font-family: $font-text;
+        border-radius: 0px;
+        margin-bottom: 5vh;
+        outline: none !important;
+        border: 0;
+        outline: 0;
+        background: transparent;
+        border-bottom: 1px solid black;
+
+        &:focus{
+          box-shadow: none !important;
+          background: transparent;
+          border-bottom: 1px solid #b3b3b3;
+        }
+      }
+
+
+
+      .field-container {
+        position: relative !important;
+        margin-top:20px;
+        font-family: $font-text;
+      }
+
+      .field{
+        display:block;
+        width:100%;
+        border-radius: 0px;
+        margin-bottom: 5vh;
+        outline: none !important;
+        border: 0;
+        outline: 0;
+        background: transparent;
+        border-bottom: 1px solid black;
+
+      }
+      .field:focus {
+        outline: 0;
+        box-shadow: none !important;
+        border-bottom: 1px solid #b3b3b3 !important;
+      }
+      .floating-label {
+        position:absolute !important;
+        pointer-events:none;
+        top: 5px;
+        left:10px;
+        font-size: 12px;
+        opacity:0;
+        background-color: transparent !important;
+        padding: 0 2px;
+        -webkit-transition: 0.2s ease-in-out;
+        transition: 0.2s ease-in-out;
+      }
+
+      .field:valid + .floating-label {
+        opacity:1;
+        top:-10px;
+        color: $antracit;
+      }
+
+      .field:focus + .floating-label {
+        color: $antracit;
+      }
+
   .form-contact{
     padding-top: 20vh;
 
@@ -913,17 +1084,6 @@ body{
     .group-der{
       width: 90%;
       float: right;
-    }
-
-    input,textarea {
-      font-family: $font-text;
-      border-radius: 0px;
-      margin-bottom: 5vh;
-      outline: none !important;
-      border: 0;
-      outline: 0;
-      background: transparent;
-      border-bottom: 1px solid black;
     }
 
     .div-message{
@@ -956,7 +1116,63 @@ body{
   }
 
 }
+.grid {
+  width: 100%;
+  margin-left: 20vh;
+  margin-right: 50px;
+}
 
+.grid-item {
+  width: 280px;
+  background: #fff;
+  float: left;
+  margin-right: 40px;
+  margin-bottom: 40px;
+}
+
+.grid-item p {
+	padding:10px;
+	font-size:13px;
+}
+
+.grid-item img {
+	width:100%;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,.22);
+}
+
+.pages-blog{
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+
+  .img-principal{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 80%;
+    height: 150vh;
+  }
+
+  img{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 80%;
+    height: 150vh;
+  }
+
+  p{
+    text-align: justify;
+    width: 80%;
+    margin-left: 10%;
+  }
+  .conten-section-1{
+    padding-top: 8vh;
+    padding-bottom: 10px;
+
+    .title{
+      padding-bottom: 15px;
+    }
+
+    }
+}
 .blog{
   height: 120vh;
   width: auto;
@@ -1116,11 +1332,11 @@ body{
 
 #button {
   display: inline-block;
-  background-color: $antracit;
-  width: 50px;
-  height: 50px;
+  background-color: #c7b4a2;
+  width: 30px;
+  height: 30px;
   text-align: center;
-  border-radius: 4px;
+  border-radius: 5px;
   margin: 30px;
   position: fixed;
   bottom: 30px;
@@ -1130,17 +1346,17 @@ body{
 
   img{
     transform: rotate(270deg);
-    width: 25px;
-    height: 41px;
-    margin-top: 4px;
+    width: 15px;
+    height: 20px;
+    margin-top: 2px;
   }
 }
 #button:hover {
   cursor: pointer;
-  background-color: #333;
+  background-color:  #c7b4a2;
 }
 #button:active {
-  background-color: #555;
+  background-color: #c7b4a2;
 }
 
 /*#button::after {

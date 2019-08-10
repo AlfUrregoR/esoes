@@ -1,12 +1,15 @@
 <?php
 /**
- * The template for displaying archive pages.
- *
+ * The template for displaying archive pages. *
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
  * @package understrap
  */
-
+ if (in_category(6)) {
+ 	include(TEMPLATEPATH . '/archive-blog.php');
+ } else {
+ 	include(TEMPLATEPATH . '/archive-default.php');
+ }
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
@@ -16,7 +19,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
 <div class="wrapper" id="archive-wrapper">
-
 	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
 
 		<div class="row">

@@ -52,7 +52,7 @@ function load_fonts_new() {
 add_action('wp_enqueue_scripts', 'load_fonts_new');
 
 
-	function my_init() {
+function my_init() {
 		if (!is_admin()) {
 			wp_deregister_script('jquery');
 			wp_register_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js', false, '2.0.3', true);
@@ -60,3 +60,50 @@ add_action('wp_enqueue_scripts', 'load_fonts_new');
 		}
 	}
 	add_action('init', 'my_init');
+
+function my_masonry(){
+		wp_enqueue_script('masonry');
+		wp_enqueue_script('masonryloader', get_stylesheet_directory_uri() . '/js/TaS-masonryInitializer.js', array( 'masonry', 'jquery' ) );
+	}
+	add_action('wp_enqueue_scripts', 'my_masonry');
+
+
+	function footer_masonry() {
+		 echo '
+	<script type="text/javascript">
+	(function($){
+		var container = document.querySelector(".grid");
+
+		imagesLoaded( container, function() {
+			var msnry = new Masonry( container, {
+				// options
+				itemSelector: ".grid-item"
+			});
+		});
+	})(jQuery);
+
+	</script>
+	';
+	}
+	add_action('wp_footer', 'footer_masonry');
+
+	function footer_onload() {
+		 echo "
+	<script type='text/javascript'>
+
+
+	</script>
+	";
+	}
+	add_action('wp_footer', 'footer_onload');
+
+
+function custom_single_template($the_template) {
+    foreach ( (array) get_the_category() as $cat ) {
+        if ( locate_template("archive-{$cat->slug}.php") ) {
+            return locate_template("archive-{$cat->slug}.php");
+        }
+    }
+    return $the_template;
+}
+add_filter( 'single_template', 'custom_single_template');

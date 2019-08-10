@@ -81,32 +81,29 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		</nav><!-- .site-navigation -->
 
-<div class="content-title">
-  <div class="container h-100">
-    <div class="row h-100 align-items-center">
-      <div class="col-12 text-center">
-        <img src="http://localhost/esoes/wp-content/uploads/2019/07/logo_esoes.png" alt="">
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="container-fluid">
-	<div class="row coordinate">
-		<div class="vl-izq"></div>
-		<div class="col-md-5 coordinate-izq">
-				<a href="https://www.google.com/maps/place/<?php the_field( 'coordenada' ); ?>" target="_blank"><?php the_field( 'coordenada' ); ?></a>
-				<p>My mind is here</p>
+	<div class="content-title">
+		  <div class="container h-100">
+		    <div class="row h-100 align-items-center">
+		      <div class="col-12 text-center">
+		        <img src="http://localhost/esoes/wp-content/uploads/2019/07/logo_esoes.png" alt="">
+		      </div>
+		    </div>
+		  </div>
 		</div>
-		<div class="col-md-5 coordinate-der">
-				<a href="https://www.google.com/maps/place/46%C2%B052'50.163%22N%207%C2%B02'33.747%22E" target="_blank">46°52'50.163"N 7°2'33.747"E</a>
-				<p>My soual is there</p>
+	<div class="container-fluid">
+			<div class="row coordinate">
+				<div class="vl-izq"></div>
+				<div class="col-md-5 coordinate-izq">
+						<a href="https://www.google.com/maps/place/<?php the_field( 'coordenada' ); ?>" target="_blank"><?php the_field( 'coordenada' ); ?></a>
+						<p>My mind is here</p>
+				</div>
+				<div class="col-md-5 coordinate-der">
+						<a href="https://www.google.com/maps/place/46%C2%B052'50.163%22N%207%C2%B02'33.747%22E" target="_blank">46°52'50.163"N 7°2'33.747"E</a>
+						<p>My soual is there</p>
+				</div>
+				<div class="vl-der"></div>
+			</div>
 		</div>
-		<div class="vl-der"></div>
-	</div>
-</div>
-
-
 	<div class="vl"></div>
 
-</div><!-- #wrapper-navbar end -->
+	</div><!-- #wrapper-navbar end -->
