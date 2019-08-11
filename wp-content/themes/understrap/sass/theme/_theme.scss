@@ -1274,34 +1274,44 @@ body {
     }
 }
 
-.blog {
-    height: 120vh;
+.blog-int {
+    height: auto;
+    padding-bottom: 50vh;
     width: auto;
     min-height: 500px;
-    background-color: $marron;
-    display: block;
+    background-color: $bg-color-titulo;
 
-    img {
-        height: 320px;
+    a {
+        text-decoration: none;
+        color: #000;
     }
 
     .blog-izq,
     .blog-der {
         margin-top: 80px;
         min-height: 100px;
-
+        padding-top: 15vh;
     }
 
     .contenido-blog {
-        font-size: 20px;
         margin: 0;
         background: #fff;
         color: $antracit;
         padding: 25px;
         text-align: center;
 
+        .text {
+            p {
+                font-size: 18px;
+                font-weight: bold;
+            }
+
+        }
+
         p {
+            font-size: 16px;
             margin-bottom: 1px;
+            font-weight: bold !important;
         }
     }
 
@@ -1321,10 +1331,76 @@ body {
     }
 
     .efecto-blog {
-        a {
+        padding-top: 5vh;
+
+        img {
+            height: 60vh;
+            width: 100%;
+        }
+    }
+}
+
+
+.blog {
+    height: 140vh;
+    width: auto;
+    min-height: 500px;
+    background-color: $marron;
+
+    .carousel-control-prev {
+        transform: rotate(180deg);
+    }
+
+    .img-prev {
+        width: 10%;
+    }
+
+    .blog-izq,
+    .blog-der {
+        margin-top: 80px;
+        min-height: 100px;
+        margin-left: 30vh;
+    }
+
+    .contenido-blog {
+        font-size: 20px;
+        margin: 0;
+        background: #fff;
+        color: $antracit;
+        padding: 25px;
+        text-align: center;
+
+        p {
+            margin-bottom: 1px;
+            font-weight: 900 !important;
+        }
+    }
+
+    .div-btn-blog {
+        margin-top: 60px;
+        margin-bottom: 20px;
+
+        .btn-blog {
+            font-size: 11px;
+            background-color: $bg-color-titulo;
+            color: $antracit;
+            border: none;
+            padding: 10px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+    }
+
+    .efecto-blog {
+        .tag {
             margin-top: 60px;
             display: inline-block;
             position: relative;
+
+            img {
+                height: 60vh;
+                width: 100%;
+            }
 
             span {
                 position: absolute;
@@ -1334,18 +1410,18 @@ body {
                 transform: translate(-50%, -50%);
                 color: white;
                 display: none;
-            }
 
-            &:hover {
-                background: black;
-            }
+                &:hover {
+                    background: black;
+                }
 
-            &:hover span {
-                display: block;
-            }
+                &:hover span {
+                    display: block;
+                }
 
-            &:hover img {
-                opacity: 0.7;
+                &:hover img {
+                    opacity: 0.7;
+                }
             }
         }
     }
@@ -1588,13 +1664,14 @@ body {
         }
     }
 
-    .blog{
+    .blog {
         width: 100%;
         height: auto;
         min-height: auto;
         padding: 100px 0;
 
-        .blog-der, .blog-izq{
+        .blog-der,
+        .blog-izq {
             margin: 0;
             padding: 0;
             width: 80%;
