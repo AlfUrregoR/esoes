@@ -7,6 +7,7 @@ $font-text: 'Source Sans Pro';
 
 html {
   min-height: 100%;
+  overflow-x: hidden !important;
 }
 
 #body-const{
@@ -21,7 +22,7 @@ html {
 }
 
 body{
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   padding: 0;
   margin: 0;
 
@@ -41,34 +42,6 @@ body{
    }
 }
 
-.cont-logo{
-  .fb-in{
-    width: 18px;
-    height: 24px;
-    margin-left: 10px;
-
-    img{
-      height: 80%;
-      width: 70%;
-    }
-  }
-
-  .fb-fb,.fb-ic{
-    width: 18px;
-    height: 24px;
-    margin-left: 10px;
-
-    img{
-      height: 70%;
-      width: 70%;
-    }
-  }
-  .fb-ic {
-    color: $bg-color-titulo !important;
-    width: 14px;
-  }
-}
-
 .masthead {
   height: 100vh;
   width: auto;
@@ -80,28 +53,53 @@ body{
   background-repeat: no-repeat;
 
   .cont-logo{
-    padding-top: 7vh;
+    padding-top: 5px;
+    .fb-in,.fb-ic{
+      margin-top: 4vh;
+      width: 18px;
+      height: 24px;
+      margin-left: 10px;
+
+      img{
+        height: 6%;
+        width: 6%;
+      }
+    }
+
+    .fb-fb{
+      margin-top: 4vh;
+      width: 18px;
+      height: 24px;
+      margin-left: 10px;
+
+      img{
+        height: 4%;
+        width: 4%;
+      }
+    }
+
+  }
+  .dropdown-menu{
+    background-color:#c7b4a2;
+    border: none;
+    margin: -0.5rem 0 0;
+    min-width: 8rem;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .2rem;
+
+    .dropdown-item{
+      color: $bg-color-titulo !important;
+    }
+
+    .dropdown-item:focus, .dropdown-item:hover {
+      color: #fff !important;
+      text-decoration: none;
+      background-color: transparent;
+    }
   }
 }
 
-.dropdown-menu{
-  background-color:#c7b4a2;
-  border: none;
-  margin: -0.5rem 0 0;
-  min-width: 8rem;
-  border: 1px solid rgba(0,0,0,.15);
-  border-radius: .2rem;
 
-  .dropdown-item{
-    color: $bg-color-titulo !important;
-  }
-
-  .dropdown-item:focus, .dropdown-item:hover {
-    color: #fff !important;
-    text-decoration: none;
-    background-color: transparent;
-  }
-}
 
 
 .masthead_int{
@@ -114,9 +112,78 @@ body{
     height: 18vh;
     background-color: $marron;
   }
+
+  @media only screen and (max-width: 600px) {
+    .navbar{
+      .astm-search-menu{
+        padding-bottom: 20px;
+        top: 0px;
+        left: 0px;
+      }
+        path{
+          fill:$bg-color-titulo;
+        }
+
+      height: 21vh;
+
+      .navbar-nav{
+        background-color: $marron;
+        width: 100%;
+
+        li{
+          padding-left: 20px;
+        }
+
+        .dropdown-menu{
+          background-color:$marron;
+          border: none;
+          margin: -0.5rem 0 0;
+          min-width: 8rem;
+          border: 0px solid rgba(0,0,0,.15);
+          border-radius: .2rem;
+
+          .dropdown-item{
+            color: $bg-color-titulo !important;
+          }
+
+          .dropdown-item:focus, .dropdown-item:hover {
+            color: #fff !important;
+            text-decoration: none;
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
     #menu-item-347{
       a{
         margin-right: 35vh;
+      }
+
+    }
+    .cont-logo{
+      .fb-in{
+        margin-top: 4vh;
+        width: 18px;
+        height: 24px;
+        margin-left: 10px;
+
+        img{
+          height: 60%;
+          width: 60%;
+        }
+      }
+
+      .fb-fb,.fb-ic{
+        margin-top: 4vh;
+        width: 18px;
+        height: 24px;
+        margin-left: 10px;
+
+        img{
+          height: 60%;
+          width: 60%;
+        }
       }
 
     }
@@ -128,23 +195,22 @@ body{
   img{
     width: 15%;
     position: relative;
-    top: -1vh;
+    top: -4vh;
     left: 1vh;
     z-index: 100000;
   }
 
   @media only screen and (max-width: 600px) {
     img{
+      width: 25%;
       top: -4vh;
-      left: -12vh;
+      left: 20vh;
     }
   }
 
 }
 
 .navbar{
-  height: 18vh;
-  background-color: $marron;
 .primary-nav {
     text-align: center;
 
@@ -1108,6 +1174,9 @@ body{
     .group-der{
       width: 90%;
       float: right;
+      @media only screen and (max-width: 600px) {
+          float: left;
+      }
     }
 
     .div-message{
@@ -1136,6 +1205,12 @@ body{
 
     p{
       padding-top: 4vh;
+    }
+    @media only screen and (max-width: 600px) {
+      margin-left: 10vh;
+        img{
+          float: left;
+        }
     }
   }
 

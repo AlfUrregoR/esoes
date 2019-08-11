@@ -41,9 +41,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<!-- Your site title as branding in the menu-->
 
 						<div class="row cont-logo">
-							<a class="fb-in mr-3" role="button" href="https://www.instagram.com/esoes_design/" target="_blank"><img src="http://esoes-design.com/wp-content/uploads/2019/07/Instagram.png" alt=""></a>
-							<a class="fb-fb mr-3" role="button" href="https://www.facebook.com/esoes.design" target="_blank"><img src="http://esoes-design.com/wp-content/uploads/2019/07/facebook.png" alt=""></a>
-							<a class="fb-ic mr-3" role="button" href="https://www.pinterest.ch/esoes_design/" target="_blank"><img src="http://esoes-design.com/wp-content/uploads/2019/07/Pinteres.png" alt=""></a>
+							<a class="fb-in" role="button" href="https://www.instagram.com/esoes_design/" target="_blank"><img src="http://esoes-design.com/wp-content/uploads/2019/07/Instagram.png" alt=""></a>
+							<a class="fb-fb" role="button" href="https://www.facebook.com/esoes.design" target="_blank"><img src="http://esoes-design.com/wp-content/uploads/2019/07/facebook.png" alt=""></a>
+							<a class="fb-ic" role="button" href="https://www.pinterest.ch/esoes_design/" target="_blank"><img src="http://esoes-design.com/wp-content/uploads/2019/07/Pinteres.png" alt=""></a>
 							<div class="col-12 text-center">
 										<a class="content-logo" href="http://localhost/esoes"><img src="http://localhost/esoes/wp-content/uploads/2019/07/logo_esoes_beige.png" alt=""></a>
 									</div>
