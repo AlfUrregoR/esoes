@@ -90,12 +90,15 @@ $container = get_theme_mod( 'understrap_container_type' );
 		    </div>
 		  </div>
 		</div>
+
 	<div class="container-fluid">
 			<div class="row coordinate">
 				<div class="vl-izq"></div>
 				<div class="col-md-5 coordinate-izq">
+					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 						<a href="https://www.google.com/maps/place/<?php the_field( 'coordenada' ); ?>" target="_blank"><?php the_field( 'coordenada' ); ?></a>
 						<p>My mind is here</p>
+					<?php endwhile; endif; ?>
 				</div>
 				<div class="col-md-5 coordinate-der">
 						<a href="https://www.google.com/maps/place/46%C2%B052'50.163%22N%207%C2%B02'33.747%22E" target="_blank">46°52'50.163"N 7°2'33.747"E</a>

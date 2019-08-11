@@ -309,33 +309,125 @@
 </section>
 
 <section id="blog" class="blog">
+  <div id="demo" class="carousel slide" data-ride="carousel">
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row align-items-center blog-izq">
+            <?php
+            $args = array(
+                      'post' => '298',
+                      'category_name'  => 'Home',
+                      'order' => 'asc'
+                  );
+             $category_posts = new WP_Query($args);
+             if($category_posts->have_posts()) :
+                while($category_posts->have_posts()) :
+                   $category_posts->the_post();
+            ?>
+
+                <div class="col-sm-12 col-md-5 text-center">
+                  <div class="efecto-blog">
+                    <a href="#" class="tag">
+                      <?php // En este ejemplo tendríamos el  ?>
+                      <?php $imagen_blog_1 = get_field( 'imagen_blog_1' ); ?>
+                      <?php if ( $imagen_blog_1 ) { ?>
+                        <img src="<?php echo $imagen_blog_1['url']; ?>" alt="<?php echo $imagen_blog_1['alt']; ?>" />
+                      <?php } ?>
+                      <span>VOYAGE</span>
+                    </a>
+                    <div class="contenido-blog text-center">
+                      <p><strong><?php the_title(); ?></strong></p>
+                      <h5><strong><?php the_field( 'content_blog_1' ); ?></strong></h5>
+                    </div>
+                  </div>
+                </div>
+              <?php endwhile; ?>
+            <?php endif; ?>
+
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row align-items-center blog-izq">
+            <?php
+            $args = array(
+                      'post' => '298',
+                      'category_name'  => 'Home',
+                      'order' => 'asc'
+                  );
+             $category_posts = new WP_Query($args);
+             if($category_posts->have_posts()) :
+                while($category_posts->have_posts()) :
+                   $category_posts->the_post();
+            ?>
+
+                <div class="col-sm-12 col-md-5 text-center">
+                  <div class="efecto-blog">
+                    <a href="#" class="tag">
+                      <?php // En este ejemplo tendríamos el  ?>
+                      <?php $imagen_blog_1 = get_field( 'imagen_blog_1' ); ?>
+                      <?php if ( $imagen_blog_1 ) { ?>
+                        <img src="<?php echo $imagen_blog_1['url']; ?>" alt="<?php echo $imagen_blog_1['alt']; ?>" />
+                      <?php } ?>
+                      <span>VOYAGE</span>
+                    </a>
+                    <div class="contenido-blog text-center">
+                      <p><strong><?php the_title(); ?></strong></p>
+                      <h5><strong><?php the_field( 'content_blog_1' ); ?></strong></h5>
+                    </div>
+                  </div>
+                </div>
+              <?php endwhile; ?>
+            <?php endif; ?>
+
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row align-items-center blog-izq">
+            <?php
+            $args = array(
+                      'post' => '298',
+                      'category_name'  => 'Home',
+                      'order' => 'asc'
+                  );
+             $category_posts = new WP_Query($args);
+             if($category_posts->have_posts()) :
+                while($category_posts->have_posts()) :
+                   $category_posts->the_post();
+            ?>
+
+                <div class="col-sm-12 col-md-5 text-center">
+                  <div class="efecto-blog">
+                    <a href="#" class="tag">
+                      <?php // En este ejemplo tendríamos el  ?>
+                      <?php $imagen_blog_1 = get_field( 'imagen_blog_1' ); ?>
+                      <?php if ( $imagen_blog_1 ) { ?>
+                        <img src="<?php echo $imagen_blog_1['url']; ?>" alt="<?php echo $imagen_blog_1['alt']; ?>" />
+                      <?php } ?>
+                      <span>VOYAGE</span>
+                    </a>
+                    <div class="contenido-blog text-center">
+                      <p><strong><?php the_title(); ?></strong></p>
+                      <h5><strong><?php the_field( 'content_blog_1' ); ?></strong></h5>
+                    </div>
+                  </div>
+                </div>
+              <?php endwhile; ?>
+            <?php endif; ?>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <img class="img-prev" src="http://esoes-design.com/wp-content/uploads/2019/07/flecha.png" alt="">
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <img class="img-prev" src="http://esoes-design.com/wp-content/uploads/2019/07/flecha.png" alt="">
+      </a>
+</div>
   <div class="container">
-    <div class="row align-items-center">
-      <div class="col-md-5 offset-md-1 blog-izq text-center">
-        <div class="efecto-blog">
-          <a href="#">
-            <img src="http://localhost/esoes/wp-content/uploads/2019/07/Medellin.png" alt="">
-            <span>VOYAGE</span>
-          </a>
-          <div class="contenido-blog text-center">
-            <p><strong>MEDELLIN</strong></p>
-            <h6><strong>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit</strong></h6>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-5 blog-der text-center">
-        <div class="efecto-blog">
-          <a href="#">
-            <img src="http://localhost/esoes/wp-content/uploads/2019/07/panama_city.png" alt="">
-            <span>VOYAGE</span>
-          </a>
-          <div class="contenido-blog text-center">
-            <p><strong>PANAMA CITY</strong></p>
-            <h6><strong>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit</strong></h6>
-          </div>
-        </div>
-      </div>
-    </div>
     <div class="row align-items-center">
       <div class="container div-btn-blog">
         <div class="col-12 text-center">

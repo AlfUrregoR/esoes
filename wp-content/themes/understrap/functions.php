@@ -87,23 +87,4 @@ function my_masonry(){
 	}
 	add_action('wp_footer', 'footer_masonry');
 
-	function footer_onload() {
-		 echo "
-	<script type='text/javascript'>
-
-
-	</script>
-	";
-	}
-	add_action('wp_footer', 'footer_onload');
-
-
-function custom_single_template($the_template) {
-    foreach ( (array) get_the_category() as $cat ) {
-        if ( locate_template("archive-{$cat->slug}.php") ) {
-            return locate_template("archive-{$cat->slug}.php");
-        }
-    }
-    return $the_template;
-}
-add_filter( 'single_template', 'custom_single_template');
+	

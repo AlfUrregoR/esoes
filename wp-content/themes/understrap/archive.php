@@ -5,15 +5,11 @@
  *
  * @package understrap
  */
- if (in_category(6)) {
- 	include(TEMPLATEPATH . '/archive-blog.php');
- } else {
- 	include(TEMPLATEPATH . '/archive-default.php');
- }
+
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-get_header();
+get_header(int);
 
 $container = get_theme_mod( 'understrap_container_type' );
 ?>

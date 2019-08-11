@@ -5,13 +5,7 @@
  * @package understrap
  */
  // Filtrando por slug
- if (in_category(6)) {
-    include(TEMPLATEPATH . '/single-blog.php');
-} elseif (in_category(2)) {
-    include(TEMPLATEPATH . '/single2.php');
-} else {
-    include(TEMPLATEPATH . '/single-default.php');
-}
+
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
@@ -20,7 +14,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
 <div class="wrapper" id="single-wrapper">
-<h1>hola</h1>
 	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
   <?php the_field( 'title' ); ?>
 		<div class="row">
