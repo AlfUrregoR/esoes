@@ -73,7 +73,7 @@
 
           <div class="rings" >
             <a href="#">
-            <div class="prueba">
+             <div class="prueba">
               <?php $imagen_portafolio_1 = get_field( 'imagen_portafolio_1' ); ?>
               <?php if ( $imagen_portafolio_1 ) { ?>
                 <img src="<?php echo $imagen_portafolio_1['url']; ?>" alt="<?php echo $imagen_portafolio_1['alt']; ?>" />

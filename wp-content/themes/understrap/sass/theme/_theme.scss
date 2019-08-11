@@ -40,28 +40,35 @@ body{
      font-size: 14px;
    }
 }
-.fb-ic {
-  color: $bg-color-titulo !important;
-  width: 14px;
-}
 
-.cabecera{
-  width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
-  left: 0; /* Posicionamos la cabecera al lado izquierdo */
-  top: 0px; /* Posicionamos la cabecera pegada arriba */
-  position: fixed; /* Hacemos que la cabecera tenga una posición fija */
-  z-index: 10000;
-}
+.cont-logo{
+  .fb-in{
+    width: 18px;
+    height: 24px;
+    margin-left: 10px;
 
-.fb-fb{
-  width: 14px;
-  height: 24px;
+    img{
+      height: 80%;
+      width: 70%;
+    }
+  }
 
-  img{
-    height: 18px;
-    width: 11px;
+  .fb-fb,.fb-ic{
+    width: 18px;
+    height: 24px;
+    margin-left: 10px;
+
+    img{
+      height: 70%;
+      width: 70%;
+    }
+  }
+  .fb-ic {
+    color: $bg-color-titulo !important;
+    width: 14px;
   }
 }
+
 .masthead {
   height: 100vh;
   width: auto;
@@ -71,6 +78,10 @@ body{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  .cont-logo{
+    padding-top: 7vh;
+  }
 }
 
 .dropdown-menu{
@@ -94,16 +105,18 @@ body{
 
 
 .masthead_int{
-    margin-top: 0px;
-    padding-top: 3vh;
+  .navbar{
+    width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+    left: 0; /* Posicionamos la cabecera al lado izquierdo */
+    top: 0px; /* Posicionamos la cabecera pegada arriba */
+    position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+    z-index: 10000;
     height: 18vh;
-    width: auto;
     background-color: $marron;
-    font-size: 1rem;
-
-    #menu-item-153{
+  }
+    #menu-item-347{
       a{
-        margin-right: 40vh;
+        margin-right: 35vh;
       }
 
     }
@@ -116,15 +129,26 @@ body{
     width: 15%;
     position: relative;
     top: -1vh;
-    left: 2vh;
+    left: 1vh;
     z-index: 100000;
   }
+
+  @media only screen and (max-width: 600px) {
+    img{
+      top: -4vh;
+      left: -12vh;
+    }
+  }
+
 }
 
 .navbar{
-  .div-menu{
-    margin-top: 25px;
-  }
+  height: 18vh;
+  background-color: $marron;
+.primary-nav {
+    text-align: center;
+
+}
 
   .navbar-nav {
       position: absolute;
@@ -1124,8 +1148,6 @@ body{
 
 .grid-item {
   width: 280px;
-  background: #fff;
-  float: left;
   margin-right: 40px;
   margin-bottom: 40px;
 }
