@@ -213,7 +213,7 @@ body {
 
     img {
         width: 30%;
-        animation-duration: 3s;
+        animation-duration: 1s;
         animation-name: slidein;
     }
 
@@ -239,7 +239,7 @@ body {
 .coordinate {
     color: $bg-color-titulo !important;
 
-    animation-duration: 5s;
+    animation-duration: 2s;
     animation-name: coordinate;
 
     a {
@@ -301,7 +301,7 @@ body {
     text-align: justify;
     width: 50%;
     animation-name: vl;
-    animation-duration: 5s;
+    animation-duration: 2s;
 }
 
 
@@ -988,8 +988,9 @@ body {
 }
 
 .collaborations {
-    height: 110vh;
-    width: auto;
+    height: auto;
+    width: 100%;
+    padding: 80px 0;
     //min-height: 500px;
     background-image: url('http://localhost/esoes/wp-content/uploads/2019/07/collaboration_fond.png');
     background-attachment: fixed;
@@ -999,12 +1000,13 @@ body {
 
     .div-text-collaborations {
         width: 70%;
+        margin: 0 auto;
     }
 
     .text-collaborations {
         padding: 80px;
-        width: 85%;
-        margin: 140px 80px 130px 165px;
+        width: 100%;
+        margin: 0 auto;
         color: $bg-color-titulo;
         background-color: rgba(200, 189, 167, 0.5);
         //opacity: 0.4;
@@ -1342,9 +1344,9 @@ body {
 
 
 .blog {
-    height: 140vh;
-    width: auto;
-    min-height: 500px;
+    height: auto;
+    width: 100%;
+    padding-bottom: 70px;
     background-color: $marron;
 
     .carousel-control-prev {
@@ -1370,9 +1372,16 @@ body {
         padding: 25px;
         text-align: center;
 
-        p {
-            margin-bottom: 1px;
-            font-weight: 900 !important;
+        p strong {
+            font-weight: 900;
+            font-size: 14px;
+        }
+
+        h5 strong p {
+            width: 80%;
+            font-weight: 100;
+            font-size: 18px;
+            margin: 0 auto;
         }
     }
 
@@ -1428,8 +1437,9 @@ body {
 }
 
 .instagram {
+    position: relative;
     width: auto;
-    margin-top: -70px;
+    background-color: $marron;
 
     @media (min-width: 768px) {
 
@@ -1455,15 +1465,19 @@ body {
         padding: 10px 20px;
         color: #474848;
         font-size: 11px;
-        position: relative;
+        position: absolute;
+        top: calc(50% - 18px);
+        left: calc(50% - 50px);
         z-index: 1;
-        top: 43vh;
-        left: 100vh;
+    }
+
+    #grid-1 {
+        margin: 0;
     }
 }
 
 .footer {
-    background-color: #85554b;
+    background-color: $marron;
     position: relative;
     margin-top: -31px;
     height: 30px;
@@ -1660,7 +1674,7 @@ body {
         .text-collaborations {
             margin: 0 auto;
             padding: 20%;
-            width: 100%;
+            width: 80%;
         }
     }
 
@@ -1679,7 +1693,33 @@ body {
         }
     }
 
-    .instagram .btn-instagram {
-        display: none;
+
+    .footer {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        padding: 25px 0;
+        height: auto;
+        text-align: center;
+
+
+        .div-item-footer {
+            padding: 0;
+            margin: 0 auto;
+            width: 90%;
+        }
+
+        .div-item-der-footer,
+        .div-item-rs,
+        .div-item-copy {
+            text-align: center;
+        }
+
+
+        .item-footer2,
+        .item-footer3,
+        .item-footer4 {
+            left: 0;
+        }
     }
 }
