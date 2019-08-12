@@ -97,6 +97,79 @@ body{
       background-color: transparent;
     }
   }
+
+  #menu-item-144{
+    margin-left: 121px;
+    @media only screen and (max-width: 600px) {
+      margin-left: 0px;
+    }
+  }
+
+  #menu-item-355{
+    position: relative;
+    top: 0px;
+    left: 58vh;
+      &:after{
+        content: "|";
+        color: $bg-color-titulo;
+        position: absolute;
+        top: 5px;
+        left: 30px;
+      }
+
+      @media only screen and (max-width: 600px) {
+        top: 0px;
+        left: 0vh;
+        &:after{
+          content: "";
+        }
+      }
+  }
+  #menu-item-356{
+    position: relative;
+    top: 0px;
+    left: 59vh;
+      &:after{
+        content: "|";
+        color: $bg-color-titulo;
+        position: absolute;
+        top: 5px;
+        left: 32px;
+      }
+      @media only screen and (max-width: 600px) {
+        top: 0px;
+        left: 0vh;
+        &:after{
+          content: "";
+        }
+      }
+  }
+  #menu-item-357{
+    position: relative;
+    top: 0px;
+    left: 60vh;
+    @media only screen and (max-width: 600px) {
+      top: 0px;
+      left: 0vh;
+
+    }
+  }
+    @media only screen and (max-width: 600px) {
+       .navbar-nav{
+         background-color: #c7b4a2;
+         width: 100%;
+         height: 100vh;
+         padding-left: 5vh;
+         z-index: 10000;
+
+         .astm-search-menu{
+           padding-bottom: 20px;
+           top: 0px !important;
+           left: 0px !important;
+         }
+       }
+    }
+
 }
 
 
@@ -233,7 +306,7 @@ body{
 .astm-search-menu{
   position: relative;
   top: 12px;
-  left: 20rem;
+  left: 15rem;
   path{
     fill:$bg-color-titulo;
   }
@@ -285,6 +358,14 @@ body{
   img{
     width: 30%;
   }
+
+  @media only screen and (max-width: 600px) {
+    margin-top: 110px;
+    margin-bottom: 30px;
+    img{
+      width: 70%;
+    }
+  }
 }
 
 .coordinate{
@@ -319,6 +400,15 @@ body{
       margin-top: 10px;
       width: 4% !important;
     }
+
+    @media only screen and (max-width: 600px) {
+      padding-top: 7vh;
+
+      .vl-izq,.vl-der{
+        display: none;
+      }
+    }
+
 }
 
 .vl {
