@@ -43,7 +43,7 @@ get_header();
 
             <div class="grid-item">
               <div class="rings">
-                <a href="#">
+                <a href="<?php the_field( 'url_portfolio_pages' ); ?>">
                   <?php $imagen_portafolio = get_field( 'imagen_portafolio' ); ?>
                   <?php if ( $imagen_portafolio ) { ?>
                   	<img src="<?php echo $imagen_portafolio['url']; ?>" alt="<?php echo $imagen_portafolio['alt']; ?>" />
@@ -119,25 +119,25 @@ get_header();
     <div class="row file-services">
       <div class="col-sm-12 col-md-6 list-izq">
         <ul>
-          <a href="http://esoes-design.com/esoes/services/#">
+          <a href="http://localhost/esoes/services/">
             <li>  <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
               <?php the_field( 'services_1' ); ?>
             <?php endwhile;
             endif; ?></li>
           </a>
-          <a href="http://esoes-design.com/esoes/services/">
+          <a href="http://localhost/esoes/services/">
             <li>  <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
               <?php the_field( 'services_2' ); ?>
             <?php endwhile;
             endif; ?></li>
           </a>
-          <a href="http://esoes-design.com/esoes/services/">
+          <a href="http://localhost/esoes/services/">
             <li>  <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
               <?php the_field( 'services_3' ); ?>
             <?php endwhile;
             endif; ?></li>
           </a>
-          <a href="http://esoes-design.com/esoes/services/">
+          <a href="http://localhost/esoes/services/">
             <li>  <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
               <?php the_field( 'services_4' ); ?>
             <?php endwhile;
@@ -147,25 +147,25 @@ get_header();
       </div>
       <div class="col-sm-12 col-md-6 list-der">
         <ul>
-          <a href="http://esoes-design.com/esoes/services/">
+          <a href="http://localhost/esoes/services/">
             <li>  <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
               <?php the_field( 'services_5' ); ?>
             <?php endwhile;
             endif; ?></li>
           </a>
-          <a href="http://esoes-design.com/esoes/services/">
+          <a href="http://localhost/esoes/services/">
             <li>  <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
               <?php the_field( 'services_6' ); ?>
             <?php endwhile;
             endif; ?></li>
           </a>
-          <a href="http://esoes-design.com/esoes/services/">
+          <a href="http://localhost/esoes/services/">
             <li>  <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
               <?php the_field( 'services_7' ); ?>
             <?php endwhile;
             endif; ?></li>
           </a>
-          <a href="http://esoes-design.com/esoes/services/">
+          <a href="http://localhost/esoes/services/">
             <li>
               <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
               <?php the_field( 'services_8' ); ?>
@@ -178,7 +178,7 @@ get_header();
     <div class="row align-items-center">
       <div class="container div-btn-services">
         <div class="col-12 text-center">
-          <a href="http://esoes-design.com/esoes/services/" class="btn-services"><?php the_field( 'text_boton' ); ?></a>
+          <a href="http://localhost/esoes/services/" class="btn-services"><?php the_field( 'text_boton' ); ?></a>
         </div>
       </div>
     </div>
@@ -197,7 +197,7 @@ get_header();
         endif; ?>
         <div class="row">
           <div class="col-12 div-btn-propos">
-            <a href="http://esoes-design.com/esoes/a-propos/" class="btn-propos">
+            <a href="http://localhost/esoes/a-propos/" class="btn-propos">
               <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
               <?php the_field( 'text_button' ); ?>
             <?php endwhile;
@@ -348,7 +348,7 @@ get_header();
     <div class="row align-items-center">
       <div class="container div-btn-propos text-center">
         <div class="col-12">
-          <a href="http://esoes-design.com/esoes/contact/" class="btn-contact"><?php the_field( 'text_button_contact' ); ?></a>
+          <a href="http://localhost/esoes/contact/" class="btn-contact"><?php the_field( 'text_button_contact' ); ?></a>
         </div>
       </div>
     </div>
