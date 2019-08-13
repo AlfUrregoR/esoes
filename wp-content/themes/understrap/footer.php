@@ -28,7 +28,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<div class="col-md-8 div-item-footer">
 					<div class="row">
 						<div class="col-md-3 item-footer">
-	            <a href="#">C O N T A C T</a>
+	            <a href="http://localhost/esoes/contact/">C O N T A C T</a>
 	          </div>
 						<div class="col-md-3 item-footer2">
 	            <a href="#">S P O N S O R S H I P</a>
