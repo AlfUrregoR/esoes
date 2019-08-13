@@ -286,11 +286,16 @@ body{
 
     .navbar-nav {
         position: absolute;
-        height: 53vh;
-        margin-top: 7px;
         left: 50%;
         transform: translatex(-50%);
 
+        @media only screen and (max-width: 600px) {
+          height: 53vh;
+          margin-top: 7px;
+          img{
+            width: 70%;
+          }
+        }
         .nav-link {
             font-family: $font-text;
 
