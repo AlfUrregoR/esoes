@@ -107,16 +107,20 @@ body{
   }
 
   #menu-item-424-fr{
+    color: $bg-color-titulo;
     position: relative;
-    top: 0px;
-    left: 60vh;
-      /*&:after{
-        content: "|";
+    top: 3px;
+    left: 72vh;
+      &:before{
+        content: " FR |";
         color: $bg-color-titulo;
         position: absolute;
         top: 5px;
-        left: 30px;
-      }*/
+      }
+
+      a{
+        opacity: 0;
+      }
 
       @media only screen and (max-width: 600px) {
         top: 0px;
@@ -127,16 +131,19 @@ body{
       }
   }
   #menu-item-424-en{
+    color: $bg-color-titulo;
     position: relative;
-    top: 0px;
-    left: 59vh;
-    /*  &:after{
-        content: "|";
+    top: 3px;
+    left: 66vh;
+      &:before{
+        content: "EN |";
         color: $bg-color-titulo;
         position: absolute;
         top: 5px;
-        left: 32px;
-      }*/
+      }
+      a{
+        opacity: 0;
+      }
       @media only screen and (max-width: 600px) {
         top: 0px;
         left: 0vh;
@@ -145,10 +152,20 @@ body{
         }
       }
   }
-  #menu-item-357{
+  #menu-item-424-es{
+    color: $bg-color-titulo;
     position: relative;
-    top: 0px;
-    left: 60vh;
+    top: 3px;
+    left:61vh;
+    &:before{
+      content: "ES";
+      color: $bg-color-titulo;
+      position: absolute;
+      top: 5px;
+    }
+    a{
+      opacity: 0;
+    }
     @media only screen and (max-width: 600px) {
       top: 0px;
       left: 0vh;

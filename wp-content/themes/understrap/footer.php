@@ -13,14 +13,7 @@ defined( 'ABSPATH' ) || exit;
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
-<section id="instagram" class="instagram">
-  <div class="container-fluid align-items-center">
-    <div class="row text-center">
-      <a class="btn-instagram" href="#">INSTAGRAM</a>
-			<?php echo do_shortcode( '[enjoyinstagram_mb_grid]' ); ?>
-    </div>
-  </div>
-</section>
+
 
 	<footer class="footer ">
 		<div class="container-fluid">
@@ -100,6 +93,7 @@ $container = get_theme_mod( 'understrap_container_type' );
     $('html, body').animate({scrollTop:0}, '100');
   });
 	$('.search-icon').replaceWith("<img class='img-lupe' src='http://esoes-design.com/wp-content/uploads/2019/07/loupe.png'>");
+
 })( jQuery );
 
   var heightImages = 0;
