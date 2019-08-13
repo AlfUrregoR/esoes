@@ -87,4 +87,7 @@ function my_masonry(){
 	}
 	add_action('wp_footer', 'footer_masonry');
 
-	
+	add_filter('pll_get_post_types', 'mi_pll_con_custom_post_types');
+	function mi_pll_con_custom_post_types($types) {
+	    return array_merge($types, array('portafolio' => 'portafolio'));
+	}

@@ -40,7 +40,7 @@ get_header('int');
       <div class="container h-100">
         <div class="row h-100">
           <div class="col-sm-12 col-md-12 col-lg-6">
-            <img src="http://localhost/esoes/wp-content/uploads/2019/07/about2.png" alt="">
+            <img src="http://esoes-design.com/wp-content/uploads/2019/07/about2.png" alt="">
           </div>
           <div class="col-sm-12 col-md-12 col-lg-6 content-propos-2">
             <h3 class="title-propos-2">Une agence nomade</h3>
@@ -81,7 +81,7 @@ get_header('int');
             </p>
           </div>
           <div class="col-sm-12  col-md-12 col-lg-6 align-items-center">
-            <img src="http://localhost/esoes/wp-content/uploads/2019/07/about3.png" alt="">
+            <img src="http://esoes-design.com/wp-content/uploads/2019/07/about3.png" alt="">
           </div>
         </div>
       </div>

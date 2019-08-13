@@ -248,7 +248,7 @@ get_header('int');
       </div>
       <div class="row div-datos">
         <div class="col-sm-12 col-md-7">
-          <img src="http://localhost/esoes/wp-content/uploads/2019/07/esoes_submark.png" alt="">
+          <img src="http://esoes-design.com/wp-content/uploads/2019/07/esoes_submark.png" alt="">
         </div>
         <div class="col-sm-12 col-md-3 div-name">
           <p>Lucie <br>

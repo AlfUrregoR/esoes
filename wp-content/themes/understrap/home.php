@@ -42,11 +42,11 @@ get_header();
             <div class="grid-item">
               <div class="rings">
                 <a href="#">
-                  <?php $imagen_portafolio_1 = get_field('imagen_portafolio_1'); ?>
-                  <?php if ($imagen_portafolio_1) { ?>
-                    <img src="<?php echo $imagen_portafolio_1['url']; ?>" alt="<?php echo $imagen_portafolio_1['alt']; ?>" />
+                  <?php $imagen_portafolio = get_field( 'imagen_portafolio' ); ?>
+                  <?php if ( $imagen_portafolio ) { ?>
+                  	<img src="<?php echo $imagen_portafolio['url']; ?>" alt="<?php echo $imagen_portafolio['alt']; ?>" />
                   <?php } ?>
-                  <span><?php the_field('title_portafolio_1'); ?></span>
+                  <span><?php the_field( 'title_portafolio_1' ); ?></span>
                 </a>
               </div>
             </div>
@@ -106,7 +106,10 @@ get_header();
       <div class="container">
         <div class="row align-items-center">
           <div class="col-12 text-center">
-            <h3 class="title-services">Services</h3>
+            <h3 class="title-services">  <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+              <?php the_field( 'title_services' ); ?>
+            <?php endwhile;
+            endif; ?></h3>
           </div>
         </div>
       </div>
@@ -114,33 +117,58 @@ get_header();
     <div class="row file-services">
       <div class="col-sm-12 col-md-6 list-izq">
         <ul>
-          <a href="http://localhost/esoes/services/#">
-            <li>Consultation et solution visuelle</li>
+          <a href="http://esoes-design.com/esoes/services/#">
+            <li>  <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+              <?php the_field( 'services_1' ); ?>
+            <?php endwhile;
+            endif; ?></li>
           </a>
-          <a href="http://localhost/esoes/services/">
-            <li>Design graphique</li>
+          <a href="http://esoes-design.com/esoes/services/">
+            <li>  <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+              <?php the_field( 'services_2' ); ?>
+            <?php endwhile;
+            endif; ?></li>
           </a>
-          <a href="http://localhost/esoes/services/">
-            <li>Développement de concept</li>
+          <a href="http://esoes-design.com/esoes/services/">
+            <li>  <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+              <?php the_field( 'services_3' ); ?>
+            <?php endwhile;
+            endif; ?></li>
           </a>
-          <a href="http://localhost/esoes/services/">
-            <li>Identité visuelle</li>
+          <a href="http://esoes-design.com/esoes/services/">
+            <li>  <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+              <?php the_field( 'services_4' ); ?>
+            <?php endwhile;
+            endif; ?></li>
           </a>
         </ul>
       </div>
       <div class="col-sm-12 col-md-6 list-der">
         <ul>
-          <a href="http://localhost/esoes/services/">
-            <li>Direction artistique</li>
+          <a href="http://esoes-design.com/esoes/services/">
+            <li>  <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+              <?php the_field( 'services_5' ); ?>
+            <?php endwhile;
+            endif; ?></li>
           </a>
-          <a href="http://localhost/esoes/services/">
-            <li>Storytelling médias sociaux</li>
+          <a href="http://esoes-design.com/esoes/services/">
+            <li>  <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+              <?php the_field( 'services_6' ); ?>
+            <?php endwhile;
+            endif; ?></li>
           </a>
-          <a href="http://localhost/esoes/services/">
-            <li>Merchandising et concept vitrine</li>
+          <a href="http://esoes-design.com/esoes/services/">
+            <li>  <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+              <?php the_field( 'services_7' ); ?>
+            <?php endwhile;
+            endif; ?></li>
           </a>
-          <a href="http://localhost/esoes/services/">
-            <li>Recherche et inspiration</li>
+          <a href="http://esoes-design.com/esoes/services/">
+            <li>
+              <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+              <?php the_field( 'services_8' ); ?>
+            <?php endwhile;
+            endif; ?></li>
           </a>
         </ul>
       </div>
@@ -148,7 +176,7 @@ get_header();
     <div class="row align-items-center">
       <div class="container div-btn-services">
         <div class="col-12 text-center">
-          <a href="http://localhost/esoes/services/" class="btn-services">Le processus</a>
+          <a href="http://esoes-design.com/esoes/services/" class="btn-services"><?php the_field( 'text_boton' ); ?></a>
         </div>
       </div>
     </div>
@@ -159,16 +187,20 @@ get_header();
   <div class="container-fluid">
     <div class="row">
       <div class="col-sm-12 col-md-6 propos-izq"></div>
-      <div class="col-sm-12 col-md-6 propos-der">
-        <h3>À propos</h3>
-        <h6>Esoes, une agence itinérante.</h6>
-        <p>Bien que ses racines se trouvent en Suisse, Lucie à<br> pour mission personnelle de
-          découvrir le monde et ses<br> différentes cultures. Digitale nomade et exploratrice<br>
-          à pleins temps, sa vision d'un monde éclectique lui<br> permet d'apporter à ses travaux,
-          à travers Esoes, des<br> influences internationales et novatrices.</p>
+      <div class="col-sm-12 col-md-6 propos-der">  <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+        <h3><?php the_field( 'title_propos' ); ?></h3>
+        <h6><?php the_field( 'tag_propos' ); ?></h6>
+        <p><?php the_field( 'text_propos' ); ?></p>
+          <?php endwhile;
+        endif; ?>
         <div class="row">
           <div class="col-12 div-btn-propos">
-            <a href="http://localhost/esoes/a-propos/" class="btn-propos">Lire</a>
+            <a href="http://esoes-design.com/esoes/a-propos/" class="btn-propos">
+              <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+              <?php the_field( 'text_button' ); ?>
+            <?php endwhile;
+          endif; ?>
+            </a>
           </div>
         </div>
       </div>
@@ -181,7 +213,7 @@ get_header();
   <div class="container content-partenaires">
     <div class="row align-items-center text-partenaires">
       <div class="col-12 text-center">
-        <h3>Partenaires</h3>
+        <h3><?php the_field( 'title_partenaires' ); ?></h3>
       </div>
     </div>
 
@@ -255,12 +287,12 @@ get_header();
           <div class="align-items-center div-text-collaborations">
             <div id="text-collaborations" class="col-12 text-center text-collaborations">
               <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-                  <h3><?php the_field('title_collaborations'); ?></h3>
-                  <p><?php the_field('content_collaborations'); ?>
+                  <h3><?php the_field( 'title_collaborations_1' ); ?></h3>
+                  <p><?php the_field( 'content_collaborations_1' ); ?>
                   </p>
                 <?php endwhile;
               endif; ?>
-              <p class="collaborations-name"><?php the_field('tag'); ?></p>
+              <p class="collaborations-name"><?php the_field( 'tag_collaborations_1' ); ?></p>
             </div>
           </div>
         </div>
@@ -268,12 +300,12 @@ get_header();
           <div class="align-items-center div-text-collaborations">
             <div id="text-collaborations" class="col-12 text-center text-collaborations">
               <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-                  <h3><?php the_field('title_collaborations'); ?></h3>
-                  <p><?php the_field('content_collaborations'); ?>
+                  <h3><?php the_field( 'title_collaborations_2' ); ?></h3>
+                  <p><?php the_field( 'content_collaborations_2' ); ?>
                   </p>
                 <?php endwhile;
               endif; ?>
-              <p class="collaborations-name"><?php the_field('tag'); ?></p>
+              <p class="collaborations-name"><?php the_field( 'tag_collaborations_2' ); ?></p>
             </div>
           </div>
         </div>
@@ -281,12 +313,12 @@ get_header();
           <div class="align-items-center div-text-collaborations">
             <div id="text-collaborations" class="col-12 text-center text-collaborations">
               <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-                  <h3><?php the_field('title_collaborations'); ?></h3>
-                  <p><?php the_field('content_collaborations'); ?>
+                  <h3><?php the_field( 'title_collaborations_3' ); ?></h3>
+                  <p><?php the_field( 'content_collaborations_3' ); ?>
                   </p>
                 <?php endwhile;
               endif; ?>
-              <p class="collaborations-name"><?php the_field('tag'); ?></p>
+              <p class="collaborations-name"><?php the_field( 'tag_collaborations_3' ); ?></p>
             </div>
           </div>
         </div>
@@ -307,16 +339,14 @@ get_header();
   <div class="container">
     <div class="row align-items-center">
       <div class="col-12 text-center text-contact">
-        <p>Vous pensez à une collaboration ?<br>
-          Esoes se réjouit d'en apprendre plus sur vos
-          différents projets,<br> envies et inspirations !
+        <p><?php the_field( 'text_contact' ); ?>
         </p>
       </div>
     </div>
     <div class="row align-items-center">
       <div class="container div-btn-propos text-center">
         <div class="col-12">
-          <a href="http://localhost/esoes/contact/" class="btn-contact">Contact</a>
+          <a href="http://esoes-design.com/esoes/contact/" class="btn-contact"><?php the_field( 'text_button_contact' ); ?></a>
         </div>
       </div>
     </div>
@@ -450,7 +480,10 @@ get_header();
     <div class="row align-items-center">
       <div class="container div-btn-blog">
         <div class="col-12 text-center">
-          <a href="#" class="btn-blog">Lire le Blog</a>
+          <a href="#" class="btn-blog"><?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+              <?php the_field( 'text_button_home' ); ?></a>
+            <?php endwhile;
+          endif; ?>
         </div>
       </div>
     </div>

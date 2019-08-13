@@ -181,7 +181,7 @@ get_header('int');
     <div class="container h-100">
       <div class="row h-100 align-items-center">
         <div class="col-sm-12 col-md-12 col-lg-6 contact-image text-center">
-          <img src="http://localhost/esoes/wp-content/uploads/2019/07/esoes_submark.png" alt="">
+          <img src="http://esoes-design.com/wp-content/uploads/2019/07/esoes_submark.png" alt="">
         </div>
         <div class="col-sm-12 col-md-12 col-lg-6 text-contact">
           <h3 class="title-contact">Collaboration</h3>

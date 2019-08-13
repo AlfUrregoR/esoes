@@ -106,17 +106,17 @@ body{
     }
   }
 
-  #menu-item-355{
+  #menu-item-424-fr{
     position: relative;
     top: 0px;
-    left: 58vh;
-      &:after{
+    left: 60vh;
+      /*&:after{
         content: "|";
         color: $bg-color-titulo;
         position: absolute;
         top: 5px;
         left: 30px;
-      }
+      }*/
 
       @media only screen and (max-width: 600px) {
         top: 0px;
@@ -126,17 +126,17 @@ body{
         }
       }
   }
-  #menu-item-356{
+  #menu-item-424-en{
     position: relative;
     top: 0px;
     left: 59vh;
-      &:after{
+    /*  &:after{
         content: "|";
         color: $bg-color-titulo;
         position: absolute;
         top: 5px;
         left: 32px;
-      }
+      }*/
       @media only screen and (max-width: 600px) {
         top: 0px;
         left: 0vh;
