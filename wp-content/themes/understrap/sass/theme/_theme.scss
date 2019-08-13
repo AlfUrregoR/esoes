@@ -11,7 +11,8 @@ html {
 
 #body-const {
 
-    width: auto;
+    width: 100%;
+    padding: 80px 0;
     min-height: 500px;
     background-image: url('http://esoes-design.com/wp-content/uploads/2019/07/WhatsApp-Image-2019-07-23-at-2.51.49-PM.jpeg');
     background-attachment: fixed;
@@ -111,7 +112,8 @@ body {
     margin-top: 0px;
     padding-top: 3vh;
     height: 18vh;
-    width: auto;
+    width: 100%;
+    padding: 80px 0;
     background-color: $marron;
     font-size: 1rem;
 
@@ -798,8 +800,9 @@ body {
 }
 
 #pag-propos {
-    height: 150vh;
-    width: auto;
+    position: relative;
+    width: 100%;
+    padding: 80px 0;
     background-image: url('http://localhost/esoes/wp-content/uploads/2019/07/about_1.png');
     background-attachment: fixed;
     background-size: cover;
@@ -807,8 +810,6 @@ body {
 
     .content-propos-1 {
         color: $antracit;
-        padding-top: 30vh;
-        padding-bottom: 50vh;
 
         h3 {
             display: inline-block;
@@ -833,7 +834,8 @@ body {
 
 #pag-propos-1 {
     height: 110vh;
-    width: auto;
+    width: 100%;
+    padding: 80px 0;
     background-color: $marron;
     background-attachment: fixed;
     background-size: cover;
@@ -945,7 +947,8 @@ body {
 
 .partenaires {
     height: 70vh;
-    width: auto;
+    width: 100%;
+    padding: 80px 0;
     background-image: url('http://localhost/esoes/wp-content/uploads/2019/07/partenaires_fond.png');
     //background-attachment: fixed;
     background-size: cover;
@@ -1279,7 +1282,8 @@ body {
 .blog-int {
     height: auto;
     padding-bottom: 50vh;
-    width: auto;
+    width: 100%;
+    padding: 80px 0;
     min-height: 500px;
     background-color: $bg-color-titulo;
 
@@ -1438,7 +1442,8 @@ body {
 
 .instagram {
     position: relative;
-    width: auto;
+    width: 100%;
+    padding: 80px 0;
     background-color: $marron;
 
     @media (min-width: 768px) {
