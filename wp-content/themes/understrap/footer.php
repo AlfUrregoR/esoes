@@ -16,7 +16,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 <section id="instagram" class="instagram">
   <div class="container-fluid align-items-center">
     <div class="row text-center">
-      <a class="btn-instagram" href="#">INSTAGRAM</a>
+      <a class="btn-instagram" href="https://www.instagram.com/esoes_design/">INSTAGRAM</a>
 			<?php echo do_shortcode( '[enjoyinstagram_mb_grid]' ); ?>
     </div>
   </div>
@@ -75,12 +75,13 @@ $container = get_theme_mod( 'understrap_container_type' );
       if ( action == 1 ) {
         $('.prueba').toggle();
         $("#mostrar-img").css("transform", "rotate(270deg)");
-        $("#div-mostrar").css("padding-top", "40vh");
-        $("#div-mostrar").css("padding-bottom", "10vh");
+        $("#div-mostrar").css("padding-top", "20vh !important");
+        //$("#div-mostrar").css("padding-bottom", "10vh");
           action = 2;
       } else {
         $('.prueba').toggle();
-        $("#div-mostrar").css("padding-top", "10vh");
+        $("#div-mostrar").css("top", "60vh !important");
+				$("#div-mostrar").css("padding-bottom", "20vh");
         $("#mostrar-img").css("transform", "rotate(90deg)");
           action = 1;
       }

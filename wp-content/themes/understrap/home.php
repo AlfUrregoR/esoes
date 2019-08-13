@@ -32,7 +32,7 @@ get_header();
         <?php
         $args = array(
           'post_type' => 'portafolio',
-          'category_name'  => 'Home',
+          'category_name'  => 'Home FR',
           'order' => 'asc'
         );
         $category_posts = new WP_Query($args);
@@ -56,14 +56,14 @@ get_header();
           endwhile;
         else :
           ?>
-          Vaya, no hay entradas.
+
         <?php
         endif;
         ?>
         <?php
         $args = array(
           'post_type' => 'portafolio',
-          'category_name'  => 'Ver mas',
+          'category_name'  => 'Home EN',
           'order' => 'asc'
         );
         $category_posts = new WP_Query($args);
@@ -72,17 +72,80 @@ get_header();
             $category_posts->the_post();
             ?>
 
-        <div class="grid-item">
-          <div class="rings" >
-            <a href="#">
-             <div class="prueba">
-              <?php $imagen_portafolio_1 = get_field( 'imagen_portafolio_1' ); ?>
-              <?php if ( $imagen_portafolio_1 ) { ?>
-                <img src="<?php echo $imagen_portafolio_1['url']; ?>" alt="<?php echo $imagen_portafolio_1['alt']; ?>" />
-              <?php } ?>
-            <span><?php the_field( 'title_portafolio_1' ); ?></span>
+            <div class="grid-item">
+              <div class="rings">
+                <a href="<?php the_field( 'url_portfolio_pages' ); ?>">
+                  <?php $imagen_portafolio = get_field( 'imagen_portafolio' ); ?>
+                  <?php if ( $imagen_portafolio ) { ?>
+                    <img src="<?php echo $imagen_portafolio['url']; ?>" alt="<?php echo $imagen_portafolio['alt']; ?>" />
+                  <?php } ?>
+                  <span><?php the_field( 'title_portafolio_1' ); ?></span>
+                </a>
+              </div>
             </div>
-            </a>
+          <?php
+          endwhile;
+        else :
+          ?>
+
+        <?php
+        endif;
+        ?>
+        <?php
+        $args = array(
+          'post_type' => 'portafolio',
+          'category_name'  => 'Home ES',
+          'order' => 'asc'
+        );
+        $category_posts = new WP_Query($args);
+        if ($category_posts->have_posts()) :
+          while ($category_posts->have_posts()) :
+            $category_posts->the_post();
+            ?>
+
+            <div class="grid-item">
+              <div class="rings">
+                <a href="<?php the_field( 'url_portfolio_pages' ); ?>">
+                  <?php $imagen_portafolio = get_field( 'imagen_portafolio' ); ?>
+                  <?php if ( $imagen_portafolio ) { ?>
+                    <img src="<?php echo $imagen_portafolio['url']; ?>" alt="<?php echo $imagen_portafolio['alt']; ?>" />
+                  <?php } ?>
+                  <span><?php the_field( 'title_portafolio_1' ); ?></span>
+                </a>
+              </div>
+            </div>
+          <?php
+          endwhile;
+        else :
+          ?>
+
+        <?php
+        endif;
+        ?>
+        <?php
+        $args = array(
+          'post_type' => 'portafolio',
+          'category_name'  => 'Ver FR',
+          'order' => 'asc'
+        );
+        $category_posts = new WP_Query($args);
+        if ($category_posts->have_posts()) :
+          while ($category_posts->have_posts()) :
+            $category_posts->the_post();
+            ?>
+
+        <div class="grid-item ">
+          <div class="prueba">
+          <div class="rings" >
+             <a href="<?php the_field( 'url_portfolio_pages' ); ?>">
+               <?php $imagen_portafolio = get_field( 'imagen_portafolio' ); ?>
+               <?php if ( $imagen_portafolio ) { ?>
+                 <img src="<?php echo $imagen_portafolio['url']; ?>" alt="<?php echo $imagen_portafolio['alt']; ?>" />
+               <?php } ?>
+               <span><?php the_field( 'title_portafolio_1' ); ?></span>
+             </a>
+           </div>
+
           </div>
         </div>
 
@@ -90,10 +153,79 @@ get_header();
         endwhile;
       else :
         ?>
-        Vaya, no hay entradas.
       <?php
       endif;
       ?>
+      <?php
+      $args = array(
+        'post_type' => 'portafolio',
+        'category_name'  => 'Ver EN',
+        'order' => 'asc'
+      );
+      $category_posts = new WP_Query($args);
+      if ($category_posts->have_posts()) :
+        while ($category_posts->have_posts()) :
+          $category_posts->the_post();
+          ?>
+
+      <div class="grid-item ">
+        <div class="prueba">
+        <div class="rings" >
+           <a href="<?php the_field( 'url_portfolio_pages' ); ?>">
+             <?php $imagen_portafolio = get_field( 'imagen_portafolio' ); ?>
+             <?php if ( $imagen_portafolio ) { ?>
+               <img src="<?php echo $imagen_portafolio['url']; ?>" alt="<?php echo $imagen_portafolio['alt']; ?>" />
+             <?php } ?>
+             <span><?php the_field( 'title_portafolio_1' ); ?></span>
+           </a>
+         </div>
+
+        </div>
+      </div>
+
+      <?php
+      endwhile;
+    else :
+      ?>
+
+    <?php
+    endif;
+    ?>
+    <?php
+    $args = array(
+      'post_type' => 'portafolio',
+      'category_name'  => 'Ver ES',
+      'order' => 'asc'
+    );
+    $category_posts = new WP_Query($args);
+    if ($category_posts->have_posts()) :
+      while ($category_posts->have_posts()) :
+        $category_posts->the_post();
+        ?>
+
+    <div class="grid-item ">
+      <div class="prueba">
+      <div class="rings" >
+         <a href="<?php the_field( 'url_portfolio_pages' ); ?>">
+           <?php $imagen_portafolio = get_field( 'imagen_portafolio' ); ?>
+           <?php if ( $imagen_portafolio ) { ?>
+             <img src="<?php echo $imagen_portafolio['url']; ?>" alt="<?php echo $imagen_portafolio['alt']; ?>" />
+           <?php } ?>
+           <span><?php the_field( 'title_portafolio_1' ); ?></span>
+         </a>
+       </div>
+
+      </div>
+    </div>
+
+    <?php
+    endwhile;
+  else :
+    ?>
+
+  <?php
+  endif;
+  ?>
   <div id="div-mostrar" class="div-mostrar text-center">
     <a id="mostrar"><img id="mostrar-img" src="http://esoes-design.com/wp-content/uploads/2019/07/flecha.png" alt=""> </a>
   </div>
@@ -364,7 +496,7 @@ get_header();
           <?php
           $args = array(
             'post' => '298',
-            'category_name'  => 'Home',
+            'category_name'  => 'Home FR',
             'order' => 'asc'
           );
           $category_posts = new WP_Query($args);
@@ -393,7 +525,70 @@ get_header();
               </div>
             <?php endwhile; ?>
           <?php endif; ?>
+          <?php
+          $args = array(
+            'post' => '298',
+            'category_name'  => 'Home EN',
+            'order' => 'asc'
+          );
+          $category_posts = new WP_Query($args);
+          if ($category_posts->have_posts()) :
+            while ($category_posts->have_posts()) :
+              $category_posts->the_post();
+              ?>
 
+              <div class="col-sm-12 col-md-5 text-center">
+                <div class="efecto-blog">
+                  <a href="#" class="tag">
+                    <?php // En este ejemplo tendríamos el
+                    ?>
+                    <?php $imagen_blog_1 = get_field('imagen_blog_1'); ?>
+                    <?php if ($imagen_blog_1) { ?>
+                      <img src="<?php echo $imagen_blog_1['url']; ?>" alt="<?php echo $imagen_blog_1['alt']; ?>" />
+                    <?php } ?>
+                    <span>VOYAGE</span>
+                  </a>
+                  <div class="contenido-blog text-center">
+                    <h6 class="paragraph"><?php the_title(); ?></h6>
+                    <h4 class="subtitle"><?php the_field( 'subtitle' ); ?></h4>
+
+                  </div>
+                </div>
+              </div>
+            <?php endwhile; ?>
+          <?php endif; ?>
+          <?php
+          $args = array(
+            'post' => '298',
+            'category_name'  => 'Home ES',
+            'order' => 'asc'
+          );
+          $category_posts = new WP_Query($args);
+          if ($category_posts->have_posts()) :
+            while ($category_posts->have_posts()) :
+              $category_posts->the_post();
+              ?>
+
+              <div class="col-sm-12 col-md-5 text-center">
+                <div class="efecto-blog">
+                  <a href="#" class="tag">
+                    <?php // En este ejemplo tendríamos el
+                    ?>
+                    <?php $imagen_blog_1 = get_field('imagen_blog_1'); ?>
+                    <?php if ($imagen_blog_1) { ?>
+                      <img src="<?php echo $imagen_blog_1['url']; ?>" alt="<?php echo $imagen_blog_1['alt']; ?>" />
+                    <?php } ?>
+                    <span>VOYAGE</span>
+                  </a>
+                  <div class="contenido-blog text-center">
+                    <h6 class="paragraph"><?php the_title(); ?></h6>
+                    <h4 class="subtitle"><?php the_field( 'subtitle' ); ?></h4>
+
+                  </div>
+                </div>
+              </div>
+            <?php endwhile; ?>
+          <?php endif; ?>
         </div>
       </div>
       <div class="carousel-item">
@@ -401,7 +596,7 @@ get_header();
           <?php
           $args = array(
             'post' => '298',
-            'category_name'  => 'Home',
+            'category_name'  => 'Home FR',
             'order' => 'asc'
           );
           $category_posts = new WP_Query($args);
@@ -429,7 +624,70 @@ get_header();
               </div>
             <?php endwhile; ?>
           <?php endif; ?>
+          <?php
+          $args = array(
+            'post' => '298',
+            'category_name'  => 'Home EN',
+            'order' => 'asc'
+          );
+          $category_posts = new WP_Query($args);
+          if ($category_posts->have_posts()) :
+            while ($category_posts->have_posts()) :
+              $category_posts->the_post();
+              ?>
 
+              <div class="col-sm-12 col-md-5 text-center">
+                <div class="efecto-blog">
+                  <a href="#" class="tag">
+                    <?php // En este ejemplo tendríamos el
+                    ?>
+                    <?php $imagen_blog_1 = get_field('imagen_blog_1'); ?>
+                    <?php if ($imagen_blog_1) { ?>
+                      <img src="<?php echo $imagen_blog_1['url']; ?>" alt="<?php echo $imagen_blog_1['alt']; ?>" />
+                    <?php } ?>
+                    <span>VOYAGE</span>
+                  </a>
+                  <div class="contenido-blog text-center">
+                    <h6 class="paragraph"><?php the_title(); ?></h6>
+                    <h4 class="subtitle"><?php the_field( 'subtitle' ); ?></h4>
+
+                  </div>
+                </div>
+              </div>
+            <?php endwhile; ?>
+          <?php endif; ?>
+          <?php
+          $args = array(
+            'post' => '298',
+            'category_name'  => 'Home ES',
+            'order' => 'asc'
+          );
+          $category_posts = new WP_Query($args);
+          if ($category_posts->have_posts()) :
+            while ($category_posts->have_posts()) :
+              $category_posts->the_post();
+              ?>
+
+              <div class="col-sm-12 col-md-5 text-center">
+                <div class="efecto-blog">
+                  <a href="#" class="tag">
+                    <?php // En este ejemplo tendríamos el
+                    ?>
+                    <?php $imagen_blog_1 = get_field('imagen_blog_1'); ?>
+                    <?php if ($imagen_blog_1) { ?>
+                      <img src="<?php echo $imagen_blog_1['url']; ?>" alt="<?php echo $imagen_blog_1['alt']; ?>" />
+                    <?php } ?>
+                    <span>VOYAGE</span>
+                  </a>
+                  <div class="contenido-blog text-center">
+                    <h6 class="paragraph"><?php the_title(); ?></h6>
+                    <h4 class="subtitle"><?php the_field( 'subtitle' ); ?></h4>
+
+                  </div>
+                </div>
+              </div>
+            <?php endwhile; ?>
+          <?php endif; ?>
         </div>
       </div>
       <div class="carousel-item">
@@ -437,7 +695,7 @@ get_header();
           <?php
           $args = array(
             'post' => '298',
-            'category_name'  => 'Home',
+            'category_name'  => 'Home FR',
             'order' => 'asc'
           );
           $category_posts = new WP_Query($args);
@@ -465,7 +723,70 @@ get_header();
               </div>
             <?php endwhile; ?>
           <?php endif; ?>
+          <?php
+          $args = array(
+            'post' => '298',
+            'category_name'  => 'Home EN',
+            'order' => 'asc'
+          );
+          $category_posts = new WP_Query($args);
+          if ($category_posts->have_posts()) :
+            while ($category_posts->have_posts()) :
+              $category_posts->the_post();
+              ?>
 
+              <div class="col-sm-12 col-md-5 text-center">
+                <div class="efecto-blog">
+                  <a href="#" class="tag">
+                    <?php // En este ejemplo tendríamos el
+                    ?>
+                    <?php $imagen_blog_1 = get_field('imagen_blog_1'); ?>
+                    <?php if ($imagen_blog_1) { ?>
+                      <img src="<?php echo $imagen_blog_1['url']; ?>" alt="<?php echo $imagen_blog_1['alt']; ?>" />
+                    <?php } ?>
+                    <span>VOYAGE</span>
+                  </a>
+                  <div class="contenido-blog text-center">
+                    <h6 class="paragraph"><?php the_title(); ?></h6>
+                    <h4 class="subtitle"><?php the_field( 'subtitle' ); ?></h4>
+
+                  </div>
+                </div>
+              </div>
+            <?php endwhile; ?>
+          <?php endif; ?>
+          <?php
+          $args = array(
+            'post' => '298',
+            'category_name'  => 'Home ES',
+            'order' => 'asc'
+          );
+          $category_posts = new WP_Query($args);
+          if ($category_posts->have_posts()) :
+            while ($category_posts->have_posts()) :
+              $category_posts->the_post();
+              ?>
+
+              <div class="col-sm-12 col-md-5 text-center">
+                <div class="efecto-blog">
+                  <a href="#" class="tag">
+                    <?php // En este ejemplo tendríamos el
+                    ?>
+                    <?php $imagen_blog_1 = get_field('imagen_blog_1'); ?>
+                    <?php if ($imagen_blog_1) { ?>
+                      <img src="<?php echo $imagen_blog_1['url']; ?>" alt="<?php echo $imagen_blog_1['alt']; ?>" />
+                    <?php } ?>
+                    <span>VOYAGE</span>
+                  </a>
+                  <div class="contenido-blog text-center">
+                    <h6 class="paragraph"><?php the_title(); ?></h6>
+                    <h4 class="subtitle"><?php the_field( 'subtitle' ); ?></h4>
+
+                  </div>
+                </div>
+              </div>
+            <?php endwhile; ?>
+          <?php endif; ?>
         </div>
       </div>
     </div>

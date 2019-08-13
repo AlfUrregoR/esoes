@@ -41,14 +41,14 @@ get_header('int');
 
     </div>
     <div class="col-7  cont-text">
-      <div class="sticky">
+
         <h6 class="tag"><?php the_field( 'tag' ); ?></h6>
         <h3><?php the_field( 'title' ); ?></h3>
         <h6 class="tag_space"><?php the_field( 'tag2' ); ?></h6>
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
           <?php the_content(); ?>
         <?php endwhile; endif; ?>
-      </div>
+      
     </div>
  </div>
 </div>
