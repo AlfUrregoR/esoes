@@ -13,7 +13,14 @@ defined( 'ABSPATH' ) || exit;
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
-
+<section id="instagram" class="instagram">
+  <div class="container-fluid align-items-center">
+    <div class="row text-center">
+      <a class="btn-instagram" href="#">INSTAGRAM</a>
+			<?php echo do_shortcode( '[enjoyinstagram_mb_grid]' ); ?>
+    </div>
+  </div>
+</section>
 
 	<footer class="footer ">
 		<div class="container-fluid">

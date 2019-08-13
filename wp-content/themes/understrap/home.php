@@ -14,7 +14,9 @@ get_header();
       <div class="row h-100 align-items-center">
         <div class="col-12 text-center">
           <h3 class="title-portafolio"><?php the_title(); ?></h3>
-          <p>Esoes est une agence de design itinérante <br> spécialisée dans les solutions de communications visuelles</p>
+          <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+            <?php the_content(); ?>
+          <?php endwhile; endif; ?>
         </div>
       </div>
     </div>
@@ -490,14 +492,7 @@ get_header();
   </div>
 </section>
 
-<section id="instagram" class="instagram">
-  <div class="container-fluid align-items-center">
-    <div class="row text-center">
-      <a class="btn-instagram" href="#">INSTAGRAM</a>
-			<?php echo do_shortcode( '[enjoyinstagram_mb_grid]' ); ?>
-    </div>
-  </div>
-</section>
+
 <a id="button"><img src="http://esoes-design.com/wp-content/uploads/2019/07/flecha.png" alt=""> </a>
 <!-- Archivo de footer de Wordpress -->
 <?php get_footer(); ?>
