@@ -286,6 +286,7 @@ body{
 
     .navbar-nav {
         position: absolute;
+        height: 58vh;
         left: 50%;
         transform: translatex(-50%);
 
@@ -454,13 +455,13 @@ body{
 }
 
 #portafolio-galeria {
-
+    height: 100vh;
     .prueba {
         display: none;
     }
 
     .div-mostrar {
-        padding-top: 30px;
+        padding-top: 80vh;
         padding-bottom: 30px;
 
         #mostrar {
