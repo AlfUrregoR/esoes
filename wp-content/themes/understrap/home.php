@@ -70,20 +70,19 @@ get_header();
             $category_posts->the_post();
             ?>
 
-            <div class="grid-item">
-
-              <div class="rings">
-                <a href="#">
-                  <div class="prueba">
-                    <?php $imagen_portafolio_1 = get_field('imagen_portafolio_1'); ?>
-                    <?php if ($imagen_portafolio_1) { ?>
-                      <img src="<?php echo $imagen_portafolio_1['url']; ?>" alt="<?php echo $imagen_portafolio_1['alt']; ?>" />
-                    <?php } ?>
-                    <span><?php the_field('title_portafolio_1'); ?></span>
-                </a>
-              </div>
+        <div class="grid-item">
+          <div class="rings" >
+            <a href="#">
+             <div class="prueba">
+              <?php $imagen_portafolio_1 = get_field( 'imagen_portafolio_1' ); ?>
+              <?php if ( $imagen_portafolio_1 ) { ?>
+                <img src="<?php echo $imagen_portafolio_1['url']; ?>" alt="<?php echo $imagen_portafolio_1['alt']; ?>" />
+              <?php } ?>
+            <span><?php the_field( 'title_portafolio_1' ); ?></span>
             </div>
+            </a>
           </div>
+        </div>
 
         <?php
         endwhile;
@@ -93,9 +92,6 @@ get_header();
       <?php
       endif;
       ?>
-
-    </div>
-  </div>
   <div id="div-mostrar" class="div-mostrar text-center">
     <a id="mostrar"><img id="mostrar-img" src="http://esoes-design.com/wp-content/uploads/2019/07/flecha.png" alt=""> </a>
   </div>
@@ -348,7 +344,7 @@ get_header();
               <div class="col-sm-12 col-md-5 text-center">
                 <div class="efecto-blog">
                   <a href="#" class="tag">
-                    <?php // En este ejemplo tendríamos el  
+                    <?php // En este ejemplo tendríamos el
                     ?>
                     <?php $imagen_blog_1 = get_field('imagen_blog_1'); ?>
                     <?php if ($imagen_blog_1) { ?>
@@ -357,8 +353,9 @@ get_header();
                     <span>VOYAGE</span>
                   </a>
                   <div class="contenido-blog text-center">
-                    <p><strong><?php the_title(); ?></strong></p>
-                    <h5><strong><?php the_field('content_blog_1'); ?></strong></h5>
+                    <h6 class="paragraph"><?php the_title(); ?></h6>
+                    <h4 class="subtitle"><?php the_field( 'subtitle' ); ?></h4>
+
                   </div>
                 </div>
               </div>
@@ -384,7 +381,7 @@ get_header();
               <div class="col-sm-12 col-md-5 text-center">
                 <div class="efecto-blog">
                   <a href="#" class="tag">
-                    <?php // En este ejemplo tendríamos el  
+                    <?php // En este ejemplo tendríamos el
                     ?>
                     <?php $imagen_blog_1 = get_field('imagen_blog_1'); ?>
                     <?php if ($imagen_blog_1) { ?>
@@ -393,8 +390,8 @@ get_header();
                     <span>VOYAGE</span>
                   </a>
                   <div class="contenido-blog text-center">
-                    <p><strong><?php the_title(); ?></strong></p>
-                    <h5><strong><?php the_field('content_blog_1'); ?></strong></h5>
+                    <h6 class="paragraph"><?php the_title(); ?></h6>
+                    <h4 class="subtitle"><?php the_field( 'subtitle' ); ?></h4>
                   </div>
                 </div>
               </div>
@@ -420,7 +417,7 @@ get_header();
               <div class="col-sm-12 col-md-5 text-center">
                 <div class="efecto-blog">
                   <a href="#" class="tag">
-                    <?php // En este ejemplo tendríamos el  
+                    <?php // En este ejemplo tendríamos el
                     ?>
                     <?php $imagen_blog_1 = get_field('imagen_blog_1'); ?>
                     <?php if ($imagen_blog_1) { ?>
@@ -429,8 +426,8 @@ get_header();
                     <span>VOYAGE</span>
                   </a>
                   <div class="contenido-blog text-center">
-                    <p><strong><?php the_title(); ?></strong></p>
-                    <h5><strong><?php the_field('content_blog_1'); ?></strong></h5>
+                    <h6 class="paragraph"><?php the_title(); ?></h6>
+                    <h4 class="subtitle"><?php the_field( 'subtitle' ); ?></h4>
                   </div>
                 </div>
               </div>

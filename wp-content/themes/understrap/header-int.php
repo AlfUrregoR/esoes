@@ -36,20 +36,18 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<nav class="navbar navbar-expand-md navbar-dark">
 
 			<?php if ( 'container' == $container ) : ?>
-				<div class="container-fluid div-menu">
 			<?php endif; ?>
 
-						<!-- Your site title as branding in the menu -->
+						<!-- Your site title as branding in the menu-->
 
-								<a class="fb-ic mr-3" role="button" href="https://www.instagram.com/esoes_design/" target="_blank"><img src="http://esoes-design.com/wp-content/uploads/2019/07/Instagram.png" alt=""></a>
-								<a class="fb-fb mr-3" role="button" href="https://www.facebook.com/esoes.design" target="_blank"><img src="http://esoes-design.com/wp-content/uploads/2019/07/facebook.png" alt=""></a>
-								<a class="fb-ic mr-3" role="button" href="https://www.pinterest.ch/esoes_design/" target="_blank"><img src="http://esoes-design.com/wp-content/uploads/2019/07/Pinteres.png" alt=""></a>
-								<div class="row h-100 align-items-center">
-									<div class="col-12 text-center">
+						<div class="row cont-logo">
+							<a class="fb-in" role="button" href="https://www.instagram.com/esoes_design/" target="_blank"><img src="http://esoes-design.com/wp-content/uploads/2019/07/Instagram.png" alt=""></a>
+							<a class="fb-fb" role="button" href="https://www.facebook.com/esoes.design" target="_blank"><img src="http://esoes-design.com/wp-content/uploads/2019/07/facebook.png" alt=""></a>
+							<a class="fb-ic" role="button" href="https://www.pinterest.ch/esoes_design/" target="_blank"><img src="http://esoes-design.com/wp-content/uploads/2019/07/Pinteres.png" alt=""></a>
+							<div class="col-12 text-center">
 										<a class="content-logo" href="http://localhost/esoes"><img src="http://localhost/esoes/wp-content/uploads/2019/07/logo_esoes_beige.png" alt=""></a>
 									</div>
-
-
+						</div>
 
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
 						<span class="navbar-toggler-icon"></span>
@@ -73,5 +71,4 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 			</nav><!-- .site-navigation -->
 		</div><!-- #wrapper-navbar end -->
-	</div>
 </div>

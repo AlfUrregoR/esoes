@@ -39,11 +39,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 					<!-- Your site title as branding in the menu -->
 					<?php if ( ! has_custom_logo() ) { ?>
+						<div class="cont-logo">
+							<?php if ( is_front_page()) : ?>
+								<a class="fb-in" role="button" href="https://www.instagram.com/esoes_design/" target="_blank"><img src="http://esoes-design.com/wp-content/uploads/2019/07/Instagram.png" alt=""></a>
+								<a class="fb-fb" role="button" href="https://www.facebook.com/esoes.design" target="_blank"><img src="http://esoes-design.com/wp-content/uploads/2019/07/facebook.png" alt=""></a>
+								<a class="fb-ic" role="button" href="https://www.pinterest.ch/esoes_design/" target="_blank"><img src="http://esoes-design.com/wp-content/uploads/2019/07/Pinteres.png" alt=""></a>
+						</div>
 
-						<?php if ( is_front_page()) : ?>
-							<a class="fb-ic mr-3" role="button" href="https://www.instagram.com/esoes_design/" target="_blank"><img src="http://esoes-design.com/wp-content/uploads/2019/07/Instagram.png" alt=""></a>
-							<a class="fb-fb mr-3" role="button" href="https://www.facebook.com/esoes.design" target="_blank"><img src="http://esoes-design.com/wp-content/uploads/2019/07/facebook.png" alt=""></a>
-							<a class="fb-ic mr-3" role="button" href="https://www.pinterest.ch/esoes_design/" target="_blank"><img src="http://esoes-design.com/wp-content/uploads/2019/07/Pinteres.png" alt=""></a>
 						<?php else : ?>
 							<a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a>
 						<?php endif; ?>
@@ -71,9 +73,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					)
 				); ?>
 			<?php //if ( 'container' == $container ) : ?>
-				 <div id="enlace-idioma" class="">
-				 	 <a href="#" >Lenguaje</a>
-				 </div>
+		
 
 			</div><!-- .container -->
 			<?php //endif; ?>
