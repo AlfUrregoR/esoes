@@ -27,8 +27,7 @@ get_header();
 <!-- Contenido Seccion portafolio galeria-->
 <section id="portafolio-galeria">
   <div class="container">
-    <div class="row">
-      <div class="grid">
+      <section id="galeria">
         <?php
         $args = array(
           'post_type' => 'portafolio',
@@ -41,7 +40,26 @@ get_header();
             $category_posts->the_post();
             ?>
 
-            <div class="grid-item">
+              <article>
+
+                  <a href="<?php the_field( 'url_portfolio_pages' ); ?>">
+                    <div class="rings">
+                  <figure>
+                      <?php $imagen_portafolio = get_field( 'imagen_portafolio' ); ?>
+                      <?php if ( $imagen_portafolio ) { ?>
+                        <img src="<?php echo $imagen_portafolio['url']; ?>" alt="<?php echo $imagen_portafolio['alt']; ?>" />
+                      <?php } ?>
+                      <span><?php the_field( 'title_portafolio_1' ); ?></span>
+                  </figure>
+
+                </div>
+                </a>
+              </article>
+
+              <!-- [...] Aquí se irían repitiendo más elementos <article> con cursos-->
+
+
+            <!--<div class="grid-item">
               <div class="rings">
                 <a href="<?php the_field( 'url_portfolio_pages' ); ?>">
                   <?php $imagen_portafolio = get_field( 'imagen_portafolio' ); ?>
@@ -51,69 +69,7 @@ get_header();
                   <span><?php the_field( 'title_portafolio_1' ); ?></span>
                 </a>
               </div>
-            </div>
-          <?php
-          endwhile;
-        else :
-          ?>
-
-        <?php
-        endif;
-        ?>
-        <?php
-        $args = array(
-          'post_type' => 'portafolio',
-          'category_name'  => 'Home EN',
-          'order' => 'asc'
-        );
-        $category_posts = new WP_Query($args);
-        if ($category_posts->have_posts()) :
-          while ($category_posts->have_posts()) :
-            $category_posts->the_post();
-            ?>
-
-            <div class="grid-item">
-              <div class="rings">
-                <a href="<?php the_field( 'url_portfolio_pages' ); ?>">
-                  <?php $imagen_portafolio = get_field( 'imagen_portafolio' ); ?>
-                  <?php if ( $imagen_portafolio ) { ?>
-                    <img src="<?php echo $imagen_portafolio['url']; ?>" alt="<?php echo $imagen_portafolio['alt']; ?>" />
-                  <?php } ?>
-                  <span><?php the_field( 'title_portafolio_1' ); ?></span>
-                </a>
-              </div>
-            </div>
-          <?php
-          endwhile;
-        else :
-          ?>
-
-        <?php
-        endif;
-        ?>
-        <?php
-        $args = array(
-          'post_type' => 'portafolio',
-          'category_name'  => 'Home ES',
-          'order' => 'asc'
-        );
-        $category_posts = new WP_Query($args);
-        if ($category_posts->have_posts()) :
-          while ($category_posts->have_posts()) :
-            $category_posts->the_post();
-            ?>
-
-            <div class="grid-item">
-              <div class="rings">
-                <a href="<?php the_field( 'url_portfolio_pages' ); ?>">
-                  <?php $imagen_portafolio = get_field( 'imagen_portafolio' ); ?>
-                  <?php if ( $imagen_portafolio ) { ?>
-                    <img src="<?php echo $imagen_portafolio['url']; ?>" alt="<?php echo $imagen_portafolio['alt']; ?>" />
-                  <?php } ?>
-                  <span><?php the_field( 'title_portafolio_1' ); ?></span>
-                </a>
-              </div>
-            </div>
+            </div>-->
           <?php
           endwhile;
         else :
@@ -134,25 +90,58 @@ get_header();
             $category_posts->the_post();
             ?>
 
-        <div class="grid-item ">
-          <div class="prueba">
-          <div class="rings" >
-             <a href="<?php the_field( 'url_portfolio_pages' ); ?>">
-               <?php $imagen_portafolio = get_field( 'imagen_portafolio' ); ?>
-               <?php if ( $imagen_portafolio ) { ?>
-                 <img src="<?php echo $imagen_portafolio['url']; ?>" alt="<?php echo $imagen_portafolio['alt']; ?>" />
-               <?php } ?>
-               <span><?php the_field( 'title_portafolio_1' ); ?></span>
-             </a>
-           </div>
-
-          </div>
-        </div>
-
+            <article class="prueba">
+              <div class="rings">
+                <a href="<?php the_field( 'url_portfolio_pages' ); ?>">
+                <figure>
+                    <?php $imagen_portafolio = get_field( 'imagen_portafolio' ); ?>
+                    <?php if ( $imagen_portafolio ) { ?>
+                      <img src="<?php echo $imagen_portafolio['url']; ?>" alt="<?php echo $imagen_portafolio['alt']; ?>" />
+                    <?php } ?>
+                    <span><?php the_field( 'title_portafolio_1' ); ?></span>
+                </figure>
+                </a>
+              </div>
+            </article>
         <?php
         endwhile;
       else :
         ?>
+      <?php
+      endif;
+      ?>
+      <?php
+      $args = array(
+        'post_type' => 'portafolio',
+        'category_name'  => 'Home EN',
+        'order' => 'asc'
+      );
+      $category_posts = new WP_Query($args);
+      if ($category_posts->have_posts()) :
+        while ($category_posts->have_posts()) :
+          $category_posts->the_post();
+          ?>
+
+            <article>
+
+                <a href="<?php the_field( 'url_portfolio_pages' ); ?>">
+                  <div class="rings">
+                <figure>
+                    <?php $imagen_portafolio = get_field( 'imagen_portafolio' ); ?>
+                    <?php if ( $imagen_portafolio ) { ?>
+                      <img src="<?php echo $imagen_portafolio['url']; ?>" alt="<?php echo $imagen_portafolio['alt']; ?>" />
+                    <?php } ?>
+                    <span><?php the_field( 'title_portafolio_1' ); ?></span>
+                </figure>
+
+              </div>
+              </a>
+            </article>
+        <?php
+        endwhile;
+      else :
+        ?>
+
       <?php
       endif;
       ?>
@@ -168,21 +157,53 @@ get_header();
           $category_posts->the_post();
           ?>
 
-      <div class="grid-item ">
-        <div class="prueba">
-        <div class="rings" >
-           <a href="<?php the_field( 'url_portfolio_pages' ); ?>">
-             <?php $imagen_portafolio = get_field( 'imagen_portafolio' ); ?>
-             <?php if ( $imagen_portafolio ) { ?>
-               <img src="<?php echo $imagen_portafolio['url']; ?>" alt="<?php echo $imagen_portafolio['alt']; ?>" />
-             <?php } ?>
-             <span><?php the_field( 'title_portafolio_1' ); ?></span>
-           </a>
-         </div>
+          <article class="prueba">
+            <div class="rings">
+              <a href="<?php the_field( 'url_portfolio_pages' ); ?>">
+              <figure>
+                  <?php $imagen_portafolio = get_field( 'imagen_portafolio' ); ?>
+                  <?php if ( $imagen_portafolio ) { ?>
+                    <img src="<?php echo $imagen_portafolio['url']; ?>" alt="<?php echo $imagen_portafolio['alt']; ?>" />
+                  <?php } ?>
+                  <span><?php the_field( 'title_portafolio_1' ); ?></span>
+              </figure>
+              </a>
+            </div>
+          </article>
+      <?php
+      endwhile;
+    else :
+      ?>
+    <?php
+    endif;
+    ?>
+    <?php
+    $args = array(
+      'post_type' => 'portafolio',
+      'category_name'  => 'Home ES',
+      'order' => 'asc'
+    );
+    $category_posts = new WP_Query($args);
+    if ($category_posts->have_posts()) :
+      while ($category_posts->have_posts()) :
+        $category_posts->the_post();
+        ?>
 
-        </div>
-      </div>
+          <article>
 
+              <a href="<?php the_field( 'url_portfolio_pages' ); ?>">
+                <div class="rings">
+              <figure>
+                  <?php $imagen_portafolio = get_field( 'imagen_portafolio' ); ?>
+                  <?php if ( $imagen_portafolio ) { ?>
+                    <img src="<?php echo $imagen_portafolio['url']; ?>" alt="<?php echo $imagen_portafolio['alt']; ?>" />
+                  <?php } ?>
+                  <span><?php the_field( 'title_portafolio_1' ); ?></span>
+              </figure>
+
+            </div>
+            </a>
+          </article>
       <?php
       endwhile;
     else :
@@ -203,29 +224,28 @@ get_header();
         $category_posts->the_post();
         ?>
 
-    <div class="grid-item ">
-      <div class="prueba">
-      <div class="rings" >
-         <a href="<?php the_field( 'url_portfolio_pages' ); ?>">
-           <?php $imagen_portafolio = get_field( 'imagen_portafolio' ); ?>
-           <?php if ( $imagen_portafolio ) { ?>
-             <img src="<?php echo $imagen_portafolio['url']; ?>" alt="<?php echo $imagen_portafolio['alt']; ?>" />
-           <?php } ?>
-           <span><?php the_field( 'title_portafolio_1' ); ?></span>
-         </a>
-       </div>
-
-      </div>
-    </div>
-
+        <article class="prueba">
+          <div class="rings">
+            <a href="<?php the_field( 'url_portfolio_pages' ); ?>">
+            <figure>
+                <?php $imagen_portafolio = get_field( 'imagen_portafolio' ); ?>
+                <?php if ( $imagen_portafolio ) { ?>
+                  <img src="<?php echo $imagen_portafolio['url']; ?>" alt="<?php echo $imagen_portafolio['alt']; ?>" />
+                <?php } ?>
+                <span><?php the_field( 'title_portafolio_1' ); ?></span>
+            </figure>
+            </a>
+          </div>
+        </article>
     <?php
     endwhile;
   else :
     ?>
-
   <?php
   endif;
   ?>
+      </section>
+  </div>
   <div id="div-mostrar" class="div-mostrar text-center">
     <a id="mostrar"><img id="mostrar-img" src="http://esoes-design.com/wp-content/uploads/2019/07/flecha.png" alt=""> </a>
   </div>

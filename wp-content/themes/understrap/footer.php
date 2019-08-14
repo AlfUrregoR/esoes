@@ -75,13 +75,13 @@ $container = get_theme_mod( 'understrap_container_type' );
       if ( action == 1 ) {
         $('.prueba').toggle();
         $("#mostrar-img").css("transform", "rotate(270deg)");
-        $("#div-mostrar").css("padding-top", "20vh !important");
+        //$("#div-mostrar").css("padding-top", "20vh !important");
         //$("#div-mostrar").css("padding-bottom", "10vh");
           action = 2;
       } else {
         $('.prueba').toggle();
-        $("#div-mostrar").css("top", "60vh !important");
-				$("#div-mostrar").css("padding-bottom", "20vh");
+        //$("#div-mostrar").css("top", "60vh !important");
+				//$("#div-mostrar").css("padding-bottom", "20vh");
         $("#mostrar-img").css("transform", "rotate(90deg)");
           action = 1;
       }
