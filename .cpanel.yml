@@ -22,3 +22,5 @@ deployment:
     - /bin/cp wp-signup.php $DEPLOYPATH
     - /bin/cp wp-trackback.php $DEPLOYPATH
     - /bin/cp xmlrpc.php $DEPLOYPATH
+    - /bin/cp .htaccess $DEPLOYPATH
+    - /bin/cp wp-config.php $DEPLOYPATH
