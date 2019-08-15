@@ -54,7 +54,7 @@ body {
     height: 100vh;
     width: 100%;
     min-height: 500px;
-    background-image: url('http://localhost/esoes/wp-content/uploads/2019/07/homepage_esoes-min.jpg');
+    background-image: url('/wp-content/uploads/2019/07/homepage_esoes-min.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -734,7 +734,7 @@ body {
 
         .cont-img {
             height: 420vh;
-            background-image: url('http://localhost/esoes/wp-content/uploads/2019/07/homepage_esoes-min.jpg');
+            background-image: url('/wp-content/uploads/2019/07/homepage_esoes-min.jpg');
             background-attachment: fixed;
             background-size: cover;
             background-position: center;
@@ -756,7 +756,7 @@ body {
 .services {
     width: 100%;
     height: auto;
-    background-image: url(http://localhost/esoes/wp-content/uploads/2019/07/fond_services.png);
+    background-image: url(/wp-content/uploads/2019/07/fond_services.png);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -817,7 +817,7 @@ body {
 }
 
 #pag-services {
-    background-image: url('http://localhost/esoes/wp-content/uploads/2019/07/service1.png');
+    background-image: url('/wp-content/uploads/2019/07/service1.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -902,7 +902,7 @@ body {
 #processus {
     height: auto;
     color: $bg-color-titulo;
-    background-image: url('http://localhost/esoes/wp-content/uploads/2019/07/services2.png');
+    background-image: url('/wp-content/uploads/2019/07/services2.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1146,7 +1146,7 @@ body {
 .propos {
 
     .propos-izq {
-        background-image: url('http://localhost/esoes/wp-content/uploads/2019/07/apropos_home.png');
+        background-image: url('/wp-content/uploads/2019/07/apropos_home.png');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -1190,7 +1190,7 @@ body {
 #pag-propos {
     height: auto;
     width: 100%;
-    background-image: url('http://localhost/esoes/wp-content/uploads/2019/07/about_1.png');
+    background-image: url('/wp-content/uploads/2019/07/about_1.png');
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1343,7 +1343,7 @@ body {
 .partenaires {
     height: 70vh;
     width: 100%;
-    background-image: url('http://localhost/esoes/wp-content/uploads/2019/07/partenaires_fond.png');
+    background-image: url('/wp-content/uploads/2019/07/partenaires_fond.png');
     //background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -1389,7 +1389,7 @@ body {
     width: 100%;
     padding: 80px 0;
     //min-height: 500px;
-    background-image: url('http://localhost/esoes/wp-content/uploads/2019/07/collaboration_fond.png');
+    background-image: url('/wp-content/uploads/2019/07/collaboration_fond.png');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -1466,7 +1466,7 @@ body {
 .pages-contact {
     padding-top: 30vh;
     padding-bottom: 30vh;
-    background-image: url('http://localhost/esoes/wp-content/uploads/2019/08/contact_fundo.png');
+    background-image: url('/wp-content/uploads/2019/08/contact_fundo.png');
     //background-attachment: fixed;
     //background-size: cover;
     //background-position: center;
