@@ -247,7 +247,7 @@ get_header();
       </section>
   </div>
   <div id="div-mostrar" class="div-mostrar text-center">
-    <a id="mostrar"><img id="mostrar-img" src="http://esoes-design.com/wp-content/uploads/2019/07/flecha.png" alt=""> </a>
+    <a id="mostrar"><img id="mostrar-img" src="/wp-content/uploads/2019/07/flecha.png" alt=""> </a>
   </div>
 
 
@@ -480,10 +480,10 @@ get_header();
 
       <!-- Left and right controls -->
       <a class="carousel-control-prev" href="#demo" data-slide="prev">
-        <img src="http://esoes-design.com/wp-content/uploads/2019/07/flecha.png" alt="">
+        <img src="/wp-content/uploads/2019/07/flecha.png" alt="">
       </a>
       <a class="carousel-control-next" href="#demo" data-slide="next">
-        <img src="http://esoes-design.com/wp-content/uploads/2019/07/flecha.png" alt="">
+        <img src="/wp-content/uploads/2019/07/flecha.png" alt="">
       </a>
     </div>
   </div>
@@ -813,10 +813,10 @@ get_header();
 
     <!-- Left and right controls -->
     <a class="carousel-control-prev" href="#demo" data-slide="prev">
-      <img class="img-prev" src="http://esoes-design.com/wp-content/uploads/2019/07/flecha.png" alt="">
+      <img class="img-prev" src="/wp-content/uploads/2019/07/flecha.png" alt="">
     </a>
     <a class="carousel-control-next" href="#demo" data-slide="next">
-      <img class="img-prev" src="http://esoes-design.com/wp-content/uploads/2019/07/flecha.png" alt="">
+      <img class="img-prev" src="/wp-content/uploads/2019/07/flecha.png" alt="">
     </a>
   </div>
   <div class="container">
@@ -834,6 +834,6 @@ get_header();
 </section>
 
 
-<a id="button"><img src="http://esoes-design.com/wp-content/uploads/2019/07/flecha.png" alt=""> </a>
+<a id="button"><img src="/wp-content/uploads/2019/07/flecha.png" alt=""> </a>
 <!-- Archivo de footer de Wordpress -->
 <?php get_footer(); ?>
