@@ -1,0 +1,7 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home1/esoesdes/public_html/
+    - /bin/cp node_modules/ $DEPLOYPATH
+    - /bin/cp wp-content/ $DEPLOYPATH
+    - /bin/cp .htaccess $DEPLOYPATH
