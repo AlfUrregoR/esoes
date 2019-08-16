@@ -55,7 +55,7 @@ add_action('wp_enqueue_scripts', 'load_fonts_new');
 function my_init() {
 		if (!is_admin()) {
 			wp_deregister_script('jquery');
-			wp_register_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js', false, '2.0.3', true);
+			wp_register_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js', false, '2.0.3', true);
 			wp_enqueue_script('jquery');
 		}
 	}

@@ -279,10 +279,10 @@ get_header('int');
 
     <!-- Left and right controls -->
     <a class="carousel-control-prev" href="#demo" data-slide="prev">
-      <img src="http://localhost/esoes/wp-content/uploads/2019/08/flecha.png" alt="">
+      <img src="esoes/wp-content/uploads/2019/08/flecha.png" alt="">
     </a>
     <a class="carousel-control-next" href="#demo" data-slide="next">
-      <img src="http://localhost/esoes/wp-content/uploads/2019/08/flecha.png" alt="">
+      <img src="esoes/wp-content/uploads/2019/08/flecha.png" alt="">
     </a>
   </div>
 </section>
@@ -291,7 +291,7 @@ get_header('int');
     <div class="container h-100">
       <div class="row h-100 align-items-center">
         <div class="col-sm-12 col-md-12 col-lg-6 contact-image text-center">
-          <img src="http://esoes-design.com/wp-content/uploads/2019/07/esoes_submark.png" alt="">
+          <img src="/wp-content/uploads/2019/07/esoes_submark.png" alt="">
         </div>
         <div class="col-sm-12 col-md-12 col-lg-6 text-contact">
           <h3 class="title-contact">  <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -362,6 +362,6 @@ get_header('int');
     </div>
   </div>
 </section>
-<a id="button"><img src="http://localhost/esoes/wp-content/uploads/2019/08/flecha.png" alt=""> </a>
+<a id="button"><img src="esoes/wp-content/uploads/2019/08/flecha.png" alt=""> </a>
 <!-- Archivo de footer de Wordpress -->
 <?php get_footer(); ?>

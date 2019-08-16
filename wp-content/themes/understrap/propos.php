@@ -28,7 +28,11 @@ get_header('int');
       <div class="container h-100">
         <div class="row h-100">
           <div class="col-sm-12 col-md-12 col-lg-6">
+<<<<<<< HEAD
             <img src="http://localhost/esoes/wp-content/uploads/2019/07/about2.png" alt="">
+=======
+            <img src="/wp-content/uploads/2019/07/about2.png" alt="">
+>>>>>>> b2b0acfd21bb097aa4ab7da9edefc6bfb246d0b9
           </div>
           <div class="col-sm-12 col-md-12 col-lg-6 content-propos-2">
             <h3 class="title-propos-2"><?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -69,6 +73,6 @@ get_header('int');
   </section>
 
 
-<a id="button"><img src="http://localhost/esoes/wp-content/uploads/2019/08/flecha.png" alt=""> </a>
+<a id="button"><img src="esoes/wp-content/uploads/2019/08/flecha.png" alt=""> </a>
 <!-- Archivo de footer de Wordpress -->
 <?php get_footer(); ?>

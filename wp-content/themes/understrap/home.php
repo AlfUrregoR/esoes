@@ -247,7 +247,7 @@ get_header();
       </section>
   </div>
   <div id="div-mostrar" class="div-mostrar text-center">
-    <a id="mostrar"><img id="mostrar-img" src="http://localhost/esoes/wp-content/uploads/2019/08/flecha.png" alt=""> </a>
+    <a id="mostrar"><img id="mostrar-img" src="esoes/wp-content/uploads/2019/08/flecha.png" alt=""> </a>
   </div>
 
 
@@ -271,25 +271,25 @@ get_header();
     <div class="row file-services">
       <div class="col-sm-12 col-md-6 list-izq">
         <ul>
-          <a href="http://localhost/esoes/services/">
+          <a href="/services/">
             <li>  <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
               <?php the_field( 'services_1' ); ?>
             <?php endwhile;
             endif; ?></li>
           </a>
-          <a href="http://localhost/esoes/services/">
+          <a href="/services/">
             <li>  <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
               <?php the_field( 'services_2' ); ?>
             <?php endwhile;
             endif; ?></li>
           </a>
-          <a href="http://localhost/esoes/services/">
+          <a href="/services/">
             <li>  <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
               <?php the_field( 'services_3' ); ?>
             <?php endwhile;
             endif; ?></li>
           </a>
-          <a href="http://localhost/esoes/services/">
+          <a href="/services/">
             <li>  <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
               <?php the_field( 'services_4' ); ?>
             <?php endwhile;
@@ -299,25 +299,25 @@ get_header();
       </div>
       <div class="col-sm-12 col-md-6 list-der">
         <ul>
-          <a href="http://localhost/esoes/services/">
+          <a href="/services/">
             <li>  <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
               <?php the_field( 'services_5' ); ?>
             <?php endwhile;
             endif; ?></li>
           </a>
-          <a href="http://localhost/esoes/services/">
+          <a href="/services/">
             <li>  <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
               <?php the_field( 'services_6' ); ?>
             <?php endwhile;
             endif; ?></li>
           </a>
-          <a href="http://localhost/esoes/services/">
+          <a href="/services/">
             <li>  <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
               <?php the_field( 'services_7' ); ?>
             <?php endwhile;
             endif; ?></li>
           </a>
-          <a href="http://localhost/esoes/services/">
+          <a href="/services/">
             <li>
               <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
               <?php the_field( 'services_8' ); ?>
@@ -330,7 +330,7 @@ get_header();
     <div class="row align-items-center">
       <div class="container div-btn-services">
         <div class="col-12 text-center">
-          <a href="http://localhost/esoes/services/" class="btn-services"><?php the_field( 'text_boton' ); ?></a>
+          <a href="/services/" class="btn-services"><?php the_field( 'text_boton' ); ?></a>
         </div>
       </div>
     </div>
@@ -349,7 +349,7 @@ get_header();
         endif; ?>
         <div class="row">
           <div class="col-12 div-btn-propos">
-            <a href="http://localhost/esoes/a-propos/" class="btn-propos">
+            <a href="/a-propos/" class="btn-propos">
               <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
               <?php the_field( 'text_button' ); ?>
             <?php endwhile;
@@ -480,10 +480,10 @@ get_header();
 
       <!-- Left and right controls -->
       <a class="carousel-control-prev" href="#demo" data-slide="prev">
-        <img src="http://localhost/esoes/wp-content/uploads/2019/08/flecha.png" alt="">
+        <img src="esoes/wp-content/uploads/2019/08/flecha.png" alt="">
       </a>
       <a class="carousel-control-next" href="#demo" data-slide="next">
-        <img src="http://localhost/esoes/wp-content/uploads/2019/08/flecha.png" alt="">
+        <img src="esoes/wp-content/uploads/2019/08/flecha.png" alt="">
       </a>
     </div>
   </div>
@@ -500,7 +500,7 @@ get_header();
     <div class="row align-items-center">
       <div class="container div-btn-propos text-center">
         <div class="col-12">
-          <a href="http://localhost/esoes/contact/" class="btn-contact"><?php the_field( 'text_button_contact' ); ?></a>
+          <a href="/contact/" class="btn-contact"><?php the_field( 'text_button_contact' ); ?></a>
         </div>
       </div>
     </div>
@@ -810,10 +810,10 @@ get_header();
 
     <!-- Left and right controls -->
     <a class="carousel-control-prev" href="#demo" data-slide="prev">
-      <img class="img-prev" src="http://localhost/esoes/wp-content/uploads/2019/08/flecha.png" alt="">
+      <img class="img-prev" src="esoes/wp-content/uploads/2019/08/flecha.png" alt="">
     </a>
     <a class="carousel-control-next" href="#demo" data-slide="next">
-      <img class="img-prev" src="http://localhost/esoes/wp-content/uploads/2019/08/flecha.png" alt="">
+      <img class="img-prev" src="esoes/wp-content/uploads/2019/08/flecha.png" alt="">
     </a>
   </div>
   <div class="container">
@@ -831,6 +831,6 @@ get_header();
 </section>
 
 
-<a id="button"><img src="http://localhost/esoes/wp-content/uploads/2019/08/flecha.png" alt=""> </a>
+<a id="button"><img src="esoes/wp-content/uploads/2019/08/flecha.png" alt=""> </a>
 <!-- Archivo de footer de Wordpress -->
 <?php get_footer(); ?>
