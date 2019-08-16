@@ -41,9 +41,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<?php if ( ! has_custom_logo() ) { ?>
 						<div class="cont-logo">
 							<?php if ( is_front_page()) : ?>
-								<a class="fb-in" role="button" href="https://www.instagram.com/esoes_design/" target="_blank"><img src="/esoes/wp-content/uploads/2019/08/Instagram.png" alt=""></a>
-								<a class="fb-fb" role="button" href="https://www.facebook.com/esoes.design" target="_blank"><img src="/esoes/wp-content/uploads/2019/08/facebook.png" alt=""></a>
-								<a class="fb-ic" role="button" href="https://www.pinterest.ch/esoes_design/" target="_blank"><img src="/esoes/wp-content/uploads/2019/08/Pinteres.png" alt=""></a>
+								<a class="fb-in" role="button" href="https://www.instagram.com/esoes_design/" target="_blank"><img src="/wp-content/uploads/2019/08/Instagram.png" alt=""></a>
+								<a class="fb-fb" role="button" href="https://www.facebook.com/esoes.design" target="_blank"><img src="/wp-content/uploads/2019/08/facebook.png" alt=""></a>
+								<a class="fb-ic" role="button" href="https://www.pinterest.ch/esoes_design/" target="_blank"><img src="/wp-content/uploads/2019/08/Pinteres.png" alt=""></a>
 						</div>
 
 						<?php else : ?>
