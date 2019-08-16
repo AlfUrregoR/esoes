@@ -747,7 +747,7 @@ body {
 
         .cont-img {
             height: 420vh;
-            background-image: url('/wp-content/uploads/2019/07/homepage_esoes-min.jpg');
+            background-image: url('esoes/wp-content/uploads/2019/07/homepage_esoes-min.jpg');
             background-attachment: fixed;
             background-size: cover;
             background-position: center;
@@ -769,7 +769,7 @@ body {
 .services {
     width: 100%;
     height: auto;
-    background-image: url(/wp-content/uploads/2019/07/fond_services.png);
+    background-image: url('/wp-content/uploads/2019/07/fond_services.png');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -1962,6 +1962,19 @@ body {
 
     .div-item-der-footer {
         text-align: right;
+
+        .fb-ic{
+          img{
+            width: 7%;
+          }
+        }
+
+        .fb-fb{
+          img{
+            width: 4%;
+          }
+        }
+
         //margin-top: -5px;
     }
 

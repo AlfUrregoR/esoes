@@ -57,6 +57,6 @@ get_header('int');
 </div>
 
 
-<a id="button"><img src="esoes/wp-content/uploads/2019/08/flecha.png" alt=""> </a>
+<a id="button"><img src="/wp-content/uploads/2019/08/flecha.png" alt=""> </a>
 <!-- Archivo de footer de Wordpress -->
 <?php get_footer(); ?>

@@ -247,7 +247,7 @@ get_header();
       </section>
   </div>
   <div id="div-mostrar" class="div-mostrar text-center">
-    <a id="mostrar"><img id="mostrar-img" src="esoes/wp-content/uploads/2019/08/flecha.png" alt=""> </a>
+    <a id="mostrar"><img id="mostrar-img" src="/wp-content/uploads/2019/08/flecha.png" alt=""> </a>
   </div>
 
 
@@ -480,10 +480,10 @@ get_header();
 
       <!-- Left and right controls -->
       <a class="carousel-control-prev" href="#demo" data-slide="prev">
-        <img src="esoes/wp-content/uploads/2019/08/flecha.png" alt="">
+        <img src="/wp-content/uploads/2019/08/flecha.png" alt="">
       </a>
       <a class="carousel-control-next" href="#demo" data-slide="next">
-        <img src="esoes/wp-content/uploads/2019/08/flecha.png" alt="">
+        <img src="/wp-content/uploads/2019/08/flecha.png" alt="">
       </a>
     </div>
   </div>
@@ -810,17 +810,17 @@ get_header();
 
     <!-- Left and right controls -->
     <a class="carousel-control-prev" href="#demo" data-slide="prev">
-      <img class="img-prev" src="esoes/wp-content/uploads/2019/08/flecha.png" alt="">
+      <img class="img-prev" src="/wp-content/uploads/2019/08/flecha.png" alt="">
     </a>
     <a class="carousel-control-next" href="#demo" data-slide="next">
-      <img class="img-prev" src="esoes/wp-content/uploads/2019/08/flecha.png" alt="">
+      <img class="img-prev" src="/wp-content/uploads/2019/08/flecha.png" alt="">
     </a>
   </div>
   <div class="container">
     <div class="row align-items-center">
       <div class="container div-btn-blog">
         <div class="col-12 text-center">
-          <a href="http://localhost/esoes/blog/" class="btn-blog"><?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+          <a href="/blog/" class="btn-blog"><?php if (have_posts()) : while (have_posts()) : the_post(); ?>
               <?php the_field( 'text_button_home' ); ?></a>
             <?php endwhile;
           endif; ?>
@@ -831,6 +831,6 @@ get_header();
 </section>
 
 
-<a id="button"><img src="esoes/wp-content/uploads/2019/08/flecha.png" alt=""> </a>
+<a id="button"><img src="/wp-content/uploads/2019/08/flecha.png" alt=""> </a>
 <!-- Archivo de footer de Wordpress -->
 <?php get_footer(); ?>
