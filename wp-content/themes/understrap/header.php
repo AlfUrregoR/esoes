@@ -85,7 +85,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		  <div class="container h-100">
 		    <div class="row h-100 align-items-center">
 		      <div class="col-12 text-center">
-		        <img src="/esoes/wp-content/uploads/2019/07/logo_esoes.png" alt="">
+		        <img src="/wp-content/uploads/2019/07/logo_esoes.png" alt="">
 		      </div>
 		    </div>
 		  </div>

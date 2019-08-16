@@ -279,7 +279,7 @@ get_header('int');
 
     <!-- Left and right controls -->
     <a class="carousel-control-prev" href="#demo" data-slide="prev">
-      <img src="/esoes//wp-content/uploads/2019/08/flecha.png" alt="">
+      <img src="/wp-content/uploads/2019/08/flecha.png" alt="">
     </a>
     <a class="carousel-control-next" href="#demo" data-slide="next">
       <img src="/wp-content/uploads/2019/08/flecha.png" alt="">
@@ -362,6 +362,6 @@ get_header('int');
     </div>
   </div>
 </section>
-<a id="button"><img src="/esoes//wp-content/uploads/2019/08/flecha.png" alt=""> </a>
+<a id="button"><img src="/wp-content/uploads/2019/08/flecha.png" alt=""> </a>
 <!-- Archivo de footer de Wordpress -->
 <?php get_footer(); ?>
