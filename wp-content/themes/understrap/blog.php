@@ -90,7 +90,7 @@ get_header('int');
     </div>
     <div class="col-12 text-center">
       <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-        <?php the_field( 'content_blog_2' ); ?>
+        <?php the_field( 'content_blog_3' ); ?>
       <?php endwhile; endif; ?>
     </div>
   </div>
@@ -137,6 +137,6 @@ get_header('int');
 </div>
 
 
-<a id="button"><img src="http://esoes-design.com/wp-content/uploads/2019/07/flecha.png" alt=""> </a>
+<a id="button"><img src="http://localhost/esoes/wp-content/uploads/2019/08/flecha.png" alt=""> </a>
 <!-- Archivo de footer de Wordpress -->
 <?php get_footer(); ?>

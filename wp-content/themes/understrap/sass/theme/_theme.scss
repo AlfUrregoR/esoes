@@ -60,6 +60,25 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 
+    .dropdown-menu {
+        background-color: #c7b4a2;
+        border: none;
+        margin: -0.5rem 0 0;
+        min-width: 8rem;
+        border: 0px solid rgba(0, 0, 0, .15);
+        border-radius: .2rem;
+
+        .dropdown-item {
+            color: $bg-color-titulo !important;
+        }
+
+        .dropdown-item:focus,
+        .dropdown-item:hover {
+            color: #fff !important;
+            text-decoration: none;
+            background-color: transparent;
+        }
+    }
     .cont-logo {
         padding-top: 5px;
 
@@ -97,11 +116,9 @@ body {
     }
 
     #menu-item-144{
-      @media only screen and (min-width: 1200px) {
         margin-left: 30vh;
         width: 90px;
 
-      }
     }
     #menu-item-501,#menu-item-525{
       @media only screen and (min-width: 1200px) {

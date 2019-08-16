@@ -247,7 +247,7 @@ get_header();
       </section>
   </div>
   <div id="div-mostrar" class="div-mostrar text-center">
-    <a id="mostrar"><img id="mostrar-img" src="http://esoes-design.com/wp-content/uploads/2019/07/flecha.png" alt=""> </a>
+    <a id="mostrar"><img id="mostrar-img" src="http://localhost/esoes/wp-content/uploads/2019/08/flecha.png" alt=""> </a>
   </div>
 
 
@@ -480,10 +480,10 @@ get_header();
 
       <!-- Left and right controls -->
       <a class="carousel-control-prev" href="#demo" data-slide="prev">
-        <img src="http://esoes-design.com/wp-content/uploads/2019/07/flecha.png" alt="">
+        <img src="http://localhost/esoes/wp-content/uploads/2019/08/flecha.png" alt="">
       </a>
       <a class="carousel-control-next" href="#demo" data-slide="next">
-        <img src="http://esoes-design.com/wp-content/uploads/2019/07/flecha.png" alt="">
+        <img src="http://localhost/esoes/wp-content/uploads/2019/08/flecha.png" alt="">
       </a>
     </div>
   </div>
@@ -527,9 +527,7 @@ get_header();
 
               <div class="col-sm-12 col-md-5 text-center">
                 <div class="efecto-blog">
-                  <a href="#" class="tag">
-                    <?php // En este ejemplo tendríamos el
-                    ?>
+                  <a href="<?php the_permalink(); ?>" class="tag">
                     <?php $imagen_blog_1 = get_field('imagen_blog_1'); ?>
                     <?php if ($imagen_blog_1) { ?>
                       <img src="<?php echo $imagen_blog_1['url']; ?>" alt="<?php echo $imagen_blog_1['alt']; ?>" />
@@ -539,7 +537,6 @@ get_header();
                   <div class="contenido-blog text-center">
                     <h6 class="paragraph"><?php the_title(); ?></h6>
                     <h4 class="subtitle"><?php the_field( 'subtitle' ); ?></h4>
-
                   </div>
                 </div>
               </div>
@@ -813,17 +810,17 @@ get_header();
 
     <!-- Left and right controls -->
     <a class="carousel-control-prev" href="#demo" data-slide="prev">
-      <img class="img-prev" src="http://esoes-design.com/wp-content/uploads/2019/07/flecha.png" alt="">
+      <img class="img-prev" src="http://localhost/esoes/wp-content/uploads/2019/08/flecha.png" alt="">
     </a>
     <a class="carousel-control-next" href="#demo" data-slide="next">
-      <img class="img-prev" src="http://esoes-design.com/wp-content/uploads/2019/07/flecha.png" alt="">
+      <img class="img-prev" src="http://localhost/esoes/wp-content/uploads/2019/08/flecha.png" alt="">
     </a>
   </div>
   <div class="container">
     <div class="row align-items-center">
       <div class="container div-btn-blog">
         <div class="col-12 text-center">
-          <a href="#" class="btn-blog"><?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+          <a href="http://localhost/esoes/blog/" class="btn-blog"><?php if (have_posts()) : while (have_posts()) : the_post(); ?>
               <?php the_field( 'text_button_home' ); ?></a>
             <?php endwhile;
           endif; ?>
@@ -834,6 +831,6 @@ get_header();
 </section>
 
 
-<a id="button"><img src="http://esoes-design.com/wp-content/uploads/2019/07/flecha.png" alt=""> </a>
+<a id="button"><img src="http://localhost/esoes/wp-content/uploads/2019/08/flecha.png" alt=""> </a>
 <!-- Archivo de footer de Wordpress -->
 <?php get_footer(); ?>
