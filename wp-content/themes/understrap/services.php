@@ -99,7 +99,7 @@ get_header('int');
 
     <!-- The slideshow -->
     <div class="carousel-inner">
-      <div class="carousel-item active">
+    <div class="carousel-item active">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-sm-12 col-md-6">
@@ -156,7 +156,7 @@ get_header('int');
           </div>
         </div>
       </div>
-      <div class="carousel-item">
+     <div class="carousel-item">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-sm-12 col-md-6">
@@ -215,7 +215,7 @@ get_header('int');
           </div>
         </div>
       </div>
-      <div class="carousel-item">
+     <div class="carousel-item">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-sm-12 col-md-6 div-livrable">

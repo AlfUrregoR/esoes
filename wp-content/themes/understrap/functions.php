@@ -91,3 +91,7 @@ function my_masonry(){
 	function mi_pll_con_custom_post_types($types) {
 	    return array_merge($types, array('portafolio' => 'portafolio'));
 	}
+
+	register_nav_menus( array(
+		'footer' => __( 'Footer Menu')
+	) );

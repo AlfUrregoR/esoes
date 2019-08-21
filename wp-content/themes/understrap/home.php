@@ -535,8 +535,8 @@ get_header();
                     <span>VOYAGE</span>
                   </a>
                   <div class="contenido-blog text-center">
-                    <h6 class="paragraph"><?php the_title(); ?></h6>
-                    <h4 class="subtitle"><?php the_field( 'subtitle' ); ?></h4>
+                    <h4 class="paragraph"><?php the_title(); ?></h4>
+                    <p class="subtitle"><?php the_field( 'subtitle_home' ); ?></p>
                   </div>
                 </div>
               </div>
@@ -556,7 +556,7 @@ get_header();
 
               <div class="col-sm-12 col-md-5 text-center">
                 <div class="efecto-blog">
-                  <a href="#" class="tag">
+                  <a href="<?php the_permalink(); ?>" class="tag">
                     <?php // En este ejemplo tendríamos el
                     ?>
                     <?php $imagen_blog_1 = get_field('imagen_blog_1'); ?>
@@ -566,9 +566,8 @@ get_header();
                     <span>VOYAGE</span>
                   </a>
                   <div class="contenido-blog text-center">
-                    <h6 class="paragraph"><?php the_title(); ?></h6>
-                    <h4 class="subtitle"><?php the_field( 'subtitle' ); ?></h4>
-
+                    <h4 class="paragraph"><?php the_title(); ?></h4>
+                    <p class="subtitle"><?php the_field( 'subtitle_home' ); ?></p>
                   </div>
                 </div>
               </div>
@@ -588,7 +587,7 @@ get_header();
 
               <div class="col-sm-12 col-md-5 text-center">
                 <div class="efecto-blog">
-                  <a href="#" class="tag">
+                  <a href="<?php the_permalink(); ?>" class="tag">
                     <?php // En este ejemplo tendríamos el
                     ?>
                     <?php $imagen_blog_1 = get_field('imagen_blog_1'); ?>
@@ -598,9 +597,8 @@ get_header();
                     <span>VOYAGE</span>
                   </a>
                   <div class="contenido-blog text-center">
-                    <h6 class="paragraph"><?php the_title(); ?></h6>
-                    <h4 class="subtitle"><?php the_field( 'subtitle' ); ?></h4>
-
+                    <h4 class="paragraph"><?php the_title(); ?></h4>
+                    <p class="subtitle"><?php the_field( 'subtitle_home' ); ?></p>
                   </div>
                 </div>
               </div>
@@ -624,7 +622,7 @@ get_header();
 
               <div class="col-sm-12 col-md-5 text-center">
                 <div class="efecto-blog">
-                  <a href="#" class="tag">
+                  <a href="<?php the_permalink(); ?>" class="tag">
                     <?php // En este ejemplo tendríamos el
                     ?>
                     <?php $imagen_blog_1 = get_field('imagen_blog_1'); ?>
@@ -634,8 +632,8 @@ get_header();
                     <span>VOYAGE</span>
                   </a>
                   <div class="contenido-blog text-center">
-                    <h6 class="paragraph"><?php the_title(); ?></h6>
-                    <h4 class="subtitle"><?php the_field( 'subtitle' ); ?></h4>
+                    <h4 class="paragraph"><?php the_title(); ?></h4>
+                    <p class="subtitle"><?php the_field( 'subtitle_home' ); ?></p>
                   </div>
                 </div>
               </div>
@@ -655,7 +653,7 @@ get_header();
 
               <div class="col-sm-12 col-md-5 text-center">
                 <div class="efecto-blog">
-                  <a href="#" class="tag">
+                  <a href="<?php the_permalink(); ?>" class="tag">
                     <?php // En este ejemplo tendríamos el
                     ?>
                     <?php $imagen_blog_1 = get_field('imagen_blog_1'); ?>
@@ -665,9 +663,8 @@ get_header();
                     <span>VOYAGE</span>
                   </a>
                   <div class="contenido-blog text-center">
-                    <h6 class="paragraph"><?php the_title(); ?></h6>
-                    <h4 class="subtitle"><?php the_field( 'subtitle' ); ?></h4>
-
+                    <h4 class="paragraph"><?php the_title(); ?></h4>
+                    <p class="subtitle"><?php the_field( 'subtitle_home' ); ?></p>
                   </div>
                 </div>
               </div>
@@ -687,7 +684,7 @@ get_header();
 
               <div class="col-sm-12 col-md-5 text-center">
                 <div class="efecto-blog">
-                  <a href="#" class="tag">
+                  <a href="<?php the_permalink(); ?>" class="tag">
                     <?php // En este ejemplo tendríamos el
                     ?>
                     <?php $imagen_blog_1 = get_field('imagen_blog_1'); ?>
@@ -697,9 +694,8 @@ get_header();
                     <span>VOYAGE</span>
                   </a>
                   <div class="contenido-blog text-center">
-                    <h6 class="paragraph"><?php the_title(); ?></h6>
-                    <h4 class="subtitle"><?php the_field( 'subtitle' ); ?></h4>
-
+                    <h4 class="paragraph"><?php the_title(); ?></h4>
+                    <p class="subtitle"><?php the_field( 'subtitle_home' ); ?></p>
                   </div>
                 </div>
               </div>
@@ -723,7 +719,7 @@ get_header();
 
               <div class="col-sm-12 col-md-5 text-center">
                 <div class="efecto-blog">
-                  <a href="#" class="tag">
+                  <a href="<?php the_permalink(); ?>" class="tag">
                     <?php // En este ejemplo tendríamos el
                     ?>
                     <?php $imagen_blog_1 = get_field('imagen_blog_1'); ?>
@@ -733,8 +729,8 @@ get_header();
                     <span>VOYAGE</span>
                   </a>
                   <div class="contenido-blog text-center">
-                    <h6 class="paragraph"><?php the_title(); ?></h6>
-                    <h4 class="subtitle"><?php the_field( 'subtitle' ); ?></h4>
+                    <h4 class="paragraph"><?php the_title(); ?></h4>
+                    <p class="subtitle"><?php the_field( 'subtitle_home' ); ?></p>
                   </div>
                 </div>
               </div>
@@ -754,7 +750,7 @@ get_header();
 
               <div class="col-sm-12 col-md-5 text-center">
                 <div class="efecto-blog">
-                  <a href="#" class="tag">
+                  <a href="<?php the_permalink(); ?>" class="tag">
                     <?php // En este ejemplo tendríamos el
                     ?>
                     <?php $imagen_blog_1 = get_field('imagen_blog_1'); ?>
@@ -764,9 +760,8 @@ get_header();
                     <span>VOYAGE</span>
                   </a>
                   <div class="contenido-blog text-center">
-                    <h6 class="paragraph"><?php the_title(); ?></h6>
-                    <h4 class="subtitle"><?php the_field( 'subtitle' ); ?></h4>
-
+                    <h4 class="paragraph"><?php the_title(); ?></h4>
+                    <p class="subtitle"><?php the_field( 'subtitle_home' ); ?></p>
                   </div>
                 </div>
               </div>
@@ -786,7 +781,7 @@ get_header();
 
               <div class="col-sm-12 col-md-5 text-center">
                 <div class="efecto-blog">
-                  <a href="#" class="tag">
+                  <a href="<?php the_permalink(); ?>" class="tag">
                     <?php // En este ejemplo tendríamos el
                     ?>
                     <?php $imagen_blog_1 = get_field('imagen_blog_1'); ?>
@@ -796,9 +791,8 @@ get_header();
                     <span>VOYAGE</span>
                   </a>
                   <div class="contenido-blog text-center">
-                    <h6 class="paragraph"><?php the_title(); ?></h6>
-                    <h4 class="subtitle"><?php the_field( 'subtitle' ); ?></h4>
-
+                    <h4 class="paragraph"><?php the_title(); ?></h4>
+                    <p class="subtitle"><?php the_field( 'subtitle_home' ); ?></p>
                   </div>
                 </div>
               </div>

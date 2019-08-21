@@ -45,7 +45,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 								<a class="fb-fb" role="button" href="https://www.facebook.com/esoes.design" target="_blank"><img src="/wp-content/uploads/2019/08/facebook.png" alt=""></a>
 								<a class="fb-ic" role="button" href="https://www.pinterest.ch/esoes_design/" target="_blank"><img src="/wp-content/uploads/2019/08/Pinteres.png" alt=""></a>
 						</div>
-
 						<?php else : ?>
 							<a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a>
 						<?php endif; ?>
@@ -85,7 +84,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		  <div class="container h-100">
 		    <div class="row h-100 align-items-center">
 		      <div class="col-12 text-center">
-		        <img src="/wp-content/uploads/2019/07/logo_esoes.png" alt="">
+		        <img src="/esoes/wp-content/uploads/2019/07/logo_esoes.png" alt="">
 		      </div>
 		    </div>
 		  </div>
