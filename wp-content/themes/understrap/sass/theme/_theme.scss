@@ -1330,7 +1330,7 @@ body {
 
 
 #pag-propos-1 {
-    height: 100%;
+    height: 90vh;
     width: 100%;
     background-color: $marron;
     background-attachment: fixed;
@@ -1338,9 +1338,9 @@ body {
     background-repeat: no-repeat;
 
     img {
-        margin-top: -10%;
+        margin-top: -14%;
         margin-left: -55px;
-        height: 120%;
+        height: 110%;
         width: 90%;
     }
 
@@ -1439,8 +1439,33 @@ body {
         }
 
     }
+
+    .text-mov{
+      position: relative;
+      padding-top: 40px;
+      width: 100%;
+      -webkit-animation-name: movimiento-diagonal;
+      -webkit-animation-duration: 3s;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-animation-direction: alternate;/*para que vuelva a su posicion inicial */
+
+      p{
+        color: $marron;
+        font-weight: 700;
+        font-size: 20px !important;
+      }
+    }
 }
 
+@keyframes movimiento-diagonal {
+   from {
+      left: 0px;
+   }
+
+   to {
+      left: 100px;
+   }
+}
 .partenaires {
     height: 70vh;
     width: 100%;
@@ -2148,6 +2173,11 @@ body {
         text-align: left;
         //padding-left: 27px;
         margin-top: 5px;
+
+        span{
+          position: relative;
+          top: 3px;
+        }
     }
 
     .item-footer2 {

@@ -56,8 +56,22 @@ get_header('int');
             <p>
               <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                 <?php the_field( 'text_propos_3' ); ?>
-               <?php endwhile; endif; ?></h3>
+               <?php endwhile; endif; ?>
             </p>
+            <div class="row text-mov">
+              <div class="col-sm-12 col-md-4">
+                <p><?php the_field( 'tag _valeurs' ); ?></p>
+              </div>
+              <div class="col-sm-12 col-md-4">
+                <p><?php the_field( 'tag _valeurs_2' ); ?></p>
+              </div>
+              <div class="col-sm-12 col-md-4">
+                <p><?php the_field( 'tag _valeurs_3' ); ?></p>
+              </div>
+            </div>
+
+
+
           </div>
           <div class="col-sm-12  col-md-12 col-lg-6 align-items-center">
             <img src="/wp-content/uploads/2019/07/about3.png" alt="">

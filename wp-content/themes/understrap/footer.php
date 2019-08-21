@@ -42,7 +42,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		         <a class="fb-ic mr-3" role="button" href="https://www.pinterest.ch/esoes_design/" target="_blank"><img src="/wp-content/uploads/2019/08/Pinteres.png" alt=""></a>
 		        </div>
 		        <div class="col-6 div-item-copy ">
-		          <p>© C O P Y R I G H T 2 0 1 9 | E S O E S </p>
+		          <p><span>&#169;</span>&nbsp;&nbsp;  C O P Y R I G H T 2 0 1 9 | E S O E S </p>
 		        </div>
 		      </div>
 				</div>
