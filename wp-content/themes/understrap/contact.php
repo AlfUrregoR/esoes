@@ -247,10 +247,10 @@ get_header('int');
         </form>
       </div>
       <div class="row div-datos">
-        <div class="col-sm-12 col-md-7">
+        <div class="col-sm-12 col-md-6">
           <img src="/wp-content/uploads/2019/07/esoes_submark.png" alt="">
         </div>
-        <div class="col-sm-12 col-md-3 div-name">
+        <div class="col-sm-12 col-md-6 div-name">
           <p>Lucie Bühlmann <br>
             Founder & Creative Designer <br><br>
             +41 78 606 82 03<br>
