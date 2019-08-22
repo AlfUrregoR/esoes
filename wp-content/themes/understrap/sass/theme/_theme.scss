@@ -904,7 +904,7 @@ body {
 }
 
 #pag-services {
-    background-image: url('/wp-content/uploads/2019/07/service1.png');
+    background-image: url('/esoes/wp-content/uploads/2019/07/service1.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -949,9 +949,14 @@ body {
         }
 
         .list-services {
-            float: right;
-            margin-top: 30vh;
-            padding-left: 15vh;
+          -webkit-animation-name: movimiento-services;
+          -webkit-animation-duration: 3s;
+          -webkit-animation-iteration-count: infinite;
+          -webkit-animation-direction: alternate;/*para que vuelva a su posicion inicial */
+          position: relative;
+          float: right;
+          margin-top: 50vh;
+          padding-left: 15vh;
 
             .fas {
                 font-size: 2px;
@@ -970,7 +975,7 @@ body {
 
             .list-services {
                 float: right;
-                margin-top: 40px;
+                margin-top: 50px;
                 padding-left: 30%;
                 width: 100%;
             }
@@ -986,10 +991,20 @@ body {
     }
 }
 
+@keyframes movimiento-services {
+   from {
+      left: 0px;
+   }
+
+   to {
+      left: 70px;
+   }
+}
+
 #processus {
     height: 100vh;
     color: $bg-color-titulo;
-    background-image: url('/wp-content/uploads/2019/07/services2.png');
+    background-image: url('/esoes/wp-content/uploads/2019/07/services2.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1161,11 +1176,16 @@ body {
     padding-top: 20vh;
     padding-bottom: 30vh;
 
+    .content-title-processus {
+      -webkit-animation-name: movimiento-pourquoi;
+      -webkit-animation-duration: 3s;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-animation-direction: alternate;/*para que vuelva a su posicion inicial */
 
-    h3 {
-        display: inline-block;
-        position: relative;
-        padding-bottom: 15vh;
+      display: inline-block;
+      position: relative;
+      left: 90vh;
+      padding-bottom: 15vh;
 
         &::before {
             content: '';
@@ -1230,6 +1250,16 @@ body {
 
 }
 
+
+@keyframes movimiento-pourquoi {
+   from {
+      top: -10px;
+   }
+
+   to {
+      top: 25px;
+   }
+}
 .propos {
 
     .propos-izq {

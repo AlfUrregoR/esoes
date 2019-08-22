@@ -225,7 +225,7 @@ get_header('int');
             <div class="row">
               <div class="col-sm-12 col-md-12 div-message">
                 <div class="form-group">
-                  <label for="f_message">Mesagge</span></label>
+                  <label for="f_message">Message</span></label>
                   <textarea id="f_message" name="f_message" rows="7" class="form-control" required aria-required="true"><?php echo $f_message;?></textarea>
 
                   <?php //Comprobamos si hay errores en la validación del campo Mensaje
@@ -241,9 +241,9 @@ get_header('int');
                 </div>
               </div>
             </div>
-
+            <button type="submit" id="btn-submit" name="btn-submit" class="btn btn-form">Envoyer</button>
           </div>
-          <button type="submit" id="btn-submit" name="btn-submit" class="btn btn-form">Envoyer</button>
+
         </form>
       </div>
       <div class="row div-datos">
@@ -251,10 +251,10 @@ get_header('int');
           <img src="/wp-content/uploads/2019/07/esoes_submark.png" alt="">
         </div>
         <div class="col-sm-12 col-md-3 div-name">
-          <p>Lucie <br>
-            Graphique Designer Freelance <br><br>
+          <p>Lucie Bühlmann <br>
+            Founder & Creative Designer <br><br>
             +41 78 606 82 03<br>
-            desing.esoes@gmail.com
+            lucie@esoes-design.com
           </p>
         </div>
       </div>
