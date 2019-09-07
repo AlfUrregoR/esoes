@@ -95,3 +95,68 @@ function my_masonry(){
 	register_nav_menus( array(
 		'footer' => __( 'Footer Menu')
 	) );
+
+	if ( ! function_exists('__bp_collaboration') ) {
+
+// Register Custom Post Type
+function __bp_collaboration() {
+
+	$labels = array(
+		'name'                  => 'Collaborations',
+		'singular_name'         => 'Collaboration',
+		'menu_name'             => 'Collaboration',
+		'name_admin_bar'        => 'Collaboration',
+		'archives'              => 'Archivo colaboraciones',
+		'attributes'            => 'Atributos de colaboraciones',
+		'parent_item_colon'     => 'Colaboración padre',
+		'all_items'             => 'Todas las Colaboraciones',
+		'add_new_item'          => 'Añadir nueva colaboración',
+		'add_new'               => 'Añadir nuevo',
+		'new_item'              => 'Nuevo colaboración',
+		'edit_item'             => 'Editar colaboración',
+		'update_item'           => 'Actualizar colaboración',
+		'view_item'             => 'Ver colaboración',
+		'view_items'            => 'Ver colaboraciones',
+		'search_items'          => 'Buscar colaboración',
+		'not_found'             => 'No encontrado',
+		'not_found_in_trash'    => 'No encontrado en la papelera',
+		'featured_image'        => 'Imagen Destacada',
+		'set_featured_image'    => 'Fijar Imagen Destacada',
+		'remove_featured_image' => 'Borrar Imagen Destacada',
+		'use_featured_image'    => 'Usar Imagen Destacada',
+		'insert_into_item'      => 'Insertar en la colaboración',
+		'uploaded_to_this_item' => 'Subido a esta colaboración',
+		'items_list'            => 'Lista de colaboraciones',
+		'items_list_navigation' => 'Navegación de la lista de colaboraciones',
+		'filter_items_list'     => 'Flitrar la lista de colaboraciones',
+	);
+	$args = array(
+		'label'                 => 'Collaboration',
+		'description'           => 'Colaboraciones Description',
+		'labels'                => $labels,
+		'supports'              => array( 'title', 'editor', 'thumbnail', 'custom-fields', 'page-attributes' ),
+		'taxonomies'            => array( 'category', 'post_tag' ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'menu_icon'             => 'dashicons-admin-comments',
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => true,
+		'exclude_from_search'   => true,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'page',
+	);
+	register_post_type( 'collaborations', $args );
+
+}
+add_action( 'init', '__bp_collaboration', 0 );
+
+}
+add_filter('pll_get_post_types', 'mi_pll_con_custom_post_types_collaborations');
+function mi_pll_con_custom_post_types_collaborations($types) {
+		return array_merge($types, array('collaborations' => 'collaborations'));
+}
