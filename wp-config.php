@@ -23,10 +23,10 @@
 define( 'DB_NAME', 'esoes' );
 
 /** MySQL database username */
-define( 'DB_USER', 'admineso' );
+define( 'DB_USER', 'root' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', '90y1BJZIcrNHiQZp' );
+define( 'DB_PASSWORD', '' );
 
 /** MySQL hostname */
 define( 'DB_HOST', 'localhost' );
