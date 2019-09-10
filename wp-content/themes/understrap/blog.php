@@ -60,6 +60,23 @@ get_header('int');
   </div>
 
 </div>
+<div class="container-fluid section4">
+  <div class="row">
+    <div class="col-md-6 img_izq">
+      <?php $imagen_blog_2 = get_field( 'imagen_blog_2' ); ?>
+      <?php if ( $imagen_blog_2 ) { ?>
+        <img src="<?php echo $imagen_blog_2['url']; ?>" alt="<?php echo $imagen_blog_2['alt']; ?>" />
+      <?php } ?>
+    </div>
+    <div class="col-md-6 img_der">
+      <?php $imagen_blog_2 = get_field( 'imagen_blog_2' ); ?>
+      <?php if ( $imagen_blog_2 ) { ?>
+        <img src="<?php echo $imagen_blog_2['url']; ?>" alt="<?php echo $imagen_blog_2['alt']; ?>" />
+      <?php } ?>
+    </div>
+  </div>
+
+</div>
 <a id="button"><img src="/wp-content/uploads/2019/08/flecha.png" alt=""> </a>
 <!-- Archivo de footer de Wordpress -->
 <?php get_footer(); ?>

@@ -7,8 +7,7 @@ get_header('int');
 ?>
 
 <div class="blog-int">
-  <div class="container">
-    <div class="row align-items-center blog-izq">
+  <div class="container-fluid">
       <?php
       $args = array(
                 'post' => '298',
@@ -21,24 +20,29 @@ get_header('int');
              $category_posts->the_post();
       ?>
 
-          <div class="col-sm-12 col-md-6 text-center">
-            <div class="efecto-blog">
-
-                <?php $imagen_blog_1 = get_field( 'imagen_blog_1' ); ?>
-                <?php if ( $imagen_blog_1 ) { ?>
-                  <img src="<?php echo $imagen_blog_1['url']; ?>" alt="<?php echo $imagen_blog_1['alt']; ?>" />
-                <?php } ?>
-              <div class="contenido-blog text-center">
-                <h6 class="paragraph"><?php the_title(); ?></h6>
-                <h4 class="subtitle"><?php the_field( 'subtitle' ); ?></h4>
-                <div class="container div-btn-blog">
-                  <div class="col-12 text-center">
-                    <a href="<?php the_permalink(); ?>" class="btn-blog">Lire</a>
-                  </div>
-                </div>
-              </div>
+      <div class="row section_blog">
+        <div class="col-md-6 blog_fondo">
+          <p>Voyage</p>
+          <h2 class="title"><?php the_title(); ?></h2>
+          <div class="sep-vert">
+          </div>
+          <p class="subtitle"><?php the_field( 'content_blog_1' ); ?></p>
+          <div class="container div-btn-blog">
+            <div class="col-12">
+              <a href="<?php the_permalink(); ?>">
+                Lire l'article
+              </a>
             </div>
           </div>
+        </div>
+        <div class="blog_text">
+          <?php $imagen_blog_3 = get_field( 'imagen_blog_3' ); ?>
+          <?php if ( $imagen_blog_3 ) { ?>
+            <img src="<?php echo $imagen_blog_3['url']; ?>" alt="<?php echo $imagen_blog_3['alt']; ?>" />
+          <?php } ?>
+        </div>
+      </div>
+
         <?php endwhile; ?>
       <?php endif; ?>
       <?php
@@ -53,24 +57,29 @@ get_header('int');
              $category_posts->the_post();
       ?>
 
-          <div class="col-sm-12 col-md-6 text-center">
-            <div class="efecto-blog">
-
-                <?php $imagen_blog_1 = get_field( 'imagen_blog_1' ); ?>
-                <?php if ( $imagen_blog_1 ) { ?>
-                  <img src="<?php echo $imagen_blog_1['url']; ?>" alt="<?php echo $imagen_blog_1['alt']; ?>" />
-                <?php } ?>
-              <div class="contenido-blog text-center">
-                <h6 class="paragraph"><?php the_title(); ?></h6>
-                <h4 class="subtitle"><?php the_field( 'subtitle' ); ?></h4>
-                <div class="container div-btn-blog">
-                  <div class="col-12 text-center">
-                    <a href="<?php the_permalink(); ?>" class="btn-blog">Lire</a>
-                  </div>
-                </div>
-              </div>
+      <div class="row section_blog">
+        <div class="col-md-6 blog_fondo">
+          <p>Voyage</p>
+          <h2 class="title"><?php the_title(); ?></h2>
+          <div class="sep-vert">
+          </div>
+          <p class="subtitle"><?php the_field( 'content_blog_1' ); ?></p>
+          <div class="container div-btn-blog">
+            <div class="col-12">
+              <a href="<?php the_permalink(); ?>">
+                Read the article
+              </a>
             </div>
           </div>
+        </div>
+        <div class="blog_text">
+          <?php $imagen_blog_3 = get_field( 'imagen_blog_3' ); ?>
+          <?php if ( $imagen_blog_3 ) { ?>
+            <img src="<?php echo $imagen_blog_3['url']; ?>" alt="<?php echo $imagen_blog_3['alt']; ?>" />
+          <?php } ?>
+        </div>
+      </div>
+
         <?php endwhile; ?>
       <?php endif; ?>
       <?php
@@ -85,32 +94,34 @@ get_header('int');
              $category_posts->the_post();
       ?>
 
-          <div class="col-sm-12 col-md-6 text-center">
-            <div class="efecto-blog">
-
-                <?php $imagen_blog_1 = get_field( 'imagen_blog_1' ); ?>
-                <?php if ( $imagen_blog_1 ) { ?>
-                  <img src="<?php echo $imagen_blog_1['url']; ?>" alt="<?php echo $imagen_blog_1['alt']; ?>" />
-                <?php } ?>
-              <div class="contenido-blog text-center">
-                <h6 class="paragraph"><?php the_title(); ?></h6>
-                <h4 class="subtitle"><?php the_field( 'subtitle' ); ?></h4>
-                <div class="container div-btn-blog">
-                  <div class="col-12 text-center">
-                    <a href="<?php the_permalink(); ?>" class="btn-blog">Lire</a>
-                  </div>
-                </div>
-              </div>
+      <div class="row section_blog">
+        <div class="col-md-6 blog_fondo">
+          <p>Voyage</p>
+          <h2 class="title"><?php the_title(); ?></h2>
+          <div class="sep-vert">
+          </div>
+          <p class="subtitle"><?php the_field( 'content_blog_1' ); ?></p>
+          <div class="container div-btn-blog">
+            <div class="col-12">
+              <a href="<?php the_permalink(); ?>">
+                Lee el articulo
+              </a>
             </div>
           </div>
+        </div>
+        <div class="blog_text">
+          <?php $imagen_blog_3 = get_field( 'imagen_blog_3' ); ?>
+          <?php if ( $imagen_blog_3 ) { ?>
+            <img src="<?php echo $imagen_blog_3['url']; ?>" alt="<?php echo $imagen_blog_3['alt']; ?>" />
+          <?php } ?>
+        </div>
+      </div>
+
         <?php endwhile; ?>
       <?php endif; ?>
-    </div>
-
-    </div>
   </div>
-
 </div>
+
 <a id="button"><img src="/wp-content/uploads/2019/08/flecha.png" alt=""> </a>
 <!-- Archivo de footer de Wordpress -->
 <?php get_footer(); ?>

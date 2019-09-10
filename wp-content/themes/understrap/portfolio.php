@@ -40,7 +40,6 @@ get_header('int');
         <?php if ( $image_portfolio_7 ) { ?>
         	<img src="<?php echo $image_portfolio_7['url']; ?>" alt="<?php echo $image_portfolio_7['alt']; ?>" />
         <?php } ?>
-
       </div>
       <div class="col-7  cont-text">
 
