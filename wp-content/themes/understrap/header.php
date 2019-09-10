@@ -38,21 +38,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<?php endif; ?>
 
 					<!-- Your site title as branding in the menu -->
-					<?php if ( ! has_custom_logo() ) { ?>
 						<div class="cont-logo">
-							<?php if ( is_front_page()) : ?>
 								<a class="fb-in" role="button" href="https://www.instagram.com/esoes_design/" target="_blank"><img src="/wp-content/uploads/2019/08/Instagram.png" alt=""></a>
 								<a class="fb-fb" role="button" href="https://www.facebook.com/esoes.design" target="_blank"><img src="/wp-content/uploads/2019/08/facebook.png" alt=""></a>
 								<a class="fb-ic" role="button" href="https://www.pinterest.ch/esoes_design/" target="_blank"><img src="/wp-content/uploads/2019/08/Pinteres.png" alt=""></a>
 						</div>
-						<?php else : ?>
-							<a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a>
-						<?php endif; ?>
 
-
-					<?php } else {
-						the_custom_logo();
-					} ?><!-- end custom logo -->
 
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
 					<span class="navbar-toggler-icon"></span>
