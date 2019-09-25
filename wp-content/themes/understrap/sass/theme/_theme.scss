@@ -329,28 +329,77 @@ body {
 
 .masthead_int {
     .navbar {
-        -webkit-box-shadow: 2px 2px 5px $marron;
-        -moz-box-shadow: 2px 2px 5px $marron;
-        filter: shadow(color=#999999, direction=135, strength=2);
         width: 100%;
-        /* hacemos que la cabecera ocupe el ancho completo de la página */
-        left: 0;
-        /* Posicionamos la cabecera al lado izquierdo */
-        top: 0px;
-        /* Posicionamos la cabecera pegada arriba */
         position: fixed;
-        /* Hacemos que la cabecera tenga una posición fija */
-        height: 18vh;
-        padding-top: 5vh;
+        height: auto;
         background-color: $marron;
+        text-transform: uppercase;
+        z-index: 1;
+
+        .cont-logo {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            padding: 0 10px;
+
+            .logo-int {
+                position: absolute;
+                margin-left: calc(50% - 40px);
+                z-index: 1;
+
+                .content-logo {
+                    img {
+                        width: 100px;
+                    }
+                }
+            }
+
+            @media only screen and (max-width: 767px) {
+                position: relative;
+                width: 80%;
+
+                .logo-int {
+                 
+                    .content-logo {
+                        img {
+                            top: 0;
+                            left: 0;
+                        }
+                    }
+                }
+            }
+
+
+
+            .fb-in,
+            .fb-fb,
+            .fb-ic {
+                width: 15px;
+                height: 15px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                display: inline-block;
+            }
+
+            .fb-in {
+                background-image: url('./../../../uploads/2019/08/Instagram.png');
+            }
+
+            .fb-fb {
+                background-image: url('./../../../uploads/2019/08/facebook.png');
+            }
+
+            .fb-ic {
+                background-image: url('./../../../uploads/2019/08/Pinteres.png');
+            }
+
+
+        }
     }
 
-    #menu-item-435,
-    #menu-item-496,
-    #menu-item-521,
-    #menu-item-678 {
-        text-transform: uppercase;
-    }
 
     .dropdown-menu {
         background-color: $marron;
@@ -414,7 +463,7 @@ body {
                 fill: $bg-color-titulo;
             }
 
-            height: 21vh;
+            padding: 20px;
 
             .navbar-nav {
                 background-color: $marron;
@@ -452,34 +501,7 @@ body {
     #menu-item-518,
     #menu-item-678 {
         a {
-            margin-right: 24vh;
-        }
-
-    }
-
-    .cont-logo {
-        .fb-in {
-            margin-top: 4vh;
-            width: 18px;
-            height: 24px;
-            margin-left: 10px;
-
-            img {
-                height: 60%;
-                width: 70%;
-            }
-        }
-
-        .fb-fb,
-        .fb-ic {
-            margin-top: 4vh;
-            width: 18px;
-            height: 24px;
-            margin-left: 10px;
-
-            img {
-                height: 60%;
-            }
+            margin-right: 120px;
         }
 
     }
