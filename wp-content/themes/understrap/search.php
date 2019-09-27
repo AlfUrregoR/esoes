@@ -8,14 +8,14 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-get_header();
+get_header('int');
 
 $container = get_theme_mod( 'understrap_container_type' );
 
 ?>
 
 <div class="wrapper" id="search-wrapper">
-
+<div class="search_title">
 	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
 
 		<div class="row">
@@ -23,22 +23,20 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<!-- Do the left sidebar check and opens the primary div -->
 			<?php get_template_part( 'global-templates/left-sidebar-check' ); ?>
 
-			<main class="site-main" id="main">
+			<main class="site-main search" id="main">
 
 				<?php if ( have_posts() ) : ?>
 
 					<header class="page-header">
-
-							<h1 class="page-title">
-								<?php
-								printf(
-									/* translators: %s: query term */
-									esc_html__( 'Search Results for: %s', 'understrap' ),
-									'<span>' . get_search_query() . '</span>'
-								);
-								?>
-							</h1>
-
+						<h1 class="page-title">
+							<?php
+							printf(
+								/* translators: %s: query term */
+								esc_html__( 'Search Results for: %s', 'understrap' ),
+								'<span>' . get_search_query() . '</span>'
+							);
+							?>
+						</h1>	
 					</header><!-- .page-header -->
 
 					<?php /* Start the Loop */ ?>
@@ -72,7 +70,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</div><!-- .row -->
 
 	</div><!-- #content -->
-
+</div>
 </div><!-- #search-wrapper -->
 
 <?php get_footer(); ?>

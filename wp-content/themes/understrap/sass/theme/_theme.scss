@@ -2397,7 +2397,33 @@ body {
     width: 19px;
 }
 
-
+.search{
+    margin-top: 15px;
+    margin-bottom: 5vh;
+    .search_title{
+        .page-title{
+            display:none;
+        }
+    }
+    article{
+        margin-top: 40px;
+    }
+    .entry-title{
+        a{
+         color:$antracit !important;
+         text-decoration: none;
+        }
+    }
+    .entry-summary{
+        .btn-secondary{
+            background-color:$marron !important;
+            width: 10% !important;
+        }
+    }
+    .entry-footer{
+        display: none;
+    }
+}
 
 
 

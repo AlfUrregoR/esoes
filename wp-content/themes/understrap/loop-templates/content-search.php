@@ -34,7 +34,18 @@ defined( 'ABSPATH' ) || exit;
 
 	<div class="entry-summary">
 
-		<?php the_excerpt(); ?>
+		<?php 
+		$limit='40';
+		 $excerpt = explode(' ', the_excerpt(), $limit);
+		 if (count($excerpt)>=$limit) {
+		 array_pop($excerpt);
+		 $excerpt = implode(" ",$excerpt).'...';
+		 } else {
+		 $excerpt = implode(" ",$excerpt);
+		 }
+		 $excerpt = preg_replace('`[[^]]*]`','',$excerpt);
+		 return $excerpt;
+		 ?>
 
 	</div><!-- .entry-summary -->
 

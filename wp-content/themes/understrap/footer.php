@@ -94,7 +94,7 @@ $container = get_theme_mod( 'understrap_container_type' );
     $('html, body').animate({scrollTop:0}, '100');
   });
 	$('.search-icon').replaceWith("<img class='img-lupe' src='/wp-content/uploads/2019/08/loupe.png'>");
-
+  $(".understrap-read-more-link").text("Lire");
 })( jQuery );
 
   var heightImages = 0;

@@ -4,8 +4,8 @@ Donate link: https://www.google.com/url?q=https%3A%2F%2Fwww.paypal.com%2Fcgi-bin
 Tags: Instagram, Instagram feed, Instagram Widget, Instagram grid, Instagram carousel, Embed Instagram, Embed Instagram feed, Instagram feed on website, responsive carousel, WordPress carousel, Instagram gallery, Instagram WordPress, Instagram pictures
 Requires at least: 4.0
 Tested up to: 5.2
-Version: 4.0.6
-Stable tag: 4.0.6
+Version: 4.0.7
+Stable tag: 4.0.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -200,6 +200,8 @@ In the Setting section yon can customize grid and/or Carousel view
 
 == Changelog ==
 
+= 4.0.7 =
+* Removed useless param scope from authorization url
 = 4.0.6 =
 * Fix missing overlay icons
 = 4.0.5 =
