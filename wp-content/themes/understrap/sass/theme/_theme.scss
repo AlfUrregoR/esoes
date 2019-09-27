@@ -289,6 +289,31 @@ body {
 }
 
 .masthead_int {
+  .is-search-input{
+    background-color: transparent;
+    border: 0px;
+    border-bottom: 1px solid $bg-color-titulo;
+    position: relative;
+    top: -6vh;
+    left: 54vh;
+
+    &:focus{
+      outline:none !important;
+      outline-width: 0 !important;
+      box-shadow: none;
+      -moz-box-shadow: none;
+      -webkit-box-shadow: none;
+    }
+
+    .is-customize-link{
+      display: none !important;
+    }
+    .is-ajax-search-result{
+      width: 300px!important;
+      left: 160vh !important;
+      background: transparent !important;
+    }
+  }
     .navbar {
       -webkit-box-shadow: 2px 2px 5px $marron;
        -moz-box-shadow: 2px 2px 5px $marron;
@@ -1967,10 +1992,43 @@ body {
 }
 .section4{
   height: 100vh !important;
+  background-image: url('/esoes/wp-content/uploads/2019/09/fundo_beige.png');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
   .img_izq{
     position: relative;
     top: -15vh;
+    left: 30px;
+    padding: 5vh;
+  }
+  .img_der{
+    position: relative;
+    top: 20vh;
+    padding: 3vh;
+  }
+  img{
+    -webkit-box-shadow: 2px 5px 5px $antracit;
+    -moz-box-shadow: 2px 5px 5px $antracit;
+    filter: shadow(color=#999999, direction=135, strength=2);
+    width: 95%;
+  }
+}
+
+.section5{
+  height: 100vh !important;
+  background-image: url('/esoes/wp-content/uploads/2019/09/fundo_maron.png');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  .img_izq{
+    color: $bg-color-titulo;
+    position: relative;
+    top: 15vh;
     left: 30px;
     padding: 5vh;
   }

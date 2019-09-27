@@ -62,20 +62,29 @@ get_header('int');
 </div>
 <div class="container-fluid section4">
   <div class="row">
-    <div class="col-md-6 img_izq">
-      <?php $imagen_blog_2 = get_field( 'imagen_blog_2' ); ?>
-      <?php if ( $imagen_blog_2 ) { ?>
-        <img src="<?php echo $imagen_blog_2['url']; ?>" alt="<?php echo $imagen_blog_2['alt']; ?>" />
+    <div class="col-md-7 img_izq">
+      <?php $imagen_blog_5 = get_field( 'imagen_blog_5' ); ?>
+      <?php if ( $imagen_blog_5 ) { ?>
+      	<img src="<?php echo $imagen_blog_5['url']; ?>" alt="<?php echo $imagen_blog_5['alt']; ?>" />
       <?php } ?>
     </div>
-    <div class="col-md-6 img_der">
-      <?php $imagen_blog_2 = get_field( 'imagen_blog_2' ); ?>
-      <?php if ( $imagen_blog_2 ) { ?>
-        <img src="<?php echo $imagen_blog_2['url']; ?>" alt="<?php echo $imagen_blog_2['alt']; ?>" />
+    <div class="col-md-5 img_der">
+      <?php the_field( 'content_blog_5' ); ?>
+    </div>
+  </div>
+</div>
+<div class="container-fluid section5">
+  <div class="row">
+    <div class="col-md-5 img_izq">
+        <?php the_field( 'content_blog_5' ); ?>
+    </div>
+    <div class="col-md-7 img_der">
+      <?php $imagen_blog_4 = get_field( 'imagen_blog_4' ); ?>
+      <?php if ( $imagen_blog_4 ) { ?>
+      	<img src="<?php echo $imagen_blog_4['url']; ?>" alt="<?php echo $imagen_blog_4['alt']; ?>" />
       <?php } ?>
     </div>
   </div>
-
 </div>
 <a id="button"><img src="/wp-content/uploads/2019/08/flecha.png" alt=""> </a>
 <!-- Archivo de footer de Wordpress -->
