@@ -118,7 +118,7 @@ body {
             background-image: url('./../../../uploads/2019/08/Pinteres.png');
         }
     }
-
+    
 
     #menu-item-424-fr,
     #menu-item-523-fr,
@@ -333,8 +333,9 @@ body {
     border: 0px;
     border-bottom: 1px solid $bg-color-titulo;
     position: relative;
-    top: -6vh;
-    left: 54vh;
+    top: -5vh;
+    right: -6vh !important;
+    left: -3vh;
 
     &:focus{
       outline:none !important;
@@ -564,6 +565,7 @@ body {
 .is-ajax-search-result {
     width: 250px !important;
     background: transparent !important;
+    top: 12vh !important;
 }
 
 .content-logo {
@@ -611,6 +613,7 @@ body {
             font-family: $font-text;
             font-size: 14px !important;
             font-weight: 900;
+            text-transform: uppercase;
 
             &:after {
                 display: none;
@@ -658,7 +661,9 @@ body {
     .is-edit-link {
         display: none;
     }
-
+    .is-customize-link{
+        display: none;
+    }
     @media only screen and (max-width: 767px) {
         position: fixed;
         width: 100%;
@@ -2159,7 +2164,7 @@ body {
 .blog-int {
     height: auto;
     width: 60%;
-    background-image: url('/wp-content/uploads/2019/09/background.png');
+    background-image: url('./../../../uploads/2019/09/background.png');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -2388,7 +2393,7 @@ body {
 
 #footer-menu {
     margin-left: -35px;
-
+    text-transform: uppercase;
     li {
         display: inline-block;
         margin-left: 15px;
@@ -2477,6 +2482,7 @@ body {
     .item-footer4 {
         left: -40%;
     }
+
 }
 
 #button {
