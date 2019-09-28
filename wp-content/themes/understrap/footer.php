@@ -18,8 +18,8 @@ $container = get_theme_mod( 'understrap_container_type' );
     <div class="row text-center">
       <a class="btn-instagram" href="https://www.instagram.com/esoes_design/">INSTAGRAM</a>
       <?php echo do_shortcode( '[enjoyinstagram_mb_grid]' );
-      global $wp_embed;
-      echo $wp_embed->run_shortcode('[enjoyinstagram_mb_grid]');
+      //global $wp_embed;
+       //$wp_embed->run_shortcode('[enjoyinstagram_mb_grid]');
        ?>
     </div>
   </div>
