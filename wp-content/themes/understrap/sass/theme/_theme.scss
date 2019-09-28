@@ -9,6 +9,7 @@ $font-text: 'Source Sans Pro';
 body {
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
 
     h1,
     h2,
@@ -48,12 +49,11 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
-
     display: flex;
     justify-content: center;
     align-content: space-between;
     flex-wrap: wrap;
+    box-shadow: 0px 0px 6px rgba($color: #000000, $alpha: 0.6);
 
 
     .div-menu {
@@ -328,31 +328,33 @@ body {
 }
 
 .masthead_int {
-  .is-search-input{
-    background-color: transparent;
-    border: 0px;
-    border-bottom: 1px solid $bg-color-titulo;
-    position: relative;
-    top: -6vh;
-    left: 54vh;
+    .is-search-input {
+        background-color: transparent;
+        border: 0px;
+        border-bottom: 1px solid $bg-color-titulo;
+        position: relative;
+        top: -6vh;
+        left: 54vh;
 
-    &:focus{
-      outline:none !important;
-      outline-width: 0 !important;
-      box-shadow: none;
-      -moz-box-shadow: none;
-      -webkit-box-shadow: none;
+        &:focus {
+            outline: none !important;
+            outline-width: 0 !important;
+            box-shadow: none;
+            -moz-box-shadow: none;
+            -webkit-box-shadow: none;
+        }
+
+        .is-customize-link {
+            display: none !important;
+        }
+
+        .is-ajax-search-result {
+            width: 300px !important;
+            left: 160vh !important;
+            background: transparent !important;
+        }
     }
 
-    .is-customize-link{
-      display: none !important;
-    }
-    .is-ajax-search-result{
-      width: 300px!important;
-      left: 160vh !important;
-      background: transparent !important;
-    }
-  }
     .navbar {
         width: 100%;
         position: fixed;
@@ -360,6 +362,7 @@ body {
         background-color: $marron;
         text-transform: uppercase;
         z-index: 1;
+        box-shadow: 0px 0px 6px rgba($color: #000000, $alpha: 0.6);
 
         .cont-logo {
             display: flex;
@@ -375,8 +378,17 @@ body {
                 z-index: 1;
 
                 .content-logo {
-                    img {
-                        width: 100px;
+                    width: 100px;
+                    background-image: url("./../../../uploads/2019/07/logo_esoes_beige.png");
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    display: block;
+
+                    &::before {
+                        content: "";
+                        display: block;
+                        padding-top: 21%;
                     }
                 }
             }
@@ -386,7 +398,7 @@ body {
                 width: 80%;
 
                 .logo-int {
-                 
+
                     .content-logo {
                         img {
                             top: 0;
@@ -541,6 +553,10 @@ body {
     right: -80vw;
     color: $bg-color-titulo;
 
+    &::placeholder {
+        color: $bg-color-titulo;
+    }
+
     &:focus {
 
         outline: none !important;
@@ -668,7 +684,7 @@ body {
         background-position: center;
         background-repeat: no-repeat;
         z-index: 1;
-        box-shadow: 0 4px 6px rgba($color: #000000, $alpha: 0.16);
+        box-shadow: 0px 0px 6px rgba($color: #000000, $alpha: 0.6);
     }
 }
 
@@ -708,15 +724,15 @@ body {
 
 @keyframes animation-logo {
     0% {
-        opacity: 0;
+        transform: scale(1);
     }
 
     50% {
-        opacity: 0;
+        transform: scale(1.2);
     }
 
     100% {
-        opacity: 1;
+        transform: scale(1);
     }
 }
 
@@ -910,31 +926,41 @@ body {
     }
 }
 
+#galeria {
+    /* display: flex;
+    justify-content: space-around; */
 
-.rings {
-    figure {
-        display: inline-block;
-        position: relative;
+    article {
+        /* height: auto;
+        border: 1px solid red;
+        width: 30%; */
 
-        span {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: white;
-            display: none;
-        }
+        .rings {
+            figure {
+                display: inline-block;
+                position: relative;
 
-        &:hover {
-            background: black;
-        }
+                span {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    color: white;
+                    display: none;
+                }
 
-        &:hover span {
-            display: block;
-        }
+                &:hover {
+                    background: black;
+                }
 
-        &:hover img {
-            opacity: 0.7;
+                &:hover span {
+                    display: block;
+                }
+
+                &:hover img {
+                    opacity: 0.7;
+                }
+            }
         }
     }
 }
@@ -2081,7 +2107,7 @@ body {
 
 .grid-item img {
     width: 100%;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .22);
+    box-shadow: 0px 0px 6px rgba($color: #000000, $alpha: 0.6);
 }
 
 .pages-blog {
@@ -2103,8 +2129,9 @@ body {
         }
 
         img {
-            -webkit-box-shadow: 2px 5px 5px $antracit;
-            -moz-box-shadow: 2px 5px 5px $antracit;
+            box-shadow: 0px 0px 6px rgba($color: #000000, $alpha: 0.6);
+            -webkit-box-shadow: 0px 0px 6px rgba($color: #000000, $alpha: 0.6);
+            -moz-box-shadow: 0px 0px 6px rgba($color: #000000, $alpha: 0.6);
             filter: shadow(color=#999999, direction=135, strength=2);
             width: 85%;
             margin-left: 10vh;
@@ -2148,8 +2175,9 @@ body {
     }
 
     img {
-        -webkit-box-shadow: 2px 5px 5px $antracit;
-        -moz-box-shadow: 2px 5px 5px $antracit;
+        box-shadow: 0px 0px 6px rgba($color: #000000, $alpha: 0.6);
+        -webkit-box-shadow: 0px 0px 6px rgba($color: #000000, $alpha: 0.6);
+        -moz-box-shadow: 0px 0px 6px rgba($color: #000000, $alpha: 0.6);
         filter: shadow(color=#999999, direction=135, strength=2);
         width: 95%;
         margin-top: -40vh;
@@ -2159,7 +2187,7 @@ body {
 .blog-int {
     height: auto;
     width: 60%;
-    background-image: url('/wp-content/uploads/2019/09/background.png');
+    background-image: url('./../../../uploads/2019/09/background.png');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -2185,8 +2213,9 @@ body {
     }
 
     img {
-        -webkit-box-shadow: 2px 5px 5px $antracit;
-        -moz-box-shadow: 2px 5px 5px $antracit;
+        box-shadow: 0px 0px 6px rgba($color: #000000, $alpha: 0.6);
+        -webkit-box-shadow: 0px 0px 6px rgba($color: #000000, $alpha: 0.6);
+        -moz-box-shadow: 0px 0px 6px rgba($color: #000000, $alpha: 0.6);
         filter: shadow(color=#999999, direction=135, strength=2);
         position: relative;
         top: -30vh;
@@ -2265,7 +2294,7 @@ body {
 
     .blog-izq,
     .blog-der {
-        width: 45%;
+        width: 30%;
         min-height: 100px;
         margin: 0px auto;
     }
@@ -2529,30 +2558,35 @@ body {
     width: 15px;
 }
 
-.search{
+.search {
     margin-top: 15px;
     margin-bottom: 5vh;
-    .search_title{
-        .page-title{
-            display:none;
+
+    .search_title {
+        .page-title {
+            display: none;
         }
     }
-    article{
+
+    article {
         margin-top: 40px;
     }
-    .entry-title{
-        a{
-         color:$antracit !important;
-         text-decoration: none;
+
+    .entry-title {
+        a {
+            color: $antracit !important;
+            text-decoration: none;
         }
     }
-    .entry-summary{
-        .btn-secondary{
-            background-color:$marron !important;
+
+    .entry-summary {
+        .btn-secondary {
+            background-color: $marron !important;
             width: 10% !important;
         }
     }
-    .entry-footer{
+
+    .entry-footer {
         display: none;
     }
 }
