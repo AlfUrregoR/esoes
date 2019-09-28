@@ -8,7 +8,7 @@ get_header('int');
 ?>
 
 <!-- Contenido de página de inicio -->
-<div class="pages-contact">
+<div class="pages-term">
     <div class="container h-100">
       <div class="row h-100  align-items-center">
         <div class="col-12 text-center">
@@ -19,8 +19,7 @@ get_header('int');
         <?php the_content(); ?>
       <?php endwhile; endif; ?>
         </div>
-    </div>
-      <div class="row div-datos">
+        <div class="row div-datos">
         <div class="col-sm-12 col-md-6">
           <img src="<?php echo $_SESSION["rutingHost"] ?>/wp-content/uploads/2019/07/esoes_submark.png" alt="">
         </div>
@@ -32,6 +31,8 @@ get_header('int');
           </p>
         </div>
       </div>
+    </div>
+     
 </div>
 
 <a id="button"><img src="<?php echo $_SESSION["rutingHost"] ?>/wp-content/uploads/2019/08/flecha.png" alt=""> </a>
