@@ -550,25 +550,25 @@ get_header();
 </section>
 
 <section id="blog" class="blog">
-  <div id="demo" class="carousel slide" data-ride="carousel">
-    <!-- The slideshow -->
-    <div class="carousel-inner">
-      <?php
-      $args = array(
-        'post_type' => 'post',
-        'category_name'  => 'Home FR',
-        'order' => 'asc'
-      );
-      $i=1;
-      ?>
-      <?php  $category_posts = new WP_Query($args);
-       if ($category_posts->have_posts()) :
-         $i=1;
+<div class="container">
+    <div id="demo-blog" class="carousel slide" data-ride="carousel">
+
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <?php
+        $args = array(
+          'post_type' => 'post',
+          'category_name'  => 'Home FR',
+          'order' => 'asc'
+        );
+        $category_posts = new WP_Query($args);
+        if ($category_posts->have_posts()) :
+        $i=1;
           while ($category_posts->have_posts()) :
             $category_posts->the_post();
             ?>
-      <div class="carousel-item <?php if($i==1) echo "active"; ?>">
-            <div class="row align-items-center blog-izq">
+        <div class="carousel-item <?php if($i==1) echo "active"; ?>">
+          <div class="row align-items-center blog-izq">
               <div class=" col-12 text-center">
                 <div class="efecto-blog">
                   <a href="<?php the_permalink(); ?>" class="tag">
@@ -585,88 +585,85 @@ get_header();
                 </div>
               </div>
             </div>
-          </div>
-            <?php $i++; endwhile; wp_reset_postdata();?>
-          <?php endif ?>
-          <?php
-          $args = array(
-            'post_type' => 'post',
-            'category_name'  => 'Home EN',
-            'order' => 'asc'
-          );
-          $i=1;
+        </div>
+        <?php $i++; endwhile; wp_reset_postdata();?>
+      <?php endif;?>
+      <?php
+      $args = array(
+        'post_type' => 'post',
+        'category_name'  => 'Home EN',
+        'order' => 'asc'
+      );
+      $category_posts = new WP_Query($args);
+      if ($category_posts->have_posts()) :
+      $i=1;
+        while ($category_posts->have_posts()) :
+          $category_posts->the_post();
           ?>
-          <?php  $category_posts = new WP_Query($args);
-           if ($category_posts->have_posts()) :
-             $i=1;
-              while ($category_posts->have_posts()) :
-                $category_posts->the_post();
-                ?>
-          <div class="carousel-item <?php if($i==1) echo "active"; ?>">
-                <div class="row align-items-center blog-izq">
-                  <div class=" col-12 text-center">
-                    <div class="efecto-blog">
-                      <a href="<?php the_permalink(); ?>" class="tag">
-                        <?php $imagen_blog_1 = get_field('imagen_blog_1'); ?>
-                        <?php if ($imagen_blog_1) { ?>
-                          <img src="<?php echo $imagen_blog_1['url']; ?>" alt="<?php echo $imagen_blog_1['alt']; ?>" />
-                        <?php } ?>
-                        <span>VOYAGE</span>
-                      </a>
-                      <div class="contenido-blog text-center">
-                        <h4 class="paragraph"><?php the_title(); ?></h4>
-                        <p class="subtitle"><?php the_field( 'subtitle_home' ); ?></p>
-                      </div>
-                    </div>
+      <div class="carousel-item <?php if($i==1) echo "active"; ?>">
+      <div class="row align-items-center blog-izq">
+              <div class=" col-12 text-center">
+                <div class="efecto-blog">
+                  <a href="<?php the_permalink(); ?>" class="tag">
+                    <?php $imagen_blog_1 = get_field('imagen_blog_1'); ?>
+                    <?php if ($imagen_blog_1) { ?>
+                      <img src="<?php echo $imagen_blog_1['url']; ?>" alt="<?php echo $imagen_blog_1['alt']; ?>" />
+                    <?php } ?>
+                    <span>VOYAGE</span>
+                  </a>
+                  <div class="contenido-blog text-center">
+                    <h4 class="paragraph"><?php the_title(); ?></h4>
+                    <p class="subtitle"><?php the_field( 'subtitle_home' ); ?></p>
                   </div>
                 </div>
               </div>
-                <?php $i++; endwhile; wp_reset_postdata();?>
-              <?php endif ?>
-              <?php
-              $args = array(
-                'post_type' => 'post',
-                'category_name'  => 'Home ES',
-                'order' => 'asc'
-              );
-              $i=1;
-              ?>
-              <?php  $category_posts = new WP_Query($args);
-               if ($category_posts->have_posts()) :
-                 $i=1;
-                  while ($category_posts->have_posts()) :
-                    $category_posts->the_post();
-                    ?>
-              <div class="carousel-item <?php if($i==1) echo "active"; ?>">
-                    <div class="row align-items-center blog-izq">
-                      <div class=" col-12 text-center">
-                        <div class="efecto-blog">
-                          <a href="<?php the_permalink(); ?>" class="tag">
-                            <?php $imagen_blog_1 = get_field('imagen_blog_1'); ?>
-                            <?php if ($imagen_blog_1) { ?>
-                              <img src="<?php echo $imagen_blog_1['url']; ?>" alt="<?php echo $imagen_blog_1['alt']; ?>" />
-                            <?php } ?>
-                            <span>VOYAGE</span>
-                          </a>
-                          <div class="contenido-blog text-center">
-                            <h4 class="paragraph"><?php the_title(); ?></h4>
-                            <p class="subtitle"><?php the_field( 'subtitle_home' ); ?></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+            </div>
+      </div>
+      <?php $i++; endwhile; wp_reset_postdata();?>
+    <?php endif;?>
+    <?php
+    $args = array(
+      'post_type' => 'post',
+      'category_name'  => 'Home ES',
+      'order' => 'asc'
+    );
+    $category_posts = new WP_Query($args);
+    if ($category_posts->have_posts()) :
+    $i=1;
+      while ($category_posts->have_posts()) :
+        $category_posts->the_post();
+        ?>
+    <div class="carousel-item <?php if($i==1) echo "active"; ?>">
+    <div class="row align-items-center blog-izq">
+              <div class=" col-12 text-center">
+                <div class="efecto-blog">
+                  <a href="<?php the_permalink(); ?>" class="tag">
+                    <?php $imagen_blog_1 = get_field('imagen_blog_1'); ?>
+                    <?php if ($imagen_blog_1) { ?>
+                      <img src="<?php echo $imagen_blog_1['url']; ?>" alt="<?php echo $imagen_blog_1['alt']; ?>" />
+                    <?php } ?>
+                    <span>VOYAGE</span>
+                  </a>
+                  <div class="contenido-blog text-center">
+                    <h4 class="paragraph"><?php the_title(); ?></h4>
+                    <p class="subtitle"><?php the_field( 'subtitle_home' ); ?></p>
                   </div>
-                    <?php $i++; endwhile; wp_reset_postdata();?>
-                  <?php endif ?>
+                </div>
+              </div>
+            </div>
     </div>
+    <?php $i++; endwhile; wp_reset_postdata();?>
+  <?php endif;?>
+      </div>
 
-    <!-- Left and right controls -->
-    <a class="carousel-control-prev" href="#demo" data-slide="prev">
-      <img class="img-prev" src="/wp-content/uploads/2019/08/flecha.png" alt="">
-    </a>
-    <a class="carousel-control-next" href="#demo" data-slide="next">
-      <img class="img-prev" src="/wp-content/uploads/2019/08/flecha.png" alt="">
-    </a>
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#demo-blog" data-slide="prev">
+        <img src="/wp-content/uploads/2019/08/flecha.png" alt="">
+      </a>
+      <a class="carousel-control-next" href="#demo-blog" data-slide="next">
+        <img src="/wp-content/uploads/2019/08/flecha.png" alt="">
+      </a>
+    </div>
   </div>
   <div class="container">
     <div class="row align-items-center">
