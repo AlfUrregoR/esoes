@@ -1,4 +1,5 @@
 <?php
+session_start();
 /**
 * Template Name: Contact
 */
@@ -248,7 +249,7 @@ get_header('int');
       </div>
       <div class="row div-datos">
         <div class="col-sm-12 col-md-6">
-          <img src="/wp-content/uploads/2019/07/esoes_submark.png" alt="">
+          <img src="<?php echo $_SESSION["rutingHost"] ?>/wp-content/uploads/2019/07/esoes_submark.png" alt="">
         </div>
         <div class="col-sm-12 col-md-6 div-name">
           <p>Lucie Bühlmann <br>
@@ -260,6 +261,6 @@ get_header('int');
       </div>
 </div>
 
-<a id="button"><img src="/wp-content/uploads/2019/08/flecha.png" alt=""> </a>
+<a id="button"><img src="<?php echo $_SESSION["rutingHost"] ?>/wp-content/uploads/2019/08/flecha.png" alt=""> </a>
 <!-- Archivo de footer de Wordpress -->
 <?php get_footer(); ?>

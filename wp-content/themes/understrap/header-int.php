@@ -44,7 +44,7 @@ $container = get_theme_mod('understrap_container_type');
 						<a class="fb-fb" role="button" href="https://www.facebook.com/esoes.design" target="_blank"></a>
 						<a class="fb-ic" role="button" href="https://www.pinterest.ch/esoes_design/" target="_blank"></a>
 						<div class="logo-int">
-							<a class="content-logo" href="/"><img src="/../wp-content/uploads/2019/07/logo_esoes_beige.png" alt=""></a>
+							<a class="content-logo" href="/"></a>
 						</div>
 					</div>
 

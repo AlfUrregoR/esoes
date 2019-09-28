@@ -116,17 +116,13 @@ $container = get_theme_mod( 'understrap_container_type' );
          texto.classList.remove('quieto');
      }
   }
-
-
-
-
   $(document).ready(function() {
-    $(".is-search-form").keypress(function(e) {
+    $(".is-search-form ").keypress(function(e) {
         if (e.which == 13) {
             return false;
         }
     });
-});
+  });
 </script>
 </body>
 
