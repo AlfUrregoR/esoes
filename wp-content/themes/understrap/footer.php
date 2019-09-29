@@ -1,4 +1,5 @@
 <?php
+session_start();
 /**
  * The template for displaying the footer.
  *
@@ -96,7 +97,7 @@ $container = get_theme_mod( 'understrap_container_type' );
     e.preventDefault();
     $('html, body').animate({scrollTop:0}, '100');
   });
-	$('.search-icon').replaceWith("<img class='img-lupe' src='/wp-content/uploads/2019/08/loupe.png'>");
+	$('.search-icon').replaceWith("<img class='img-lupe' src='<?php echo $_SESSION["rutingHost"] ?>/wp-content/uploads/2019/08/loupe.png'>");
   $(".understrap-read-more-link").text("Lire");
 })( jQuery );
 

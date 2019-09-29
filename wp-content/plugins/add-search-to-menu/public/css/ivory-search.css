@@ -151,7 +151,7 @@
 }
 
 .is-highlight {
-	background-color: #FFFFB9;
+	background-color: #f3ebe6;
         color: #222;
 }
 
@@ -245,7 +245,7 @@ form:hover + .is-link-container {
     font-size: 19px;
     line-height: 1;
     border-radius: 0;
-    border: solid 1px #ccc;
+    border: solid 1px #f3ebe6;
     font-family: arial;
 }
 
@@ -308,12 +308,13 @@ form.is-form-style input.is-search-submit {
 
 .is-ajax-search-details a,
 .is-ajax-search-result a {
-    color: #0073aa;
+    color: #f3ebe6;
 }
 
 .is-ajax-search-details a:hover,
 .is-ajax-search-result a:hover {
     text-decoration: underline;
+    color: #85554b;
 }
 
 div.is-ajax-search-details,
@@ -435,7 +436,7 @@ div.is-ajax-search-result {
 }
 
 .is-ajax-result-description {
-    font-size: 14px;
+    font-size: 12px;
     margin-top: 10px;
 }
 
@@ -443,25 +444,37 @@ div.is-ajax-search-result {
 .is-ajax-search-post {
     clear: both;
     padding: 15px;
-    border-bottom: 1px solid #eceff1;
+    /* border-bottom: 1px solid #eceff1; */
 }
 
 .is-ajax-search-details .mCSB_container > div,
 .is-ajax-search-post {
-    background: #fff;    
+    background: #85554b;
+    box-shadow: 0 0 6px rgba(0,0,0,.6);
+    margin: 5px;
+    color: #f3ebe6;
+    border-radius: 4px;
 }
 
 .is-ajax-search-result .is-ajax-search-post:hover,
 .is-ajax-search-result .is-show-more-results:hover,
 .is-ajax-search-tags-details > div:hover,
 .is-ajax-search-categories-details > div:hover {
-    background: #e2e2e2;
+    background: #f3ebe6;
+    color: #85554b;
+    transition: 0.5s;
+}
+
+.is-ajax-search-post:hover .is-search-sections .right-section .is-title a {
+    color: #85554b;
 }
 
 .is-ajax-search-details .is-title a,
 .is-ajax-search-post .is-title a {
     text-transform: capitalize;
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.5s;
 }
 
 .is-ajax-search-post-details:last-child,
@@ -500,8 +513,8 @@ div.is-ajax-search-result {
 
 .is-ajax-woocommerce-actions .add_to_cart_inline a.button {
     padding: 4px 10px;
-    background: #0073aa;
-    color: #FFF;
+    background: #85554b;
+    color: #f3ebe6;
     font-weight: 800;
     text-decoration: none;
 }
