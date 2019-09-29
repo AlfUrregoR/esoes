@@ -1,5 +1,11 @@
 <?php
-session_start();
+$rutingHost = $_SERVER['SERVER_NAME'];
+
+if ($rutingHost == "localhost") {
+  $rutingHost = "/esoes";
+} else {
+  $rutingHost = "";
+}
 /**
 * Template Name: PORTFOLIO
 */
@@ -57,6 +63,6 @@ get_header('int');
 </div>
 
 
-<a id="button"><img src="<?php echo $_SESSION["rutingHost"] ?>/wp-content/uploads/2019/08/flecha.png" alt=""> </a>
+<a id="button"><img src="<?php echo $rutingHost ?>/wp-content/uploads/2019/08/flecha.png" alt=""> </a>
 <!-- Archivo de footer de Wordpress -->
 <?php get_footer(); ?>

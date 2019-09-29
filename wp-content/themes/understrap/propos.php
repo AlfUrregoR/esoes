@@ -1,5 +1,11 @@
 <?php
-session_start();
+$rutingHost = $_SERVER['SERVER_NAME'];
+
+if ($rutingHost == "localhost") {
+  $rutingHost = "/esoes";
+} else {
+  $rutingHost = "";
+}
 /**
 * Template Name: PROPOS
 */
@@ -29,7 +35,7 @@ get_header('int');
       <div class="container h-100">
         <div class="row h-100">
           <div class="col-sm-12 col-md-12 col-lg-6">
-            <img src="<?php echo $_SESSION["rutingHost"] ?>/wp-content/uploads/2019/07/about2.png" alt="">
+            <img src="<?php echo $rutingHost ?>/wp-content/uploads/2019/07/about2.png" alt="">
           </div>
           <div class="col-sm-12 col-md-12 col-lg-6 content-propos-2">
             <h3 class="title-propos-2"><?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -75,7 +81,7 @@ get_header('int');
 
           </div>
           <div class="col-sm-12  col-md-12 col-lg-6 align-items-center">
-            <img src="<?php echo $_SESSION["rutingHost"] ?>/wp-content/uploads/2019/07/about3.png" alt="">
+            <img src="<?php echo $rutingHost ?>/wp-content/uploads/2019/07/about3.png" alt="">
           </div>
         </div>
       </div>
@@ -84,6 +90,6 @@ get_header('int');
   </section>
 
 
-<a id="button"><img src="<?php echo $_SESSION["rutingHost"] ?>/wp-content/uploads/2019/08/flecha.png" alt=""> </a>
+<a id="button"><img src="<?php echo $rutingHost ?>/wp-content/uploads/2019/08/flecha.png" alt=""> </a>
 <!-- Archivo de footer de Wordpress -->
 <?php get_footer(); ?>

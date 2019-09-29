@@ -7,9 +7,6 @@ if ($rutingHost == "localhost") {
   $rutingHost = "";
 }
 
-session_start();
-$_SESSION["rutingHost"] = $rutingHost;
-
 /**
  * Template Name: HOME
  */
@@ -258,7 +255,7 @@ get_header();
     </section>
   </div>
   <div id="div-mostrar" class="div-mostrar text-center">
-    <a id="mostrar"><img id="mostrar-img" src="<?php echo $_SESSION["rutingHost"] ?>/wp-content/uploads/2019/08/flecha.png" alt=""> </a>
+    <a id="mostrar"><img id="mostrar-img" src="<?php echo $rutingHost ?>/wp-content/uploads/2019/08/flecha.png" alt=""> </a>
   </div>
 
 
@@ -539,10 +536,10 @@ get_header();
 
       <!-- Left and right controls -->
       <a class="carousel-control-prev" href="#demo" data-slide="prev">
-        <img src="<?php echo $_SESSION["rutingHost"] ?>/wp-content/uploads/2019/08/flecha.png" alt="">
+        <img src="<?php echo $rutingHost ?>/wp-content/uploads/2019/08/flecha.png" alt="">
       </a>
       <a class="carousel-control-next" href="#demo" data-slide="next">
-        <img src="<?php echo $_SESSION["rutingHost"] ?>/wp-content/uploads/2019/08/flecha.png" alt="">
+        <img src="<?php echo $rutingHost ?>/wp-content/uploads/2019/08/flecha.png" alt="">
       </a>
     </div>
   </div>
@@ -675,10 +672,10 @@ get_header();
 
       <!-- Left and right controls -->
       <a class="carousel-control-prev" href="#demo-blog" data-slide="prev">
-        <img src="<?php echo $_SESSION["rutingHost"] ?>/wp-content/uploads/2019/08/flecha.png" alt="">  
+        <img src="<?php echo $rutingHost ?>/wp-content/uploads/2019/08/flecha.png" alt="">  
       </a>
       <a class="carousel-control-next" href="#demo-blog" data-slide="next">
-       <img src="<?php echo $_SESSION["rutingHost"] ?>/wp-content/uploads/2019/08/flecha.png" alt="">
+       <img src="<?php echo $rutingHost ?>/wp-content/uploads/2019/08/flecha.png" alt="">
       </a>
     </div>
   </div>
@@ -697,6 +694,6 @@ get_header();
 </section>
 
 
-<a id="button"><img src="<?php echo $_SESSION["rutingHost"] ?>/wp-content/uploads/2019/08/flecha.png" alt=""> </a>
+<a id="button"><img src="<?php echo $rutingHost ?>/wp-content/uploads/2019/08/flecha.png" alt=""> </a>
 <!-- Archivo de footer de Wordpress -->
 <?php get_footer(); ?>
