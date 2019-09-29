@@ -22,7 +22,7 @@ get_header('int');
       ?>
 
       <div class="row section_blog">
-        <div class="col-md-6 blog_fondo">
+        <div class="col-sm-12 col-md-5 blog_fondo">
           <p>Voyage</p>
           <h2 class="title"><?php the_title(); ?></h2>
           <div class="sep-vert">
@@ -36,7 +36,7 @@ get_header('int');
             </div>
           </div>
         </div>
-        <div class="blog_text">
+        <div class="blog_text col-sm-12 col-md-6" >
           <?php $imagen_blog_3 = get_field( 'imagen_blog_3' ); ?>
           <?php if ( $imagen_blog_3 ) { ?>
             <img src="<?php echo $imagen_blog_3['url']; ?>" alt="<?php echo $imagen_blog_3['alt']; ?>" />
@@ -59,7 +59,7 @@ get_header('int');
       ?>
 
       <div class="row section_blog">
-        <div class="col-md-6 blog_fondo">
+        <div class="col-sm-12 col-md-6 blog_fondo">
           <p>Voyage</p>
           <h2 class="title"><?php the_title(); ?></h2>
           <div class="sep-vert">
@@ -73,7 +73,7 @@ get_header('int');
             </div>
           </div>
         </div>
-        <div class="blog_text">
+        <div class="blog_text col-sm-12 col-md-6">
           <?php $imagen_blog_3 = get_field( 'imagen_blog_3' ); ?>
           <?php if ( $imagen_blog_3 ) { ?>
             <img src="<?php echo $imagen_blog_3['url']; ?>" alt="<?php echo $imagen_blog_3['alt']; ?>" />
@@ -96,7 +96,7 @@ get_header('int');
       ?>
 
       <div class="row section_blog">
-        <div class="col-md-6 blog_fondo">
+        <div class="col-sm-12 col-md-6 blog_fondo">
           <p>Voyage</p>
           <h2 class="title"><?php the_title(); ?></h2>
           <div class="sep-vert">
@@ -110,7 +110,7 @@ get_header('int');
             </div>
           </div>
         </div>
-        <div class="blog_text">
+        <div class="blog_text col-sm-12 col-md-6">
           <?php $imagen_blog_3 = get_field( 'imagen_blog_3' ); ?>
           <?php if ( $imagen_blog_3 ) { ?>
             <img src="<?php echo $imagen_blog_3['url']; ?>" alt="<?php echo $imagen_blog_3['alt']; ?>" />
