@@ -41,13 +41,13 @@ $container = get_theme_mod('understrap_container_type');
     ?>
 
     <div class="footer-social">
-        <a class="fb-ic" role="button" href="https://www.instagram.com/esoes_design/" target="_blank"></a>
+        <a class="fb-in" role="button" href="https://www.instagram.com/esoes_design/" target="_blank"></a>
         <a class="fb-fb" role="button" href="https://www.facebook.com/esoes.design" target="_blank"></a>
         <a class="fb-ic" role="button" href="https://www.pinterest.ch/esoes_design/" target="_blank"></a>
     </div>
 
 
-    <div class="footer-right"> Copyright 2019 | ESOES </div>
+    <div class="footer-right"> &#169; &nbsp; C o p y r i g h t &nbsp; 2 0 1 9 &nbsp; | &nbsp; E S O E S </div>
 </footer>
 
 
