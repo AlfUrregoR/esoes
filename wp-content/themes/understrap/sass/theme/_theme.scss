@@ -312,9 +312,8 @@ body {
     }
 
     .is-menu.dropdown form {
-        display: block;
         position: absolute;
-        top: 0px;
+        top: 35px;
         left: 0px;
 
         @media only screen and (max-width: 767px) {
@@ -323,37 +322,39 @@ body {
     }
 
     .is-ajax-search label {
-        position: absolute;
+        position: initial;
     }
 }
 
 .masthead_int {
     .is-search-input {
-        background-color: transparent;
-        border: 0px;
-        border-bottom: 1px solid $bg-color-titulo;
-        position: relative;
-        top: -5vh;
-        right: -6vh !important;
-        left: -3vh;
+        right: 50px;
+        color: $marron;
+        border-color: $marron;
 
-        &:focus {
-            outline: none !important;
-            outline-width: 0 !important;
-            box-shadow: none;
-            -moz-box-shadow: none;
-            -webkit-box-shadow: none;
+        &::placeholder {
+            color: $marron;
         }
+    }
 
-        .is-customize-link {
-            display: none !important;
-        }
+    .is-ajax-search .is-loader-image {
+        right: 10px !important;
+    }
 
-        .is-ajax-search-result {
-            width: 300px !important;
-            left: 10vh !important;
-            background: transparent !important;
-        }
+    .is-ajax-search label {
+        position: initial;
+    }
+
+    .is-menu.dropdown form {
+        position: absolute;
+        top: 50px;
+        left: 0;
+    }
+
+    .div-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .navbar {
@@ -365,17 +366,22 @@ body {
         z-index: 1;
         box-shadow: 0px 0px 6px rgba($color: #000000, $alpha: 0.6);
 
+
+        .astm-search-menu {
+            a {
+                right: 0%;
+            }
+        }
+
         .cont-logo {
             display: flex;
+            justify-content: space-between;
             align-items: center;
-            width: 100%;
-            position: absolute;
-            left: 0;
-            padding: 0 10px;
+            width: 80px;
 
             .logo-int {
                 position: absolute;
-                margin-left: calc(50% - 40px);
+                margin-left: calc(50% - 50px);
                 z-index: 1;
 
                 .content-logo {
@@ -433,8 +439,6 @@ body {
             .fb-ic {
                 background-image: url('./../../../uploads/2019/08/Pinteres.png');
             }
-
-
         }
     }
 
@@ -539,9 +543,14 @@ body {
     #menu-item-518,
     #menu-item-678 {
         a {
-            margin-right: 120px;
+            margin-right: 150px;
         }
+    }
 
+    #menu-item-496,
+    #menu-item-435,
+    #menu-item-521 {
+        margin-right: 50px;
     }
 }
 
@@ -549,10 +558,12 @@ body {
     background-color: transparent;
     border: 0px;
     border-bottom: 1px solid $bg-color-titulo;
+    color: $bg-color-titulo;
     position: absolute;
     top: 0;
-    right: -80vw;
-    color: $bg-color-titulo;
+    right: 150px;
+    left: auto;
+
 
     &::placeholder {
         color: $bg-color-titulo;
@@ -574,15 +585,22 @@ body {
     }
 }
 
+.is-ajax-search .is-loader-image {
+    top: 15px !important;
+    right: 110px !important;
+    left: auto !important;
+}
+
 .is-search-submit {
     display: none;
 }
 
 .is-ajax-search-result {
-    width: 250px !important;
     background: transparent !important;
-    top: 12vh !important;
-    left: 57rem !important;
+    top: 90px !important;
+    left: auto !important;
+    right: 0;
+    z-index: 0 !important;
 }
 
 .content-logo {
@@ -618,12 +636,11 @@ body {
         position: relative;
 
         @media only screen and (max-width: 767px) {
-            margin: 0;
-            padding: 0;
             position: absolute;
             left: 0;
             height: 100vh;
             justify-content: end;
+            top: 55px;
         }
 
         .nav-link {
@@ -1177,10 +1194,10 @@ body {
         }
 
         .list-services {
-            -webkit-animation-name: movimiento-services;
+            /* -webkit-animation-name: movimiento-services;
             -webkit-animation-duration: 3s;
             -webkit-animation-iteration-count: infinite;
-            -webkit-animation-direction: alternate;
+            -webkit-animation-direction: alternate; */
             /*para que vuelva a su posicion inicial */
             position: relative;
             float: right;
@@ -1406,10 +1423,10 @@ body {
     padding-bottom: 30vh;
 
     .content-title-processus {
-        -webkit-animation-name: movimiento-pourquoi;
+        /* -webkit-animation-name: movimiento-pourquoi;
         -webkit-animation-duration: 3s;
         -webkit-animation-iteration-count: infinite;
-        -webkit-animation-direction: alternate;
+        -webkit-animation-direction: alternate; */
         /*para que vuelva a su posicion inicial */
 
         display: inline-block;
@@ -1603,7 +1620,7 @@ body {
 
 
 #pag-propos-1 {
-    height: 90vh;
+    height: auto;
     width: 100%;
     background-color: $marron;
     background-attachment: fixed;
@@ -1611,15 +1628,14 @@ body {
     background-repeat: no-repeat;
 
     img {
-        margin-top: -14%;
-        margin-left: -55px;
-        height: 110%;
+        margin-top: -10%;
+        height: 115%;
         width: 90%;
     }
 
     .content-propos-2 {
         color: $bg-color-titulo;
-        padding: 100px 0;
+        padding: 80px 0;
 
         h3 {
             display: inline-block;
@@ -1663,18 +1679,14 @@ body {
 }
 
 #pag-propos-3 {
-    margin: 180px 0 180px 0;
 
     img {
         width: 100%;
         height: 90%;
-        margin-left: 5vh;
     }
 
     .content-propos-3 {
-        padding-top: 12vh;
-        padding-bottom: 20vh;
-        padding-left: 20vh;
+        padding: 100px 0 50px;
 
 
         .title-propos-2 {
@@ -1717,10 +1729,10 @@ body {
         position: relative;
         padding-top: 40px;
         width: 100%;
-        -webkit-animation-name: movimiento-diagonal;
+        /* -webkit-animation-name: movimiento-diagonal;
         -webkit-animation-duration: 3s;
         -webkit-animation-iteration-count: infinite;
-        -webkit-animation-direction: alternate;
+        -webkit-animation-direction: alternate; */
         /*para que vuelva a su posicion inicial */
 
         p {
