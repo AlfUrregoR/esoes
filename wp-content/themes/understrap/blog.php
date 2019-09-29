@@ -69,15 +69,19 @@ get_header('int');
       	<img src="<?php echo $imagen_blog_5['url']; ?>" alt="<?php echo $imagen_blog_5['alt']; ?>" />
       <?php } ?>
     </div>
-    <div class="col-md-5 img_der">
+    <div class="col-md-4 content-text">
+      <div class="sep-der">
+      </div>
       <?php the_field( 'content_blog_5' ); ?>
     </div>
   </div>
 </div>
 <div class="container-fluid section5">
   <div class="row">
-    <div class="col-md-5 img_izq">
-        <?php the_field( 'content_blog_5' ); ?>
+    <div class="col-md-5 content-text">
+       <div class="sep-der">
+      </div>
+      <?php the_field( 'content_blog_6' ); ?>
     </div>
     <div class="col-md-7 img_der">
       <?php $imagen_blog_4 = get_field( 'imagen_blog_4' ); ?>
