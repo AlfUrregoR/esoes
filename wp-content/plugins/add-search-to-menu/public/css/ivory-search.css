@@ -370,8 +370,11 @@ div.is-ajax-search-result {
 
 .is-ajax-search-no-result {
     padding: 10px;
-    background: #FFF;
     text-align: center;
+    background: #85554b;
+    box-shadow: 0 0 6px rgba(0,0,0,.6);
+    color: #f3ebe6;
+    border-radius: 4px;
 }
 
 .is-ajax-search-items .post-title {

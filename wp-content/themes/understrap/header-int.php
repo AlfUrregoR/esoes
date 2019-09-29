@@ -35,37 +35,44 @@ $container = get_theme_mod('understrap_container_type');
 
 				<nav class="navbar navbar-expand-md navbar-dark">
 					<?php if ('container' == $container) : ?>
-					<?php endif; ?>
+						<div class="container-fluid div-menu">
+						<?php endif; ?>
 
-					<!-- Your site title as branding in the menu-->
+						<!-- Your site title as branding in the menu-->
 
-					<div class="cont-logo">
-						<a class="fb-in" role="button" href="https://www.instagram.com/esoes_design/" target="_blank"></a>
-						<a class="fb-fb" role="button" href="https://www.facebook.com/esoes.design" target="_blank"></a>
-						<a class="fb-ic" role="button" href="https://www.pinterest.ch/esoes_design/" target="_blank"></a>
-						<div class="logo-int">
-							<a class="content-logo" href="/"></a>
+						<div class="cont-logo">
+							<a class="fb-in" role="button" href="https://www.instagram.com/esoes_design/" target="_blank"></a>
+							<a class="fb-fb" role="button" href="https://www.facebook.com/esoes.design" target="_blank"></a>
+							<a class="fb-ic" role="button" href="https://www.pinterest.ch/esoes_design/" target="_blank"></a>
+							<div class="logo-int">
+								<a class="content-logo" href="/"></a>
+							</div>
 						</div>
-					</div>
 
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e('Toggle navigation', 'understrap'); ?>">
-						<span class="navbar-toggler-icon"></span>
-					</button>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e('Toggle navigation', 'understrap'); ?>">
+							<span class="navbar-toggler-icon"></span>
+						</button>
 
-					<!-- The WordPress Menu goes here -->
-					<?php wp_nav_menu(
-						array(
-							'theme_location'  => 'primary',
-							'container_class' => 'collapse navbar-collapse',
-							'container_id'    => 'navbarNavDropdown',
-							'menu_class'      => 'navbar-nav ml-auto',
-							'fallback_cb'     => '',
-							'menu_id'         => 'main-menu',
-							'depth'           => 2,
-							'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
-						)
-					); ?>
+						<!-- The WordPress Menu goes here -->
+						<?php wp_nav_menu(
+							array(
+								'theme_location'  => 'primary',
+								'container_class' => 'collapse navbar-collapse',
+								'container_id'    => 'navbarNavDropdown',
+								'menu_class'      => 'navbar-nav ml-auto',
+								'fallback_cb'     => '',
+								'menu_id'         => 'main-menu',
+								'depth'           => 2,
+								'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
+							)
+						); ?>
+						<?php //if ( 'container' == $container ) : 
+						?>
 
+
+						</div><!-- .container -->
+						<?php //endif; 
+						?>
 
 
 				</nav><!-- .site-navigation -->
