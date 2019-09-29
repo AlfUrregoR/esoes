@@ -1931,7 +1931,7 @@ body {
         &::before {
             content: '';
             position: absolute;
-            width: 30%;
+            width: 15%;
             height: 1px;
             background-color: $antracit;
             top: 1rem;
@@ -1941,11 +1941,11 @@ body {
         &::after {
             content: '';
             position: absolute;
-            width: 30%;
+            width: 15%;
             height: 1px;
             background-color: $antracit;
             top: 1rem;
-            right: -40px;
+            right: -41px;
         }
     }
 
@@ -2525,6 +2525,7 @@ body {
 #footer-menu {
     margin-left: -35px;
     text-transform: uppercase;
+    letter-spacing: 2pt;
 
     li {
         display: inline-block;
