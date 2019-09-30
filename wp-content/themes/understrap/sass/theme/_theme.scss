@@ -400,11 +400,7 @@ body {
             }
 
             @media only screen and (max-width: 767px) {
-                position: relative;
-                width: 80%;
-
                 .logo-int {
-
                     .content-logo {
                         img {
                             top: 0;
@@ -469,6 +465,21 @@ body {
 
     @media only screen and (max-width: 767px) {
         .navbar {
+            background-image: none;
+
+            #menu-item-347 a,
+            #menu-item-497 a,
+            #menu-item-518 a,
+            #menu-item-678 a {
+                margin-right: 0;
+            }
+
+            #menu-item-435,
+            #menu-item-496,
+            #menu-item-521 {
+                margin-right: 0;
+            }
+
             .astm-search-menu {
                 padding-bottom: 20px;
                 top: 0px;
@@ -484,6 +495,7 @@ body {
             .navbar-nav {
                 background-color: $marron;
                 width: 100%;
+                height: 100vh;
 
                 li {
                     padding-left: 20px;
@@ -507,6 +519,21 @@ body {
                         text-decoration: none;
                         background-color: transparent;
                     }
+                }
+            }
+
+            .is-menu.dropdown form {
+                position: relative;
+            }
+
+            .is-search-input {
+                border-bottom: 1px solid #f3ebe6;
+                color: #f3ebe6;
+                right: initial;
+                left: 40px;
+
+                &::placeholder {
+                    color: $bg-color-titulo;
                 }
             }
         }
@@ -575,6 +602,13 @@ body {
     left: auto !important;
     right: 0;
     z-index: 0 !important;
+
+    @media only screen and (max-width: 767px) {
+        position: absolute;
+        top: auto !important;
+        bottom: 0;
+        z-index: 3 !important;
+    }
 }
 
 .content-logo {
@@ -612,9 +646,7 @@ body {
         @media only screen and (max-width: 767px) {
             position: absolute;
             left: 0;
-            height: 100vh;
             justify-content: end;
-            top: 55px;
         }
 
         .nav-link {
@@ -682,7 +714,7 @@ body {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        z-index: 1;
+        z-index: 2;
         box-shadow: 0px 0px 6px rgba($color: #000000, $alpha: 0.6);
     }
 }
@@ -963,11 +995,7 @@ body {
 #pages-portfolio {
 
     .cont {
-        background-image: url('./../../../uploads/2019/07/homepage_esoes-min.jpg');
-            background-attachment: fixed;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
+        
         position: relative;
 
         .quieto {
@@ -2960,20 +2988,25 @@ body {
 
     #pages-portfolio {
         .cont{
-            width: 80%;
+            width: 103%;
+            background-image: url('./../../../uploads/2019/07/homepage_esoes-min.jpg');
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            overflow-x: auto;
             .cont-text {
                 position: relative!important;
                 margin-top: 108px;
                 width: 100%!important;
                 height: auto;
-                flex-direction: column;
                 margin-left: 18px;
             }
             .cont-img{
                 height: auto;
                 img {
-                    left: 25%;
-                    width: 101%!important;
+                    left: 10%;
+                    width: 90%!important;
                     height: 13%;
                     padding-bottom: 30px;
                 }

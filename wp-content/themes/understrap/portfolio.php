@@ -47,7 +47,7 @@ get_header('int');
         	<img src="<?php echo $image_portfolio_7['url']; ?>" alt="<?php echo $image_portfolio_7['alt']; ?>" />
         <?php } ?>
       </div>
-      <div class="col-sm-12 col-md-7  cont-text cont-text-des">
+      <div class="col-sm-12 col-md-7  cont-text">
 
           <h6 class="tag"><?php the_field( 'tag' ); ?></h6>
           <h3><?php the_field( 'title' ); ?></h3>
