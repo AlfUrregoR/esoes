@@ -17,8 +17,7 @@ get_header('int');
 <div id="pages-portfolio">
 
   <div class="row cont">
-
-      <div class="col-5 content cont-img">
+      <div class=" col-sm-12 col-md-5 content cont-img">
         <?php $image_portfolio_1 = get_field( 'image_portfolio_1' ); ?>
           <?php if ( $image_portfolio_1 ) { ?>
           	<img src="<?php echo $image_portfolio_1['url']; ?>" alt="<?php echo $image_portfolio_1['alt']; ?>" />
@@ -48,7 +47,7 @@ get_header('int');
         	<img src="<?php echo $image_portfolio_7['url']; ?>" alt="<?php echo $image_portfolio_7['alt']; ?>" />
         <?php } ?>
       </div>
-      <div class="col-7  cont-text">
+      <div class="col-sm-12 col-md-7  cont-text">
 
           <h6 class="tag"><?php the_field( 'tag' ); ?></h6>
           <h3><?php the_field( 'title' ); ?></h3>
