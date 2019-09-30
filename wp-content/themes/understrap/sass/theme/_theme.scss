@@ -2228,13 +2228,18 @@ body {
         padding-left: 10vh;
     }
 }
-
+.section3-des{
+    display: block;
+}
+.section3-mov{
+    display: none;
+}
 .section3 {
     padding-top: 30vh;
     padding-bottom: 50vh;
     color: $bg-color-titulo;
     background-color: $marron;
-    height: 70vh;
+    height: 90vh;
 
     .sep-der {
         border-right: 1px solid $bg-color-titulo;
@@ -2242,7 +2247,7 @@ body {
     }
 
     .content-text {
-        margin-top: -13vh;
+        margin-top: -20vh;
         padding-left: 20vh;
         text-align: right;
     }
@@ -2269,7 +2274,7 @@ body {
 
     .content-text {
         text-align: left;
-        padding-top: 40px;
+        padding-top: 80px;
     }
 
     .sep-der {
@@ -2282,12 +2287,18 @@ body {
         -webkit-box-shadow: 0px 0px 6px rgba($color: #000000, $alpha: 0.6);
         -moz-box-shadow: 0px 0px 6px rgba($color: #000000, $alpha: 0.6);
         filter: shadow(color=#999999, direction=135, strength=2);
-        width: 85%;
+        width: 70%;
         margin-left: 10vh;
         margin-top: -10vh;
+        height: 700px;
     }
 }
-
+.section5-des{
+    display: block;
+}
+.section5-mov{
+    display: none;
+}
 .section5 {
     background-image: url('./../../../uploads/2019/08/portfolio_m4.png');
     //background-attachment: fixed;
@@ -2295,17 +2306,17 @@ body {
     // background-position: center;
     background-repeat: no-repeat;
     padding-top: 50px;
-    color: $bg-color-titulo;
+    color: $antracit;
     background-color: $marron;
-    height: 70vh;
-
+    height: 125vh;
+    
     .sep-der {
-        border-right: 1px solid $bg-color-titulo;
+        border-right: 1px solid $antracit;
         height: 20vh;
     }
 
     .content-text {
-        margin-top: 0vh;
+        margin-top: 30vh;
         padding-left: 20vh;
         text-align: right;
     }
@@ -2315,8 +2326,10 @@ body {
         -webkit-box-shadow: 0px 0px 6px rgba($color: #000000, $alpha: 0.6);
         -moz-box-shadow: 0px 0px 6px rgba($color: #000000, $alpha: 0.6);
         filter: shadow(color=#999999, direction=135, strength=2);
-        width: 95%;
-        margin-top: -40vh;
+        width: 70%;
+        height: 700px;
+        margin-top: -14vh;
+        margin-left: 108px;
     }
 }
 
@@ -2869,11 +2882,17 @@ body {
     }
 
     .pages-blog {
+        height: 70vh;
         .section1 {
             width: 110%;
-
-            img {
-                margin-left: 2vh;
+            .sep-vert {
+                display: none;
+            }
+            img{
+                margin-left: 0vh;
+            }
+            .title {
+                padding-top: 20px;
             }
         }
     }
@@ -2885,43 +2904,84 @@ body {
         .sep-der {
             border-right: 0px solid #474848;
             border-bottom: 1px solid #474848;
-            padding-right: 0vh !important;
+            padding-right: 15px;
         }
 
         .sep-izq {
-            padding-left: 0vh !important;
+            padding-left: 15px !important;
         }
     }
-
-    .section3 {
-        height: 93vh;
-
-        img {
-            margin-top: -134vh;
-        }
-    }
-
-    .section4 {
+    .section3{
+        padding-top: 20px;
+        padding-bottom: 0vh;
         height: auto;
-
-        img {
+        .sep-der {
+            display: none;
+        }
+        
+        img{
+            margin-top: -29px;
+            padding-left: -4px;
+            margin-left: -5px;
+        }
+        .content-text {
+            margin-top: 18px;
+            padding-left: 6vh;
+            text-align: right;
+            margin-right: 59px;
+        }
+    } 
+    .section3-des{
+        display: none;
+    }
+    .section3-mov{
+        display: block;
+    }
+    .section4{
+        height: auto;
+        .sep-der {
+            display: none;
+        }
+        img{
             margin-left: 20px;
             margin-top: 0vh;
+            height: 400px;
         }
 
         .content-text {
             text-align: left;
-            padding-top: 0px;
-            margin-top: -77px;
+            padding-top: 0;
+            margin-top: 16px;
+            padding-left: -49px;
+            padding-right: 60px;
         }
     }
 
     .section5 {
         height: auto;
-
-        img {
-            margin-left: -3px;
-            margin-top: -131vh;
+        .sep-der {
+            display: none;
         }
+        img{
+            margin-top: -55px;
+            margin-left: 21px;
+            margin-bottom: 20px;
+            width: 90%;
+            height: 400px;
+        }
+
+        .content-text {
+            margin-top: 0;
+            padding-left: 6vh;
+            text-align: right;
+            margin-right: 59px;
+        }
+       
+    } 
+    .section5-des{
+        display: none;
     }
-}
+    .section5-mov{
+        display: block;
+    }
+}    

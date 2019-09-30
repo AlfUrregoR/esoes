@@ -51,7 +51,7 @@ get_header('int');
   </div>
 </div>
 
-<div class="container-fluid section3">
+<div class="container-fluid section3 section3-des">
   <div class="row">
     <div class="col-md-5 content-text">
       <div class="sep-der">
@@ -67,33 +67,66 @@ get_header('int');
   </div>
 
 </div>
+<div class="container-fluid section3 section3-mov">
+  <div class="row">
+    <div class="col-md-5 ">
+      <div class="sep-der">
+      </div>
+      <?php $imagen_blog_2 = get_field( 'imagen_blog_2' ); ?>
+      <?php if ( $imagen_blog_2 ) { ?>
+      	<img src="<?php echo $imagen_blog_2['url']; ?>" alt="<?php echo $imagen_blog_2['alt']; ?>" />
+      <?php } ?>
+      
+    </div>
+    <div class="col-md-7 content-text">
+    <?php the_field( 'content_blog_4' ); ?>
+    </div>
+  </div>
+
+</div>
 <div class="container-fluid section4">
   <div class="row">
-    <div class="col-md-7 img_izq">
+    <div class="col-md-6 img_izq">
       <?php $imagen_blog_5 = get_field( 'imagen_blog_5' ); ?>
       <?php if ( $imagen_blog_5 ) { ?>
       	<img src="<?php echo $imagen_blog_5['url']; ?>" alt="<?php echo $imagen_blog_5['alt']; ?>" />
       <?php } ?>
     </div>
-    <div class="col-md-4 content-text">
+    <div class="col-md-5 content-text">
       <div class="sep-der">
       </div>
       <?php the_field( 'content_blog_5' ); ?>
     </div>
   </div>
 </div>
-<div class="container-fluid section5">
+<div class="container-fluid section5 section5-des">
   <div class="row">
     <div class="col-md-5 content-text">
        <div class="sep-der">
       </div>
       <?php the_field( 'content_blog_6' ); ?>
     </div>
-    <div class="col-md-7 img_der">
+    <div class="col-md-6 img_der">
       <?php $imagen_blog_4 = get_field( 'imagen_blog_4' ); ?>
       <?php if ( $imagen_blog_4 ) { ?>
       	<img src="<?php echo $imagen_blog_4['url']; ?>" alt="<?php echo $imagen_blog_4['alt']; ?>" />
       <?php } ?>
+    </div>
+  </div>
+</div>
+<div class="container-fluid section5 section5-mov">
+  <div class="row">
+    <div class="col-md-5 content-text">
+       <div class="sep-der">
+      </div>
+      <?php $imagen_blog_4 = get_field( 'imagen_blog_4' ); ?>
+      <?php if ( $imagen_blog_4 ) { ?>
+      	<img src="<?php echo $imagen_blog_4['url']; ?>" alt="<?php echo $imagen_blog_4['alt']; ?>" />
+      <?php } ?>
+      
+    </div>
+    <div class="col-md-6 img_der">
+     <?php the_field( 'content_blog_6' ); ?> 
     </div>
   </div>
 </div>
