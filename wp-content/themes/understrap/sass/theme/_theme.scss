@@ -1160,7 +1160,7 @@ body {
     display: flex;
     justify-content: space-between;
     height: 100vh;
-    min-height: 550px;
+    min-height: 650px;
 
     .text-servvices {
         width: 45%;
@@ -1216,38 +1216,29 @@ body {
 
 
     @media (max-width: 990px) {
-        .content-services {
-            padding: 180px 0 80px 0;
-            width: 80%;
-            margin: 20px auto 0;
+        padding: 100px 10%;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        min-height: auto;
 
-            .list-services {
-                float: right;
-                margin-top: 50px;
-                padding-left: 30%;
-                width: 100%;
-            }
+        .text-servvices {
+            width: 100%;
+        }
 
-            ul {
-                width: 100%;
-            }
 
-            li {
-                width: 100%;
+        .list-services {
+            width: 100%;
+
+            ul {                
+                li {
+                    width: 100%;
+                }
             }
         }
     }
 }
 
-@keyframes movimiento-services {
-    from {
-        left: 0px;
-    }
-
-    to {
-        left: 70px;
-    }
-}
 
 #processus {
     height: auto;
@@ -1421,20 +1412,12 @@ body {
 #pourquoi {
     background-color: $marron;
     color: $bg-color-titulo;
-    padding-top: 20vh;
-    padding-bottom: 30vh;
+    padding: 100px 10%;
 
     .content-title-processus {
-        /* -webkit-animation-name: movimiento-pourquoi;
-        -webkit-animation-duration: 3s;
-        -webkit-animation-iteration-count: infinite;
-        -webkit-animation-direction: alternate; */
-        /*para que vuelva a su posicion inicial */
-
-        display: inline-block;
         position: relative;
-        left: 90vh;
-        padding-bottom: 15vh;
+        width: 40%;
+        margin: 0 auto;
 
         &::before {
             content: '';
@@ -1463,18 +1446,20 @@ body {
 
     .text-pourquoi {
         border-right: 1px solid $bg-color-titulo;
-        height: 50vh;
-        padding-top: 10vh;
+        margin-top: 50px;
     }
 
     .text-pourquoi-unique {
-        height: 50vh;
-        padding-top: 10vh;
+        margin-top: 50px;
     }
 
 
     @media (max-width: 990px) {
         padding: 80px 0;
+
+        .content-title-processus {
+            width: 60%;
+        }
 
         .title-pourquoi {
             padding-bottom: 30px;
