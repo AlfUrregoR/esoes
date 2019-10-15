@@ -98,16 +98,29 @@ $container = get_theme_mod('understrap_container_type');
 
     window.onload = function() {
         heightImages = document.querySelector('.cont-img').scrollHeight;
+        infotext = document.querySelector('.cont-text').scrollHeight;
     }
 
     function controlScroll($event) {
-        console.log(pageYOffset);
-        var scrollY = window.innerHeight + pageYOffset;
-        var texto = document.querySelector('.cont-text');
-        if (scrollY > heightImages) {
-            texto.classList.add('quieto')
-        } else {
-            texto.classList.remove('quieto');
+        if (document.querySelector('.cont-text')) {
+            console.log('heightImages', heightImages);
+            console.log('infotext', infotext);
+            
+
+
+            console.log('pageYOffset', pageYOffset);
+            var scrollY = window.innerHeight + pageYOffset;
+
+            console.log('scrollY', scrollY);
+
+            var texto = document.querySelector('.cont-text');
+            console.log('texto', texto);
+
+            if (scrollY > heightImages) {
+                texto.classList.add('quieto')
+            } else {
+                texto.classList.remove('quieto');
+            }
         }
     }
     $(document).ready(function() {

@@ -70,11 +70,11 @@ get_header('int');
             endif; ?>
         </p>
 
-        <div class="valeurs">
+        <!--  <div class="valeurs">
             <p><?php the_field('tag _valeurs'); ?></p>
             <p><?php the_field('tag _valeurs_2'); ?></p>
             <p><?php the_field('tag _valeurs_3'); ?></p>
-        </div>
+        </div> -->
     </div>
 
     <div class="content-img">

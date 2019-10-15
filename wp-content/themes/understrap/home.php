@@ -385,7 +385,9 @@ get_header();
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
             <?php $imagen_partenaires_1 = get_field('imagen_partenaires_1'); ?>
             <?php if ($imagen_partenaires_1) { ?>
-              <a href="<?php the_field('url_partenaires_1'); ?>"></a> <img src="<?php echo $imagen_partenaires_1['url']; ?>" alt="<?php echo $imagen_partenaires_1['alt']; ?>" />
+              <a href="<?php the_field('url_partenaires_1'); ?>">
+                <img src="<?php echo $imagen_partenaires_1['url']; ?>" alt="<?php echo $imagen_partenaires_1['alt']; ?>" />
+            </a> 
             <?php } ?>
         <?php endwhile;
         endif; ?>
@@ -536,10 +538,10 @@ get_header();
 
       <!-- Left and right controls -->
       <a class="carousel-control-prev" href="#demo" data-slide="prev">
-        <img src="<?php echo $rutingHost ?>/wp-content/uploads/2019/08/flecha.png" alt="">
+        <img class="arrow-carousel-home" src="<?php echo $rutingHost ?>/wp-content/uploads/2019/08/flecha.png" alt="">
       </a>
       <a class="carousel-control-next" href="#demo" data-slide="next">
-        <img src="<?php echo $rutingHost ?>/wp-content/uploads/2019/08/flecha.png" alt="">
+        <img class="arrow-carousel-home" src="<?php echo $rutingHost ?>/wp-content/uploads/2019/08/flecha.png" alt="">
       </a>
     </div>
   </div>
