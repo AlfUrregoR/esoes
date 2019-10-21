@@ -1041,6 +1041,15 @@ body {
 
             .tag_space {
                 padding-bottom: 30px;
+
+                a{
+                    color: #212529;
+                    text-decoration: underline;
+
+                    &:hover{
+                        color: $marron;
+                    }
+                }
             }
 
             p {
