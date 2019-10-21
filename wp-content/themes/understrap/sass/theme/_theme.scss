@@ -1003,18 +1003,24 @@ body {
         position: relative;
 
         .quieto {
+            position: fixed !important;
+        }
+
+        .movimiento {
+            bottom: 0 !important;
+            top: auto !important;
             position: absolute !important;
-            bottom: 5vh;
         }
 
         .cont-text {
-            position: fixed;
             top: 150px;
             right: 0;
             width: 70%;
-            height: 100vh;
+            height: fit-content;
             display: flex;
             flex-direction: column;
+            padding-bottom: 50px;
+            position: absolute;
 
             .tag {
                 display: inline-block;

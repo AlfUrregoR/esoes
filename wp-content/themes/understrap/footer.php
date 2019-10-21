@@ -75,6 +75,7 @@ $container = get_theme_mod('understrap_container_type');
             }
         }
     })(jQuery);
+
     (function($) {
         var btn = $('#button');
         $(window).on('scroll', function() {
@@ -97,32 +98,46 @@ $container = get_theme_mod('understrap_container_type');
     var heightImages = 0;
 
     window.onload = function() {
-        heightImages = document.querySelector('.cont-img').scrollHeight;
+        heightImages = document.querySelector('.cont-img').scrollHeight - 150;
         infotext = document.querySelector('.cont-text').scrollHeight;
+        texto = document.querySelector('.cont-text');
+
+        controlScroll();
     }
 
     function controlScroll($event) {
         if (document.querySelector('.cont-text')) {
-            console.log('heightImages', heightImages);
             console.log('infotext', infotext);
-            
+            console.log('heightImages', heightImages);
 
-
-            console.log('pageYOffset', pageYOffset);
-            var scrollY = window.innerHeight + pageYOffset;
+            //var scrollY = window.innerHeight + pageYOffset;
+            var scrollY = window.innerHeight + pageYOffset - 150;
 
             console.log('scrollY', scrollY);
 
-            var texto = document.querySelector('.cont-text');
-            console.log('texto', texto);
-
-            if (scrollY > heightImages) {
-                texto.classList.add('quieto')
+            if (scrollY > infotext && scrollY < heightImages) {
+                console.log('quieto');
+                styleTop = window.innerHeight - infotext;
+                styleTop = styleTop + 'px';
+                
+                console.log('styleTop', styleTop);
+                texto.style.top = styleTop.toString();
+                texto.classList.add('quieto');
+                texto.classList.remove('movimiento');
+            } else if (scrollY > heightImages) {
+                console.log('movimiento');
+                texto.style.top = '';
+                texto.classList.add('movimiento');
+                texto.classList.remove('quieto');
             } else {
+                console.log('else');
+                texto.style.top = '';
+                texto.classList.remove('movimiento');
                 texto.classList.remove('quieto');
             }
         }
     }
+
     $(document).ready(function() {
         $(".is-search-form ").keypress(function(e) {
             if (e.which == 13) {
