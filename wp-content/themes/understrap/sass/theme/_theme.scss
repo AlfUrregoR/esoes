@@ -606,6 +606,7 @@ body {
     left: auto !important;
     right: 0;
     z-index: 0 !important;
+    position: fixed;
 
     @media only screen and (max-width: 767px) {
         position: absolute;
@@ -1982,9 +1983,8 @@ body {
     padding-top: 30vh;
     padding-bottom: 30vh;
     background-image: url('./../../../uploads/2019/08/contact_fundo.png');
-    //background-attachment: fixed;
-    //background-size: cover;
-    //background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
     background-repeat: no-repeat;
 
     h3 {
