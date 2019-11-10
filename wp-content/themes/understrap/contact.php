@@ -249,7 +249,7 @@ get_header('int');
             </div>
           </div>
         </div>
-        <button type="submit" id="btn-submit" name="btn-submit" class="btn btn-form">Envoyer</button>
+        <button type="submit" id="btn-submit" name="btn-submit" class="btn btn-form"><?php the_field('send'); ?></button>
       </div>
 
     </form>
