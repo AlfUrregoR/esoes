@@ -22,7 +22,7 @@ get_header('int');
             <?php endwhile;
             endif; ?></p>
     </div>
-    
+
     <div class="list-services">
         <ul>
             <li><i class="fas fa-circle"></i>
@@ -351,10 +351,12 @@ get_header('int');
                         <?php endwhile;
                         endif; ?>
                     </p>
-                    <a href="#" class="btn-contact"><?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-                                <?php the_field('button_services_collaboration'); ?>
-                        <?php endwhile;
-                        endif; ?></a>
+
+
+                    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                            <?php the_field('button_services_collaboration'); ?>
+                    <?php endwhile;
+                    endif; ?>
                 </div>
             </div>
         </div>
@@ -421,3 +423,11 @@ get_header('int');
 <a id="button"><img src="<?php echo $rutingHost ?>/wp-content/uploads/2019/08/flecha.png" alt=""> </a>
 <!-- Archivo de footer de Wordpress -->
 <?php get_footer(); ?>
+
+
+
+<script>
+    $('.carousel').carousel({
+        interval: false
+    })
+</script>
